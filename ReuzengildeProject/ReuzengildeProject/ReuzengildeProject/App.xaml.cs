@@ -12,7 +12,7 @@ namespace ReuzengildeProject
 		public App ()
 		{
 			InitializeComponent();
-
+            //enne
 			MainPage = new ReuzengildeProject.MainPage();
 		}
 
