@@ -14,6 +14,7 @@ namespace ReuzengildeProject
 
 		public App (string path)
 		{
+            //test
             Path = path;
             DatabaseController.SaveJsonLocal(Path);
             InitializeComponent();
