@@ -1,6 +1,6 @@
 let n = 0;
 var _n;
-var nOfDeelnemers = 10;
+var nOfDeelnemers = 15;
 
 //vars
 var displayName = [];
