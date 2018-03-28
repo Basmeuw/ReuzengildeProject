@@ -15,23 +15,17 @@ namespace ReuzengildeProject.Classes
 {
     public partial class JsonToCs
     {
-        [JsonProperty("reus")]
-        public List<Reus> Reus { get; set; }
+        [JsonProperty("deelnemers")]
+        public List<Deelnemer> Deelnemers { get; set; }
     }
 
-    public partial class Reus
+    public partial class Deelnemer
     {
-        [JsonProperty("Information")]
-        public Information Information { get; set; }
+        [JsonProperty("beschrijving")]
+        public string Beschrijving { get; set; }
 
-        [JsonProperty("Name")]
-        public Information Name { get; set; }
-    }
-
-    public partial class Information
-    {
-        [JsonProperty("Text")]
-        public string Text { get; set; }
+        [JsonProperty("naam")]
+        public string Naam { get; set; }
     }
 
     public partial class JsonToCs
