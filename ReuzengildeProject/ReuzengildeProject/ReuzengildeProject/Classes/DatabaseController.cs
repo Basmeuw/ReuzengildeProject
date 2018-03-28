@@ -17,10 +17,12 @@ namespace ReuzengildeProject.Classes
         {
             SaveFile(Path);
         }
-        //gebruik JsonToCs reus = DatabaseController.JsonFile(App.Path) om alle informatie uit het opgeslagen json file om te zetten naar in list die zit in her var reus
-        public static JsonToCs JsonFile(string Path)
+        //gebruik JsonToCs naam = DatabaseController.GetJson(App.Path) om alle informatie uit het opgeslagen json file om te zetten naar in list die zit in het var reus
+        //je kan die informatie dan gebruiken door voor de informatie: naam.Reus[nummer van de deelnemer].Informatie.Text of voor de naam: naam.Reus[nummer van de deelnemer].Name.Text 
+        public static JsonToCs GetJson(string Path)
         {
             string file = File.ReadAllText(Path);
+            Console.WriteLine(file);
             return JsonToCs.FromJson(file);
         }
 
@@ -29,12 +31,14 @@ namespace ReuzengildeProject.Classes
         {
             IFirebaseConfig config = new FirebaseConfig
             {
-                BasePath = "https://reuzengildetest.firebaseio.com/"
+                BasePath = "https://reuzentest.firebaseio.com/"
             };
             IFirebaseClient client = new FirebaseClient(config);
-            FirebaseResponse response = await client.GetAsync("Reus");
+            FirebaseResponse response = await client.GetAsync("");
             var json = response.Body;
             File.WriteAllText(Path, json);
+            Console.WriteLine("test");
+            Console.WriteLine(json);
         }
 
     }
