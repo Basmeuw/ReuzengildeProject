@@ -15,7 +15,15 @@ namespace ReuzengildeProject.Pages
 	{
 		public HamburgerPage ()
 		{
-            
+            try
+            {
+                var hamburgerMenu = new Image { Source = "HamburgerMenuImage.png " };
+                stackLayout.Children.Add(hamburgerMenu);
+            }
+            catch
+            {
+
+            }
             Detail = new HomePage();
             IsPresented = false;
 

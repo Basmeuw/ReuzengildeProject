@@ -134,4 +134,7 @@
       <Name>ReuzengildeProject</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\HamburgerMenuImage.png" />
+  </ItemGroup>
 </Project>
