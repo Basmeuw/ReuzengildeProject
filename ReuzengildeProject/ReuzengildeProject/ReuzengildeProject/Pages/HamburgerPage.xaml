@@ -1,29 +1,32 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="ReuzengildeProject.Pages.HamburgerPage">
+             x:Class="ReuzengildeProject.Pages.HamburgerPage"
+             >
     <MasterDetailPage.Master>
         <ContentPage Title="Master">
-            
-            <StackLayout x:Name="stackLayout">
-                <Image x:Name="image" Source="HamburgerMenuImage.png"/>
-                <Button x:Name="HomeButton"
-                        Text="Home"
-                        Clicked="HomeButtonClicked"/>
-                <Button x:Name="OptochtButton"
-                        Text="Optocht"
-                        Clicked="OptochtButtonClicked"/>
-                <Button x:Name="DeelnemersButton"
-                        Text="Deelnemers"
-                        Clicked="DeelnemersButtonClicked"/>
-                <Button x:Name="RouteButton"
-                        Text="Route"
-                        Clicked="RouteButtonClicked"/>
-                <Button x:Name="OverButton"
-                        Text="Over"
-                        Clicked="OverButtonClicked"/>
+            <StackLayout>
+                <ListView x:Name="MasterPageItems"
+                          SeparatorVisibility="None"
+                          ItemSelected="OnMenuItemSelected">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <StackLayout VerticalOptions="FillAndExpand"
+                                         Orientation="Horizontal"
+                                         Padding="20,10,0,10"
+                                         Spacing="20">
+                                    <Label Text="{Binding Title}"
+                                       FontSize="Small"
+                                       VerticalOptions="Center"
+                                       TextColor="Black"/>
+                                </StackLayout>
+
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
             </StackLayout>
         </ContentPage>
-            
     </MasterDetailPage.Master>
 </MasterDetailPage>

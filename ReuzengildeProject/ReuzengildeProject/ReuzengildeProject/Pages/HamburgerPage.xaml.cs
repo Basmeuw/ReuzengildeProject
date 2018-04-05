@@ -13,46 +13,35 @@ namespace ReuzengildeProject.Pages
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class HamburgerPage : MasterDetailPage
 	{
+        public List<MasterPageItem> MasterPageItemsList { get; set; }
 		public HamburgerPage ()
 		{
-            try
-            {
-                var hamburgerMenu = new Image { Source = "HamburgerMenuImage.png " };
-                stackLayout.Children.Add(hamburgerMenu);
-            }
-            catch
-            {
+            InitializeComponent();
 
-            }
-            Detail = new HomePage();
+            Detail = new NavigationPage(new HomePage());
+
             IsPresented = false;
 
-			InitializeComponent ();
-		}
-        void HomeButtonClicked(object sender, EventArgs e)
+            MasterPageItemsList = new List<MasterPageItem>();
+            MasterPageItemsList.Add(MakeMasterPageItem("Home", typeof(HomePage)));
+            MasterPageItemsList.Add(MakeMasterPageItem("Start", typeof(OptochtPage)));
+            MasterPageItemsList.Add(MakeMasterPageItem("Deelnemers", typeof(DeelnemersPage)));
+            MasterPageItemsList.Add(MakeMasterPageItem("Route", typeof(RoutePage)));
+            MasterPageItemsList.Add(MakeMasterPageItem("Over", typeof(OverPage)));
+            MasterPageItems.ItemsSource = MasterPageItemsList;
+        }
+        private void OnMenuItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
-            Detail = new HomePage();
+            var item = (MasterPageItem)e.SelectedItem;
+            Type page = item.TargetType;
+
+            Detail = new NavigationPage((Page)Activator.CreateInstance(page));
             IsPresented = false;
         }
-        void OptochtButtonClicked(object sender, EventArgs e)
+        private MasterPageItem MakeMasterPageItem(string title, Type targetType)
         {
-            Detail = new OptochtPage();
-            IsPresented = false;
-        }
-        void DeelnemersButtonClicked(object sender, EventArgs e)
-        {
-            Detail = new DeelnemersPage();
-            IsPresented = false;
-        }
-        void RouteButtonClicked(object sender, EventArgs e)
-        {
-            Detail = new RoutePage();
-            IsPresented = false;
-        }
-        void OverButtonClicked(object sender, EventArgs e)
-        {
-            Detail = new OverPage();
-            IsPresented = false;
+            MasterPageItem page = new MasterPageItem() { Title = title, TargetType = targetType };
+            return page;
         }
     }
 }

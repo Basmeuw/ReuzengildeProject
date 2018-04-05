@@ -17,7 +17,8 @@ namespace ReuzengildeProject
             Path = path;
             DatabaseController.SaveJsonLocal(Path);
             InitializeComponent();
-            MainPage = new NavigationPage(new HamburgerPage());
+
+            MainPage = new HamburgerPage();
 		}
 
 		protected override void OnStart ()
