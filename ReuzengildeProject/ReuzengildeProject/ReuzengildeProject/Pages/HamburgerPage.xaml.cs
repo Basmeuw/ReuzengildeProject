@@ -13,7 +13,6 @@ namespace ReuzengildeProject.Pages
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class HamburgerPage : MasterDetailPage
 	{
-        public List<MasterPageItem> MasterPageItemsList { get; set; }
 		public HamburgerPage ()
 		{
             InitializeComponent();
@@ -22,13 +21,8 @@ namespace ReuzengildeProject.Pages
 
             IsPresented = false;
 
-            MasterPageItemsList = new List<MasterPageItem>();
-            MasterPageItemsList.Add(MakeMasterPageItem("Home", typeof(HomePage)));
-            MasterPageItemsList.Add(MakeMasterPageItem("Start", typeof(OptochtPage)));
-            MasterPageItemsList.Add(MakeMasterPageItem("Deelnemers", typeof(DeelnemersPage)));
-            MasterPageItemsList.Add(MakeMasterPageItem("Route", typeof(RoutePage)));
-            MasterPageItemsList.Add(MakeMasterPageItem("Over", typeof(OverPage)));
-            MasterPageItems.ItemsSource = MasterPageItemsList;
+            MasterPageItems mpi = new MasterPageItems();
+            MasterPageItems.ItemsSource = mpi.masterPageItems;
         }
         private void OnMenuItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
@@ -37,11 +31,6 @@ namespace ReuzengildeProject.Pages
 
             Detail = new NavigationPage((Page)Activator.CreateInstance(page));
             IsPresented = false;
-        }
-        private MasterPageItem MakeMasterPageItem(string title, Type targetType)
-        {
-            MasterPageItem page = new MasterPageItem() { Title = title, TargetType = targetType };
-            return page;
         }
     }
 }
