@@ -27,13 +27,12 @@ namespace ReuzengildeProject.iOS
             var img = UIImage.FromFile("Hamburger.png");
             btn.SetTitle(string.Empty, UIControlState.Normal);
             btn.SetImage(img, UIControlState.Normal);
-            btn.ContentScaleFactor = 20f;
             btn.TouchUpInside += (sender, e) => mdp.IsPresented = true;
             nc.NavigationBar.TitleTextAttributes = new UIStringAttributes()
             {
                 ForegroundColor = UIColor.White
             };
-
+            //test
             nc.NavigationBar.BarTintColor = Color.FromHex("#52A7E0").ToUIColor();
 
             var lbbi = new UIBarButtonItem(btn);

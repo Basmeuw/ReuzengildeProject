@@ -22,12 +22,10 @@ namespace ReuzengildeProject.Classes
         public static JsonToCs GetJson(string Path)
         {
             string file = File.ReadAllText(Path);
-            Console.WriteLine(file);
             return JsonToCs.FromJson(file);
         }
 
-
-        private static async Task SaveFile(string Path)
+        public static async Task SaveFile(string Path)
         {
             IFirebaseConfig config = new FirebaseConfig
             {
@@ -37,8 +35,7 @@ namespace ReuzengildeProject.Classes
             FirebaseResponse response = await client.GetAsync("");
             var json = response.Body;
             File.WriteAllText(Path, json);
-            Console.WriteLine("test");
-            Console.WriteLine(json);
+            App.Information = GetJson(App.Path);
         }
 
     }
