@@ -38,6 +38,20 @@ namespace ReuzengildeProject.Pages
             }
             NaamDeelnemer.Text = App.Information.Deelnemers[App.NumberOfDeelnemer - 1].Naam;
             NumberOfDeelnemer.Text = App.NumberOfDeelnemer.ToString();
+            App.DeelnemerSound.Stop();
+        }
+        private void SoundsButtonClicked(object sender, EventArgs e)
+        {
+            try
+            {
+                App.DeelnemerSound.Load(App.Information.Deelnemers[App.NumberOfDeelnemer - 1].Naam  + ".mp3");
+                App.DeelnemerSound.Play();
+            }
+            catch
+            {
+
+            }
+
         }
         private void BackButtonClicked(object sender, EventArgs e)
         {
@@ -51,6 +65,7 @@ namespace ReuzengildeProject.Pages
         private void NextButtonClicked(object sender, EventArgs e)
         {
             App.NumberOfDeelnemer += 1;
+            App.DeelnemerSound.Stop();
             ChangeItems();
         }
         private void ChangeNumberOfDeelnemers(object sender, TextChangedEventArgs e)

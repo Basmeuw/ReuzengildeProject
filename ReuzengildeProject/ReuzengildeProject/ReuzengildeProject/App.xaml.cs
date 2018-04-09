@@ -7,6 +7,8 @@ using ReuzengildeProject.Classes;
 using ReuzengildeProject.Pages;
 using Plugin.Connectivity;
 using System.IO;
+using Plugin.SimpleAudioPlayer;
+using Plugin.SimpleAudioPlayer.Abstractions;
 
 namespace ReuzengildeProject
 {
@@ -17,6 +19,8 @@ namespace ReuzengildeProject
         public static HamburgerPage HamburgerPage { get; set; }
         public static JsonToCs Information { get; set; }
         public static bool LatestInformation { get; set; }
+        public static ISimpleAudioPlayer BackgroundSound = CrossSimpleAudioPlayer.CreateSimpleAudioPlayer();
+        public static ISimpleAudioPlayer DeelnemerSound = CrossSimpleAudioPlayer.CreateSimpleAudioPlayer();
 
         public App (string path)
 		{
@@ -36,7 +40,6 @@ namespace ReuzengildeProject
             {
                 LatestInformation = false;
             }
-
             InitializeComponent();
             HamburgerPage = new HamburgerPage();
             MainPage = HamburgerPage;

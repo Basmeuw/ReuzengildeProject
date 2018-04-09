@@ -12,7 +12,7 @@ namespace ReuzengildeProject.Classes
     }
     public class MasterPageItems
     {
-        public List<MasterPageItem> masterPageItems = new List<MasterPageItem>()
+        public static List<MasterPageItem> masterPageItems = new List<MasterPageItem>()
         {
              new MasterPageItem{Title = "Home", TargetType = typeof(HomePage)},
              new MasterPageItem{Title = "Start", TargetType = typeof(OptochtPage)},

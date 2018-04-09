@@ -23,13 +23,16 @@ namespace ReuzengildeProject.Pages
 
             IsPresented = false;
 
-            MasterPageItems masterPageItems = new MasterPageItems();
-            MasterPageItems.ItemsSource = masterPageItems.masterPageItems;
+            MasterPageItems.ItemsSource = Classes.MasterPageItems.masterPageItems;
         }
-        private void OnMenuItemSelected(object sender, SelectedItemChangedEventArgs e)
+        private async void OnMenuItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
             var item = (MasterPageItem)e.SelectedItem;
             Type page = item.TargetType;
+            if (App.DeelnemerSound.IsPlaying)
+            {
+                App.DeelnemerSound.Pause();
+            }
             if(page == typeof(OptochtPage) || page == typeof(DeelnemersPage))
             {
                 if (File.Exists(App.Path) && App.Information != null)
@@ -47,14 +50,14 @@ namespace ReuzengildeProject.Pages
                 {
                     if (CrossConnectivity.Current.IsConnected)
                     {
-                        DatabaseController.SaveJsonLocal(App.Path);
+                        await DatabaseController.SaveFile(App.Path);
                         Detail = new NavigationPage((Page)Activator.CreateInstance(page));
                         IsPresented = false;
                         App.LatestInformation = true;
                     }
                     else
                     {
-                        DisplayAlert("Error", "Maak eerst verbinding met het internet om de laatste informatie op te halen en probeer dan opnieuw.", "Oké");
+                        await DisplayAlert("Error", "Maak eerst verbinding met het internet om de laatste informatie op te halen en probeer dan opnieuw.", "Oké");
                     }
                 }
             }

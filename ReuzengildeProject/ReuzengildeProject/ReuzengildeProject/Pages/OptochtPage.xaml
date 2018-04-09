@@ -4,6 +4,8 @@
              x:Class="ReuzengildeProject.Pages.OptochtPage">
     <ContentPage.Content>
         <StackLayout>
+            <Button Text="Sounds"
+                    Clicked="SoundsButtonClicked"/>
             <Label x:Name="NaamDeelnemer"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />

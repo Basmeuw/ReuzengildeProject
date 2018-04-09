@@ -135,6 +135,9 @@
     <PackageReference Include="Xam.Plugin.Connectivity">
       <Version>3.1.1</Version>
     </PackageReference>
+    <PackageReference Include="Xam.Plugin.SimpleAudioPlayer">
+      <Version>1.0.2</Version>
+    </PackageReference>
     <PackageReference Include="Xamarin.Forms" Version="2.5.0.280555" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
@@ -152,5 +155,20 @@
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\homepageHistorischeStoet.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Blue.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Clean Bandit.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\De Tweekaas.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Famke Louise.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Pokemon.mp3" />
   </ItemGroup>
 </Project>
