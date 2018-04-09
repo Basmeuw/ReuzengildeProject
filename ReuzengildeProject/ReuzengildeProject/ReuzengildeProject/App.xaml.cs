@@ -13,6 +13,7 @@ namespace ReuzengildeProject
 		{
 			InitializeComponent();
             //enne
+            //hallo
 			MainPage = new ReuzengildeProject.MainPage();
 		}
 
