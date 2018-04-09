@@ -150,4 +150,7 @@
   <ItemGroup>
     <BundleResource Include="Resources\Hamburger.png" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\homepageHistorischeStoet.jpg" />
+  </ItemGroup>
 </Project>

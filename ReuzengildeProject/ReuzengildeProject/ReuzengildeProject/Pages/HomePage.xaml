@@ -3,8 +3,17 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ReuzengildeProject.Pages.HomePage">
     <StackLayout>
-        <Label Text="Home"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+        <Image Source="homepageHistorischeStoet.jpg"/>
+
+            <Label Text="            De optocht            "
+               HorizontalOptions="CenterAndExpand"
+               TextColor="#985c80"
+               XAlign="Center"
+               BackgroundColor="#3793a8"
+               TranslationY="40"
+               Scale="2"
+               WidthRequest="200"/>
+      
+
     </StackLayout>
 </ContentPage>
