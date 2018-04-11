@@ -6,6 +6,7 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using Android.OS;
+using System.IO;
 
 namespace ReuzengildeProject.Droid
 {
@@ -20,7 +21,11 @@ namespace ReuzengildeProject.Droid
             base.OnCreate(bundle);
 
             global::Xamarin.Forms.Forms.Init(this, bundle);
-            LoadApplication(new App());
+
+            var folder = System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal);
+            var filePath = Path.Combine(folder, "Data.json");
+
+            LoadApplication(new App(filePath));
         }
     }
 }

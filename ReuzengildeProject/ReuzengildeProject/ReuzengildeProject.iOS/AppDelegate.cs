@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 
 using Foundation;
@@ -23,7 +24,11 @@ namespace ReuzengildeProject.iOS
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
             global::Xamarin.Forms.Forms.Init();
-            LoadApplication(new App());
+
+            var folder = Environment.GetFolderPath(Environment.SpecialFolder.Personal);
+            var filePath = Path.Combine(folder, "Data.json");
+
+            LoadApplication(new App(filePath));
 
             return base.FinishedLaunching(app, options);
         }

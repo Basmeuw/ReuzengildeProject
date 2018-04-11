@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ReuzengildeProject.Pages.OptochtPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label x:Name="NaamDeelnemer"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+            <AbsoluteLayout TranslationY="-20">
+                <Button x:Name="BackButton"
+                    Text="Back"
+                    Clicked="BackButtonClicked"
+                    
+                    TranslationX="10"
+                    HeightRequest="40"
+                    WidthRequest="80"
+                    />
+                <Entry x:Name="NumberOfDeelnemer"
+                       Keyboard="Numeric"
+                       Placeholder="1"
+                       TranslationX="90"
+                       HeightRequest="40"
+                       WidthRequest="70"
+                       Completed="ChangeNumberOfDeelnemers"
+                       Focused="EntryFocused"
+                       />
+                <Button x:Name="NextButton"
+                    Text="Next"
+                    Clicked="NextButtonClicked"
+                    TranslationX="165"
+                    HeightRequest="40"
+                    WidthRequest="80"
+                />
+            </AbsoluteLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
