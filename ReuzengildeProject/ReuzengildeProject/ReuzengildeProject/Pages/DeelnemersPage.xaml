@@ -5,8 +5,27 @@
     <ContentPage.Content>
         <StackLayout>
             <Label Text="Deelnemers"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+                   VerticalOptions="Start"
+                   HorizontalOptions="Center"
+                   FontSize="Large"/>
+            <ListView x:Name="DeelnemersList"
+                      ItemSelected="OnItemSelected"
+                      >
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout VerticalOptions="FillAndExpand"
+                                         Orientation="Horizontal"
+                                         Padding="20,10,0,10"
+                                         Spacing="20">
+                                <Label Text="{Binding Naam}"
+                                       VerticalOptions="Center"
+                                       TextColor="Black"/>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
