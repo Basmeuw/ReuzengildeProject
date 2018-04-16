@@ -16,5 +16,9 @@ namespace ReuzengildeProject.Pages
 		{
 			InitializeComponent ();
 		}
+        private void StartButtonClicked(object sender, EventArgs e)
+        {
+
+        }
 	}
 }

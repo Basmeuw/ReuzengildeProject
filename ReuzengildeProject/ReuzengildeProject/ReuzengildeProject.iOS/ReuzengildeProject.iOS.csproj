@@ -171,4 +171,10 @@
   <ItemGroup>
     <BundleResource Include="Resources\Pokemon.mp3" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\muziek1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\muziek2.png" />
+  </ItemGroup>
 </Project>

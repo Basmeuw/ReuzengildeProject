@@ -2,18 +2,41 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ReuzengildeProject.Pages.HomePage">
-    <StackLayout>
-        <Image Source="homepageHistorischeStoet.jpg"/>
+    <AbsoluteLayout BackgroundColor="#efefef">
 
-            <Label Text="            De optocht            "
-               HorizontalOptions="CenterAndExpand"
+        <Button Image="muziek1.png"
+                AbsoluteLayout.LayoutBounds="0.80, 0.005, 0.09, 0.049" AbsoluteLayout.LayoutFlags="All"/>
+
+        <Button Image="muziek2.png"
+                 AbsoluteLayout.LayoutBounds="0.95, 0.005, 0.09, 0.049" AbsoluteLayout.LayoutFlags="All"/>
+
+        <Image Source="homepageHistorischeStoet.jpg"
+                   AbsoluteLayout.LayoutBounds="0.5, 0.08, 0.94, 0.27" AbsoluteLayout.LayoutFlags="All"/>
+
+        <Label Text="          De optocht          "
+              
                TextColor="#985c80"
-               XAlign="Center"
+               FontSize="Medium"
                BackgroundColor="#3793a8"
-               TranslationY="40"
-               Scale="2"
-               WidthRequest="200"/>
-      
+               AbsoluteLayout.LayoutBounds="0.5, 0.36, 0.78, 0.055" AbsoluteLayout.LayoutFlags="All"/>
 
-    </StackLayout>
+        <Label Text="Koen houdt van donuts. jwefkdruireh ju-34yu8h howrw4uy8we rguiwefqhefw u23489y80gw u23r8r89weghguef7 yr23489wty79gfw7yuwfg y7g"
+               TextColor="Black"
+               FontSize="Small"
+               BackgroundColor="White"
+               AbsoluteLayout.LayoutBounds="0.5, 0.81, 0.6, 0.5" AbsoluteLayout.LayoutFlags="All"/>
+
+        <Button Text="Start"
+                TextColor="#985c80"
+                FontSize="Medium"
+                BackgroundColor="White"
+                Clicked="StartButtonClicked"
+                AbsoluteLayout.LayoutBounds="0.5, 1, 0.61, 0.1" AbsoluteLayout.LayoutFlags="All"/>
+
+
+
+
+
+
+    </AbsoluteLayout>
 </ContentPage>
