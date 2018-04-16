@@ -15,6 +15,11 @@ namespace ReuzengildeProject.Pages
 		public DeelnemersPage ()
 		{
 			InitializeComponent ();
+            DeelnemersList.ItemsSource = App.Information.Deelnemers;
 		}
+        private void OnItemSelected(object sender, SelectedItemChangedEventArgs e)
+        {
+
+        }
 	}
 }
