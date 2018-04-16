@@ -2,6 +2,8 @@ let n = 0;
 var _n;
 var nOfDeelnemers = 15;
 
+var hasInitialized = false;
+
 //vars
 var displayName = [];
 var name = [];
@@ -23,10 +25,12 @@ var collapsebutton = [];
 
 //firebase
 var database;
+var retrievedData = [];
 
 
 function setup() {
 
+  //Setup voor verbinding met firebase
   var config = {
     apiKey: "AIzaSyCHGwKRUx1IJ7b-42rhqOEu2vLhQjJMbaY",
     authDomain: "test-project-be3a3.firebaseapp.com",
@@ -39,21 +43,31 @@ function setup() {
   firebase.initializeApp(config);
   database = firebase.database();
 
-	initializeHTML();
-
-  for(var i = 0; i < nOfDeelnemers; i++){
-    var ref = database.ref('deelnemers/' + i);
-    ref.on('value', function(snap){
-      name[i] = snap.naam.val();
-      description[i] = snap.beschrijving.val();
-    });
-  }
-
-
+  //Wanneer de site voor het eerst wordt opgestart wordt alle informatie uit de db gehaald, en de HTML geinitialized
+  database.ref('deelnemers').on('value', function(snapshot){
+    retrievedData = snapshotToArray(snapshot);
+    if(!hasInitialized){
+        initializeHTML();
+    }
+  });
 }
 
+//functie die een array uit de database haalt met alle informatie over de deelnemers erin
+function snapshotToArray(snapshot) {
+    var returnArr = [];
+
+    snapshot.forEach(function(childSnapshot) {
+        var item = childSnapshot.val();
+        item.key = childSnapshot.key;
+
+        returnArr.push(item);
+    });
+    return returnArr;
+};
+
+//deze functie slaat alle data die nu in de tekstvakken staat op
 function saveData(){
-	for(n = 1; n <= nOfDeelnemers; n++){
+	for(n = 0; n < nOfDeelnemers; n++){
 		var name = e_nameInput[n].value();
 		var desc = e_descInput[n].value();
 
@@ -68,26 +82,10 @@ function saveData(){
 	}
 }
 
-//
-// function getDataFromDeelnemer(n){
-//   var ref = database.ref('deelnemers/' + n);
-//   ref.once('value').then(function (snap){
-//     var data = {
-//       naam: snap.val().naam,
-//       beschrijving: snap.val().beschrijving
-//     };
-//     return data;
-//   });
-//
-//
-// }
-
-
+//Hier wordt alle HTML voor de eerste keer op de pagina gezet
 function initializeHTML(){
 
-
-
-		for(n = 1; n <= nOfDeelnemers; n++){
+		for(n = 0; n < nOfDeelnemers; n++){
 		displayName[n] = 'Deelnemer ' + n.toString();
 
 		//deelnemer div
@@ -131,7 +129,7 @@ function initializeHTML(){
 				//label naam
 
 				//textarea naam
-				e_nameInput[n] = createElement('textarea', '');
+				e_nameInput[n] = createElement('textarea', retrievedData[n].naam);
 				e_nameInput[n].id('nameinput' + n.toString());
 				e_nameInput[n].parent('inputdiv' + n.toString());
 				e_nameInput[n].attribute('class', 'form-control');
@@ -146,7 +144,7 @@ function initializeHTML(){
 				//label beschrijving
 
 				//textarea beschrijving
-				e_descInput[n] = createElement('textarea', '');
+				e_descInput[n] = createElement('textarea', retrievedData[n].beschrijving);
 				e_descInput[n].id('descriptioninput' + n.toString());
 				e_descInput[n].parent('inputdiv' + n.toString());
 				e_descInput[n].attribute('class', 'form-control');
@@ -168,4 +166,5 @@ function initializeHTML(){
 
 		//button opslaan
 
+    hasInitialized = true;
 }
