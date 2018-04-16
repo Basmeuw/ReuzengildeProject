@@ -1,5 +1,4 @@
 let n = 0;
-var _n;
 var nOfDeelnemers = 15;
 
 var hasInitialized = false;
@@ -8,6 +7,7 @@ var hasInitialized = false;
 var displayName = [];
 var name = [];
 var description = [];
+var bestandnaam = [];
 
 //elements
 var e_deelnemerDiv = [];
@@ -19,6 +19,8 @@ var e_nameLabel = [];
 var e_nameInput = [];
 var e_descLabel = [];
 var e_descInput = [];
+var e_bestandLabel = [];
+var e_bestandInput = [];
 var e_saveButton = [];
 
 var collapsebutton = [];
@@ -44,7 +46,7 @@ function setup() {
   database = firebase.database();
 
   //Wanneer de site voor het eerst wordt opgestart wordt alle informatie uit de db gehaald, en de HTML geinitialized
-  database.ref('deelnemers').on('value', function(snapshot){
+  database.ref('deelnemers').once('value', function(snapshot){
     retrievedData = snapshotToArray(snapshot);
     if(!hasInitialized){
         initializeHTML();
@@ -70,10 +72,12 @@ function saveData(){
 	for(n = 0; n < nOfDeelnemers; n++){
 		var name = e_nameInput[n].value();
 		var desc = e_descInput[n].value();
+    var bestand = e_bestandInput[n].value();
 
 		var data = {
 			naam: name,
-			beschrijving: desc
+			beschrijving: desc,
+      bestandnaam: bestand
 		}
 
 		var ref = database.ref('deelnemers');
@@ -150,6 +154,21 @@ function initializeHTML(){
 				e_descInput[n].attribute('class', 'form-control');
 				e_descInput[n].attribute('rows', '5');
 				//textarea beschrijving
+
+        //label bestandnaam
+        e_bestandLabel[n] = createElement('label', 'Bestandsnaam van foto: ');
+				e_bestandLabel[n].id('bestandlabel' + n.toString());
+				e_bestandLabel[n].parent('inputdiv' + n.toString());
+				e_bestandLabel[n].attribute('for', 'bestandinput' + n.toString());
+        //label bestandnaam
+
+        //textarea bestandsnaam
+        e_bestandInput[n] = createElement('textarea', retrievedData[n].bestandnaam);
+        e_bestandInput[n].id('bestandinput' + n.toString());
+        e_bestandInput[n].parent('inputdiv' + n.toString());
+        e_bestandInput[n].attribute('class', 'form-control');
+        e_bestandInput[n].attribute('rows', '1');
+        //textarea bestandsnaam
 
 			//input div
 
