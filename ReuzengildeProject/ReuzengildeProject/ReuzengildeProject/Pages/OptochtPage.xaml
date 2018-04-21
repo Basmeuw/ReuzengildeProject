@@ -5,8 +5,7 @@
     <AbsoluteLayout BackgroundColor="#e0dddd">
         <BoxView Color="#00758b"
                  AbsoluteLayout.LayoutBounds="0, 1, 1, 0.11" AbsoluteLayout.LayoutFlags="All"
-                 Opacity="1"
-                 />
+                 Opacity="1"/>
         <Button Image="muziek1.png"
                 AbsoluteLayout.LayoutBounds="0.80, 0.005, 0.09, 0.049" AbsoluteLayout.LayoutFlags="All"/>
 
@@ -20,8 +19,7 @@
                TextColor="#985c80"
                FontSize="Large"
                
-               AbsoluteLayout.LayoutBounds="0.5, 0.36, 0.75, 0.055" AbsoluteLayout.LayoutFlags="All"
-                />
+               AbsoluteLayout.LayoutBounds="0.5, 0.36, 0.75, 0.055" AbsoluteLayout.LayoutFlags="All"/>
 
         <Button x:Name="BackButton"
                 BackgroundColor="#ebebeb"
@@ -30,16 +28,14 @@
                 Opacity="1"
                 Text="Back"
                 Clicked="BackButtonClicked"           
-                AbsoluteLayout.LayoutBounds="0.05, 1, 0.25, 0.1" AbsoluteLayout.LayoutFlags="All"
-             />
+                AbsoluteLayout.LayoutBounds="0.05, 1, 0.25, 0.1" AbsoluteLayout.LayoutFlags="All"/>
 
         <Entry x:Name="NumberOfDeelnemer"
                 AbsoluteLayout.LayoutBounds="0.5, 1, 0.4, 0.1" AbsoluteLayout.LayoutFlags="All"
                 
                 Keyboard="Numeric"
                 Completed="ChangeNumberOfDeelnemers"
-                Focused="EntryFocused"  
-             />
+                Focused="EntryFocused"/>
 
         <Button x:Name="NextButton"
                 
@@ -48,7 +44,6 @@
                 BorderWidth="2"
                 Text="Next"
                 Clicked="NextButtonClicked"
-                AbsoluteLayout.LayoutBounds="0.95, 1, 0.25, 0.1" AbsoluteLayout.LayoutFlags="All"
-             />
+                AbsoluteLayout.LayoutBounds="0.95, 1, 0.25, 0.1" AbsoluteLayout.LayoutFlags="All"/>
     </AbsoluteLayout>
 </ContentPage>
