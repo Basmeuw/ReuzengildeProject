@@ -4,9 +4,11 @@
              x:Class="ReuzengildeProject.Pages.RoutePage"
              Title="De route">
     <ContentPage.Content>
-        <AbsoluteLayout>
+        <AbsoluteLayout BackgroundColor="#e0dddd">
+            
             <Image Source="Route.jpg"
-           AbsoluteLayout.LayoutBounds="1, 1, 1, 1" AbsoluteLayout.LayoutFlags="All"/>
+             AbsoluteLayout.LayoutBounds="1, 1, 1, 1" AbsoluteLayout.LayoutFlags="All"/>
+            
         </AbsoluteLayout>
     </ContentPage.Content>
 </ContentPage>

@@ -6,11 +6,12 @@
         <BoxView Color="#00758b"
                  AbsoluteLayout.LayoutBounds="0, 1, 1, 0.11" AbsoluteLayout.LayoutFlags="All"
                  Opacity="1"/>
+
         <Button Image="muziek1.png"
                 AbsoluteLayout.LayoutBounds="0.80, 0.005, 0.09, 0.049" AbsoluteLayout.LayoutFlags="All"/>
 
         <Button Image="muziek2.png"
-                 AbsoluteLayout.LayoutBounds="0.95, 0.005, 0.09, 0.049" AbsoluteLayout.LayoutFlags="All"/>
+                AbsoluteLayout.LayoutBounds="0.95, 0.005, 0.09, 0.049" AbsoluteLayout.LayoutFlags="All"/>
 
         <Label x:Name="NaamDeelnemer"
                BackgroundColor="#00758b"
@@ -18,7 +19,6 @@
                VerticalTextAlignment="Center"
                TextColor="#985c80"
                FontSize="Large"
-               
                AbsoluteLayout.LayoutBounds="0.5, 0.36, 0.75, 0.055" AbsoluteLayout.LayoutFlags="All"/>
 
         <Button x:Name="BackButton"
