@@ -45,5 +45,15 @@
                 Text="Next"
                 Clicked="NextButtonClicked"
                 AbsoluteLayout.LayoutBounds="0.95, 1, 0.25, 0.1" AbsoluteLayout.LayoutFlags="All"/>
+
+        <Label x:Name="TekstDeelnemer"
+               AbsoluteLayout.LayoutBounds="0.5, 0.45, 0.75, 0.5" AbsoluteLayout.LayoutFlags="All"
+               />
+
+        <Image Source="homepageHistorischeStroet.jpg"
+               AbsoluteLayout.LayoutBounds="0.5, 0.1, 0.75, 0.25" AbsoluteLayout.LayoutFlags="All"
+            />
+
+
     </AbsoluteLayout>
 </ContentPage>
