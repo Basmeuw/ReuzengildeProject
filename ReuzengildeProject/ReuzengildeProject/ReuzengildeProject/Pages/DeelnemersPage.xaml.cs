@@ -19,7 +19,11 @@ namespace ReuzengildeProject.Pages
 		}
         private void OnItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
-
+            var index = (DeelnemersList.ItemsSource as List<Classes.Deelnemer>).IndexOf(e.SelectedItem as Classes.Deelnemer);
+            Console.WriteLine(index.ToString());
+            App.NumberOfDeelnemer = index + 1;
+            App.HamburgerPage.Detail = new NavigationPage(new OptochtPage());
+            App.HamburgerPage.DeselectListviewItems();
         }
 	}
 }
