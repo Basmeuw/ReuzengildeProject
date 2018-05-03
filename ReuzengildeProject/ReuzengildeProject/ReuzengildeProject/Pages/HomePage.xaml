@@ -33,10 +33,5 @@
                 Clicked="StartButtonClicked"
                 AbsoluteLayout.LayoutBounds="0.5, 1, 0.61, 0.1" AbsoluteLayout.LayoutFlags="All"/>
 
-
-
-
-
-
     </AbsoluteLayout>
 </ContentPage>
