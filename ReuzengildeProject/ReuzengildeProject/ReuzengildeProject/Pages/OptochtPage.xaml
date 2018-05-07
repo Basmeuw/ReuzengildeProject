@@ -1,40 +1,60 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="ReuzengildeProject.Pages.OptochtPage">
-    <ContentPage.Content>
-        <StackLayout>
-            <Button Text="Sounds"
-                    Clicked="SoundsButtonClicked"/>
-            <Label x:Name="NaamDeelnemer"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-            <AbsoluteLayout TranslationY="-20">
-                <Button x:Name="BackButton"
-                    Text="Back"
-                    Clicked="BackButtonClicked"
-                    
-                    TranslationX="10"
-                    HeightRequest="40"
-                    WidthRequest="80"
-                    />
-                <Entry x:Name="NumberOfDeelnemer"
-                       Keyboard="Numeric"
-                       Placeholder="1"
-                       TranslationX="90"
-                       HeightRequest="40"
-                       WidthRequest="70"
-                       Completed="ChangeNumberOfDeelnemers"
-                       Focused="EntryFocused"
-                       />
-                <Button x:Name="NextButton"
-                    Text="Next"
-                    Clicked="NextButtonClicked"
-                    TranslationX="165"
-                    HeightRequest="40"
-                    WidthRequest="80"
-                />
-            </AbsoluteLayout>
-        </StackLayout>
-    </ContentPage.Content>
+             x:Class="ReuzengildeProject.Pages.OptochtPage"
+             >
+    <AbsoluteLayout BackgroundColor="#e0dddd">
+        <BoxView Color="#00758b"
+                 AbsoluteLayout.LayoutBounds="0, 1, 1, 0.11" AbsoluteLayout.LayoutFlags="All"
+                 Opacity="1"/>
+
+        <Button Image="muziek1.png"
+                AbsoluteLayout.LayoutBounds="0.80, 0.005, 0.09, 0.049" AbsoluteLayout.LayoutFlags="All"/>
+
+        <Button Image="muziek2.png"
+                AbsoluteLayout.LayoutBounds="0.95, 0.005, 0.09, 0.049" AbsoluteLayout.LayoutFlags="All"/>
+
+        <Label x:Name="NaamDeelnemer"
+               BackgroundColor="#00758b"
+               HorizontalTextAlignment="Center"
+               VerticalTextAlignment="Center"
+               TextColor="#985c80"
+               FontSize="Large"
+               AbsoluteLayout.LayoutBounds="0.5, 0.36, 0.75, 0.055" AbsoluteLayout.LayoutFlags="All"/>
+
+        <Button x:Name="BackButton"
+                BackgroundColor="#ebebeb"
+                BorderColor="#666666"
+                BorderWidth="2"
+                Opacity="1"
+                Text="Back"
+                Clicked="BackButtonClicked"           
+                AbsoluteLayout.LayoutBounds="0.05, 1, 0.25, 0.1" AbsoluteLayout.LayoutFlags="All"/>
+
+        <Entry x:Name="NumberOfDeelnemer"
+                AbsoluteLayout.LayoutBounds="0.5, 1, 0.4, 0.1" AbsoluteLayout.LayoutFlags="All"
+                
+                Keyboard="Numeric"
+                Completed="ChangeNumberOfDeelnemers"
+                Focused="EntryFocused"/>
+
+        <Button x:Name="NextButton"
+                
+                BackgroundColor="#ebebeb"
+                BorderColor="#666666"
+                BorderWidth="2"
+                Text="Next"
+                Clicked="NextButtonClicked"
+                AbsoluteLayout.LayoutBounds="0.95, 1, 0.25, 0.1" AbsoluteLayout.LayoutFlags="All"/>
+
+        <Label x:Name="TekstDeelnemer"
+               AbsoluteLayout.LayoutBounds="0.5, 0.45, 0.75, 0.5" AbsoluteLayout.LayoutFlags="All"
+               />
+
+        <Image Source="homepageHistorischeStroet.jpg"
+               AbsoluteLayout.LayoutBounds="0.5, 0.1, 0.75, 0.25" AbsoluteLayout.LayoutFlags="All"
+            />
+
+
+    </AbsoluteLayout>
 </ContentPage>

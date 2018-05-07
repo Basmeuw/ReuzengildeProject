@@ -12,11 +12,11 @@ using Plugin.Connectivity;
 
 namespace ReuzengildeProject.Pages
 {
-	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class HamburgerPage : MasterDetailPage
-	{
-		public HamburgerPage ()
-		{
+    [XamlCompilation(XamlCompilationOptions.Compile)]
+    public partial class HamburgerPage : MasterDetailPage
+    {
+        public HamburgerPage()
+        {
             InitializeComponent();
 
             Detail = new NavigationPage(new HomePage());
@@ -27,20 +27,25 @@ namespace ReuzengildeProject.Pages
         }
         private async void OnMenuItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
+            if (e.SelectedItem == null)
+            {
+                return;
+            }
+
             var item = (MasterPageItem)e.SelectedItem;
             Type page = item.TargetType;
             if (App.DeelnemerSound.IsPlaying)
             {
                 App.DeelnemerSound.Pause();
             }
-            if(page == typeof(OptochtPage) || page == typeof(DeelnemersPage))
+            if (page == typeof(OptochtPage) || page == typeof(DeelnemersPage))
             {
                 if (File.Exists(App.Path) && App.Information != null)
                 {
                     Detail = new NavigationPage((Page)Activator.CreateInstance(page));
                     IsPresented = false;
                 }
-                else if(File.Exists(App.Path) && App.Information == null)
+                else if (File.Exists(App.Path) && App.Information == null)
                 {
                     App.Information = DatabaseController.GetJson(App.Path);
                     Detail = new NavigationPage((Page)Activator.CreateInstance(page));
@@ -66,6 +71,10 @@ namespace ReuzengildeProject.Pages
                 Detail = new NavigationPage((Page)Activator.CreateInstance(page));
                 IsPresented = false;
             }
+        }
+        public void DeselectListviewItems()
+        {
+            MasterPageItems.SelectedItem = null;
         }
     }
 }
