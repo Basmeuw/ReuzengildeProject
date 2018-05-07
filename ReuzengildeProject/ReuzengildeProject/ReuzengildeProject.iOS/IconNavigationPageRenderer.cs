@@ -33,7 +33,7 @@ namespace ReuzengildeProject.iOS
                 ForegroundColor = UIColor.White
             };
             //test
-            nc.NavigationBar.BarTintColor = Color.FromHex("#52A7E0").ToUIColor();
+            nc.NavigationBar.BarTintColor = Color.FromHex("ffffff").ToUIColor();
 
             var lbbi = new UIBarButtonItem(btn);
             nc.NavigationBar.TopItem.LeftBarButtonItem = lbbi;
