@@ -29,7 +29,7 @@ namespace ReuzengildeProject.Classes
         {
             IFirebaseConfig config = new FirebaseConfig
             {
-                BasePath = "https://reuzentest.firebaseio.com/"
+                BasePath = "https://reuzengilde-1089d.firebaseio.com/"
             };
             IFirebaseClient client = new FirebaseClient(config);
             FirebaseResponse response = await client.GetAsync("");
