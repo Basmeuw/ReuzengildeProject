@@ -20,6 +20,15 @@ namespace ReuzengildeProject
 
         public App (string path)
 		{
+            Current.Resources = new ResourceDictionary();
+            Current.Resources.Add("UlycesColor", Color.FromHex("ffffff"));
+            var navigationStyle = new Style(typeof(NavigationPage));
+            var barBackgroundColorSetter = new Setter { Property = NavigationPage.BarBackgroundColorProperty, Value = Color.FromHex("ffffff") };
+            var barHamburgerBackgroundColorSetter = new Setter { Property = MasterDetailPage.BackgroundColorProperty, Value = Color.FromHex("000000") };
+
+            navigationStyle.Setters.Add(barBackgroundColorSetter);
+            navigationStyle.Setters.Add(barHamburgerBackgroundColorSetter);
+            Current.Resources.Add(navigationStyle);
             NumberOfDeelnemer = 1;
             Path = path;
             if (CrossConnectivity.Current.IsConnected)

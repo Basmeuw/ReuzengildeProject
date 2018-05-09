@@ -17,16 +17,14 @@
         <Label x:Name="NaamDeelnemer"
                BackgroundColor="#00758b"
                HorizontalTextAlignment="Center"
-               VerticalTextAlignment="Center"
+               VerticalTextAlignment="End"
                TextColor="#985c80"
                FontSize="Large"
                AbsoluteLayout.LayoutBounds="0.5, 0.36, 0.75, 0.055" AbsoluteLayout.LayoutFlags="All"/>
 
         <Button x:Name="BackButton"
-                BackgroundColor="#ebebeb"
-                BorderColor="#666666"
-                BorderWidth="2"
-                Opacity="1"
+                BackgroundColor="White"
+                TextColor="Black"
                 Text="Back"
                 Clicked="BackButtonClicked"           
                 AbsoluteLayout.LayoutBounds="0.05, 1, 0.25, 0.1" AbsoluteLayout.LayoutFlags="All"/>
@@ -41,17 +39,23 @@
         <Button x:Name="NextButton"
                 
                 BackgroundColor="#ebebeb"
-                BorderColor="#666666"
-                BorderWidth="2"
+                TextColor="Black"
                 Text="Next"
                 Clicked="NextButtonClicked"
                 AbsoluteLayout.LayoutBounds="0.95, 1, 0.25, 0.1" AbsoluteLayout.LayoutFlags="All"/>
 
-        <Label x:Name="TekstDeelnemer"
-               AbsoluteLayout.LayoutBounds="0.5, 0.45, 0.75, 0.5" AbsoluteLayout.LayoutFlags="All"/>
+        <Label Text="TekstDeelnemer"
+               AbsoluteLayout.LayoutBounds="0.5, 0.80, 0.70, 0.48" AbsoluteLayout.LayoutFlags="All"
+               BackgroundColor="White"
+               
+               />
 
-        <Image Source="homepageHistorischeStroet.jpg"
-               AbsoluteLayout.LayoutBounds="0.5, 0.1, 0.75, 0.25" AbsoluteLayout.LayoutFlags="All"/>
+        <BoxView
+            BackgroundColor="Black"
+  
+               AbsoluteLayout.LayoutBounds="0.5, 0.1, 0.75, 0.25" AbsoluteLayout.LayoutFlags="All"
+            />
+
 
     </AbsoluteLayout>
 </ContentPage>
