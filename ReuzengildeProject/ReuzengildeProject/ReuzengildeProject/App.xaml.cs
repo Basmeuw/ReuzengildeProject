@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using Xamarin.Forms;
+﻿using Xamarin.Forms;
 using ReuzengildeProject.Classes;
 using ReuzengildeProject.Pages;
 using Plugin.Connectivity;
@@ -12,7 +8,7 @@ using Plugin.SimpleAudioPlayer.Abstractions;
 
 namespace ReuzengildeProject
 {
-	public partial class App : Application
+    public partial class App : Application
 	{
         public static string Path;
         public static int NumberOfDeelnemer { get; set; }

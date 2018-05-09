@@ -148,28 +148,10 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\HamburgerMenuImage.png" />
-  </ItemGroup>
-  <ItemGroup>
     <BundleResource Include="Resources\Hamburger.png" />
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\homepageHistorischeStoet.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\Blue.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\Clean Bandit.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\De Tweekaas.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\Famke Louise.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\Pokemon.mp3" />
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\muziek1.png" />

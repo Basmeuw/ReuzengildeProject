@@ -1,16 +1,10 @@
-﻿using ReuzengildeProject.Classes;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
+﻿using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
 namespace ReuzengildeProject.Pages
 {
-	[XamlCompilation(XamlCompilationOptions.Compile)]
+    [XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class OptochtPage : ContentPage
 	{
         public OptochtPage ()
@@ -47,11 +41,7 @@ namespace ReuzengildeProject.Pages
                 App.DeelnemerSound.Load(App.Information.Deelnemers[App.NumberOfDeelnemer - 1].Naam  + ".mp3");
                 App.DeelnemerSound.Play();
             }
-            catch
-            {
-
-            }
-
+            catch{}
         }
         private void BackButtonClicked(object sender, EventArgs e)
         {

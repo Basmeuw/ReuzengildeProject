@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using FireSharp;
+﻿using FireSharp;
 using FireSharp.Config;
 using FireSharp.Interfaces;
 using FireSharp.Response;
@@ -37,6 +34,5 @@ namespace ReuzengildeProject.Classes
             File.WriteAllText(Path, json);
             App.Information = GetJson(App.Path);
         }
-
     }
 }
