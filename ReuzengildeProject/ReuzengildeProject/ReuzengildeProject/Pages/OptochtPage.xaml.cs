@@ -14,6 +14,7 @@ namespace ReuzengildeProject.Pages
         }
         public void ChangeItems()
         {
+            //App.DeelnemerSound.Load(App.Information.Deelnemers[App.NumberOfDeelnemer - 1].Bestandnaam + ".mp3");
             if (App.NumberOfDeelnemer == 1)
             {
                 BackButton.IsEnabled = false;
@@ -33,15 +34,6 @@ namespace ReuzengildeProject.Pages
             NaamDeelnemer.Text = App.Information.Deelnemers[App.NumberOfDeelnemer - 1].Naam;
             NumberOfDeelnemer.Text = App.NumberOfDeelnemer.ToString();
             App.DeelnemerSound.Stop();
-        }
-        private void SoundsButtonClicked(object sender, EventArgs e)
-        {
-            try
-            {
-                App.DeelnemerSound.Load(App.Information.Deelnemers[App.NumberOfDeelnemer - 1].Naam  + ".mp3");
-                App.DeelnemerSound.Play();
-            }
-            catch{}
         }
         private void BackButtonClicked(object sender, EventArgs e)
         {
@@ -75,6 +67,11 @@ namespace ReuzengildeProject.Pages
         private void EntryFocused(object sender, TextChangedEventArgs e)
         {
             NumberOfDeelnemer.Text = string.Empty;
+        }
+        public void Test(object sender, EventArgs e)
+        {
+            DisplayAlert("test", "Werkt", "Oké");
+            Console.WriteLine("Test");
         }
     }
 }

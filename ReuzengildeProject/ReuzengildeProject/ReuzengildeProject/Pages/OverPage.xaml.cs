@@ -1,4 +1,5 @@
-﻿using Xamarin.Forms;
+﻿using System;
+using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
 namespace ReuzengildeProject.Pages
@@ -10,5 +11,10 @@ namespace ReuzengildeProject.Pages
 		{
 			InitializeComponent ();
 		}
-	}
+        public void Test(object sender, EventArgs e)
+        {
+            DisplayAlert("test", "Werkt", "Oké");
+            Console.WriteLine("Test");
+        }
+    }
 }

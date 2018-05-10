@@ -20,15 +20,7 @@ namespace ReuzengildeProject
 
         public App (string path)
 		{
-            Current.Resources = new ResourceDictionary();
-            Current.Resources.Add("UlycesColor", Color.FromHex("ffffff"));
-            var navigationStyle = new Style(typeof(NavigationPage));
-            var barBackgroundColorSetter = new Setter { Property = NavigationPage.BarBackgroundColorProperty, Value = Color.FromHex("ffffff") };
-            var barHamburgerBackgroundColorSetter = new Setter { Property = MasterDetailPage.BackgroundColorProperty, Value = Color.FromHex("000000") };
-
-            navigationStyle.Setters.Add(barBackgroundColorSetter);
-            navigationStyle.Setters.Add(barHamburgerBackgroundColorSetter);
-            Current.Resources.Add(navigationStyle);
+            AddResources();
             NumberOfDeelnemer = 1;
             Path = path;
             if (CrossConnectivity.Current.IsConnected)
@@ -64,5 +56,17 @@ namespace ReuzengildeProject
 		{
 			// Handle when your app resumes
 		}
+
+        private void AddResources()
+        {
+            Current.Resources = new ResourceDictionary
+            {
+                { "UlycesColor", Color.FromHex("ffffff") }
+            };
+            var navigationStyle = new Style(typeof(NavigationPage));
+            var barBackgroundColorSetter = new Setter { Property = NavigationPage.BarBackgroundColorProperty, Value = Color.FromHex("ffffff") };
+            navigationStyle.Setters.Add(barBackgroundColorSetter);
+            Current.Resources.Add(navigationStyle);
+        }
 	}
 }

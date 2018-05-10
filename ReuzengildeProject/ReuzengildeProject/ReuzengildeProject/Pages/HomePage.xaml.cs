@@ -8,20 +8,22 @@ namespace ReuzengildeProject.Pages
     [XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class HomePage : ContentPage
 	{
-        NavigationPage page;
 		public HomePage ()
 		{
-			InitializeComponent ();
+            try
+            {
+                App.DeelnemerSound.Load("Pokemon.mp3");
+            }
+            catch
+            {
+
+            }
+
+            InitializeComponent ();
 		}
-        private async void StartButtonClicked(object sender, EventArgs e)
+        private void StartButtonClicked(object sender, EventArgs e)
         {
-            await Wait();
-            App.HamburgerPage.Detail = page;
-        }
-        private async Task Wait()
-        {
-            page = new NavigationPage(new OptochtPage());
-            
+            App.HamburgerPage.ChangePage(typeof(OptochtPage));
         }
 	}
 }

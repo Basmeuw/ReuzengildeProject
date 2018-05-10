@@ -2,17 +2,12 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ReuzengildeProject.Pages.OptochtPage"
+                          Icon="Hamburger.png"
              >
     <AbsoluteLayout BackgroundColor="#e0dddd">
         <BoxView Color="#00758b"
                  AbsoluteLayout.LayoutBounds="0, 1, 1, 0.11" AbsoluteLayout.LayoutFlags="All"
                  Opacity="1"/>
-
-        <Button Image="muziek1.png"
-                AbsoluteLayout.LayoutBounds="0.80, 0.005, 0.09, 0.049" AbsoluteLayout.LayoutFlags="All"/>
-
-        <Button Image="muziek2.png"
-                AbsoluteLayout.LayoutBounds="0.95, 0.005, 0.09, 0.049" AbsoluteLayout.LayoutFlags="All"/>
 
         <Label x:Name="NaamDeelnemer"
                BackgroundColor="#00758b"
