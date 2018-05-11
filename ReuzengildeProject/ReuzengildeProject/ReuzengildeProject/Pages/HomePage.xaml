@@ -4,25 +4,33 @@
              x:Class="ReuzengildeProject.Pages.HomePage"
                           Icon="Hamburger.png">
     <AbsoluteLayout BackgroundColor="#e0dddd">
-        <BoxView Color="#00758b"
-                 AbsoluteLayout.LayoutBounds="0, 1, 1, 0.11" AbsoluteLayout.LayoutFlags="All"
+        <BoxView Color="#00758b"                                                                  
+        AbsoluteLayout.LayoutBounds="0, 1, 1, 0.11" AbsoluteLayout.LayoutFlags="All"
                  Opacity="1"/>
-        
+ <!--maakt blauw vak onderaan scherm-->                                                                                          
+        <BoxView Color="#666666"
+                 AbsoluteLayout.LayoutBounds="0.5, 0.327, 0.77, 0.07" AbsoluteLayout.LayoutFlags="All"
+                 Opacity="1" />
+<!--maakt rand om optocht label-->
+        <BoxView Color="#afafaf"
+                 AbsoluteLayout.LayoutBounds="0.5, 0.795, 0.72, 0.513" AbsoluteLayout.LayoutFlags="All"
+                 Opacity="1" />
+<!--maakt rand om tekst label-->
         <Image Source="homepageHistorischeStoet.jpg"
-               AbsoluteLayout.LayoutBounds="0.5, 0.08, 0.94, 0.27" AbsoluteLayout.LayoutFlags="All"/>        
+               AbsoluteLayout.LayoutBounds="0.5, 0.03, 0.94, 0.27" AbsoluteLayout.LayoutFlags="All"/>        
 
         <Label Text="De optocht"
               HorizontalTextAlignment="Center"
-               TextColor="#985c80"
+               TextColor="White"
                FontSize="Medium"
                BackgroundColor="#00758b"
-               AbsoluteLayout.LayoutBounds="0.5, 0.36, 0.75, 0.055" AbsoluteLayout.LayoutFlags="All"/>
+               AbsoluteLayout.LayoutBounds="0.5, 0.33, 0.75, 0.055" AbsoluteLayout.LayoutFlags="All"/>
 
         <Label Text="Koen houdt van donuts. jwefkdruireh ju-34yu8h howrw4uy8we rguiwefqhefw u23489y80gw u23r8r89weghguef7 yr23489wty79gfw7yuwfg y7g"
                TextColor="Black"
                FontSize="Small"
                BackgroundColor="White"
-               AbsoluteLayout.LayoutBounds="0.5, 0.81, 0.6, 0.5" AbsoluteLayout.LayoutFlags="All"/>
+               AbsoluteLayout.LayoutBounds="0.5, 0.79, 0.7, 0.5" AbsoluteLayout.LayoutFlags="All"/>
 
         <Button Text="Start"
                 TextColor="#985c80"
