@@ -8,19 +8,33 @@
         <BoxView Color="#00758b"
                  AbsoluteLayout.LayoutBounds="0, 1, 1, 0.11" AbsoluteLayout.LayoutFlags="All"
                  Opacity="1"/>
+<!--maakt blauw vak onderaan scherm-->
+        <BoxView Color="#666666"
+                 AbsoluteLayout.LayoutBounds="0.5, 0.327, 0.77, 0.07" AbsoluteLayout.LayoutFlags="All"
+                 Opacity="1" />
+<!--maakt rand om NaamDeelnemer label-->
+        <BoxView Color="#afafaf"
+                 AbsoluteLayout.LayoutBounds="0.5, 0.795, 0.72, 0.513" AbsoluteLayout.LayoutFlags="All"
+                 Opacity="1" />
+<!--maakt rand om TekstDeelnemer label-->
 
         <Label x:Name="NaamDeelnemer"
                BackgroundColor="#00758b"
                HorizontalTextAlignment="Center"
                VerticalTextAlignment="End"
-               TextColor="#985c80"
+               TextColor="White"
                FontSize="Large"
-               AbsoluteLayout.LayoutBounds="0.5, 0.36, 0.75, 0.055" AbsoluteLayout.LayoutFlags="All"/>
-
+               AbsoluteLayout.LayoutBounds="0.5, 0.33, 0.75, 0.055" AbsoluteLayout.LayoutFlags="All"/>
+      
+        <Label Text="TekstDeelnemer"
+               AbsoluteLayout.LayoutBounds="0.5, 0.79, 0.7, 0.5" AbsoluteLayout.LayoutFlags="All"
+               BackgroundColor="White" 
+               />
+        
         <Button x:Name="BackButton"
                 BackgroundColor="White"
                 TextColor="Black"
-                Text="Back"
+                Text="terug"
                 Clicked="BackButtonClicked"           
                 AbsoluteLayout.LayoutBounds="0.05, 1, 0.25, 0.1" AbsoluteLayout.LayoutFlags="All"/>
 
@@ -35,20 +49,14 @@
                 
                 BackgroundColor="#ebebeb"
                 TextColor="Black"
-                Text="Next"
+                Text="verder"
                 Clicked="NextButtonClicked"
                 AbsoluteLayout.LayoutBounds="0.95, 1, 0.25, 0.1" AbsoluteLayout.LayoutFlags="All"/>
 
-        <Label Text="TekstDeelnemer"
-               AbsoluteLayout.LayoutBounds="0.5, 0.80, 0.70, 0.48" AbsoluteLayout.LayoutFlags="All"
-               BackgroundColor="White"
-               
-               />
 
         <BoxView
             BackgroundColor="Black"
-  
-               AbsoluteLayout.LayoutBounds="0.5, 0.1, 0.75, 0.25" AbsoluteLayout.LayoutFlags="All"
+               AbsoluteLayout.LayoutBounds="0.5, 0.03, 0.94, 0.27" AbsoluteLayout.LayoutFlags="All"
             />
 
 
