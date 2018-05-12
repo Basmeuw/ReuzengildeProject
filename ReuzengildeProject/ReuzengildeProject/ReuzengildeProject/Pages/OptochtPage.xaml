@@ -8,14 +8,15 @@
         <BoxView Color="#00758b"
                  AbsoluteLayout.LayoutBounds="0, 1, 1, 0.11" AbsoluteLayout.LayoutFlags="All"
                  Opacity="1"/>
+<!--maakt blauw vak onderaan scherm-->
         <BoxView Color="#666666"
                  AbsoluteLayout.LayoutBounds="0.5, 0.327, 0.77, 0.07" AbsoluteLayout.LayoutFlags="All"
                  Opacity="1" />
-<!--maakt rand om optocht label-->
+<!--maakt rand om NaamDeelnemer label-->
         <BoxView Color="#afafaf"
                  AbsoluteLayout.LayoutBounds="0.5, 0.795, 0.72, 0.513" AbsoluteLayout.LayoutFlags="All"
                  Opacity="1" />
-<!--maakt rand om tekst label-->
+<!--maakt rand om TekstDeelnemer label-->
 
         <Label x:Name="NaamDeelnemer"
                BackgroundColor="#00758b"
