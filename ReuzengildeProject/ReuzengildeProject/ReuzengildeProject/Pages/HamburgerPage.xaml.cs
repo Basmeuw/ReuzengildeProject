@@ -12,7 +12,7 @@ namespace ReuzengildeProject.Pages
     {
         private Page homePage = new NavigationPage(new HomePage());
         private Page optochtPage;
-        private bool startPauze = false;
+        public bool startPauze = false;
         public HamburgerPage()
         {
             InitializeComponent();

@@ -34,6 +34,7 @@ namespace ReuzengildeProject.Pages
             NaamDeelnemer.Text = App.Information.Deelnemers[App.NumberOfDeelnemer - 1].Naam;
             NumberOfDeelnemer.Text = App.NumberOfDeelnemer.ToString();
             App.DeelnemerSound.Stop();
+            App.HamburgerPage.startPauze = false;
         }
         private void BackButtonClicked(object sender, EventArgs e)
         {
