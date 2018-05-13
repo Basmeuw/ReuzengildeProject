@@ -4,7 +4,6 @@ using ReuzengildeProject.Classes;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using Plugin.Connectivity;
-
 namespace ReuzengildeProject.Pages
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
@@ -22,24 +21,27 @@ namespace ReuzengildeProject.Pages
             IsPresented = false;
             MasterPageItems.ItemsSource = Classes.MasterPageItems.masterPageItems;
         }
-        private void StartPauzeButton()
+        public void StartPauzeButton()
         {
             startPauze = !startPauze;
-                if (startPauze)
-                {
-                    App.DeelnemerSound.Play();
-                }
-                else if (!startPauze)
-                {
-                    App.DeelnemerSound.Pause();
-                }
+            if (startPauze)
+            {
+                Console.WriteLine("play");
+                App.DeelnemerSound.Play();
+            }
+            else if (!startPauze)
+            {
+                Console.WriteLine("Pauze");
+                App.DeelnemerSound.Pause();
+            }
         }
-        private void StopButton()
+        public void StopButton()
         {
             App.DeelnemerSound.Stop();
+            Console.WriteLine("Stop");
             startPauze = false;
         }
-        private async void OnMenuItemSelected(object sender, SelectedItemChangedEventArgs e)
+        private void OnMenuItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
             startPauze = false;
             if (e.SelectedItem == null)
@@ -52,6 +54,31 @@ namespace ReuzengildeProject.Pages
             {
                 App.DeelnemerSound.Pause();
             }
+            CheckInformation(page);
+        }
+        public void DeselectListviewItems()
+        {
+            MasterPageItems.SelectedItem = null;
+        }
+        private void AddToolBarItems()
+        {
+            ToolbarItem tbi = new ToolbarItem
+            {
+                Icon = "muziek1.png",
+                Order = ToolbarItemOrder.Primary,
+                Command = new Command(() => StartPauzeButton())
+            };
+            ToolbarItem tbi2 = new ToolbarItem
+            {
+                Icon = "muziek2.png",
+                Order = ToolbarItemOrder.Primary,
+                Command = new Command(() => StopButton())
+            };
+            ToolbarItems.Add(tbi);
+            ToolbarItems.Add(tbi2);
+        }
+        public async void CheckInformation(Type page)
+        {
             if (page == typeof(OptochtPage) || page == typeof(DeelnemersPage))
             {
                 if (File.Exists(App.Path) && App.Information != null)
@@ -86,39 +113,33 @@ namespace ReuzengildeProject.Pages
                 IsPresented = false;
             }
         }
-        public void DeselectListviewItems()
-        {
-            MasterPageItems.SelectedItem = null;
-        }
-        private void AddToolBarItems()
-        {
-            ToolbarItem tbi = new ToolbarItem
-            {
-                Icon = "muziek1.png",
-                Order = ToolbarItemOrder.Primary,
-                Command = new Command(() => StartPauzeButton())
-            };
-            ToolbarItem tbi2 = new ToolbarItem
-            {
-                Icon = "muziek2.png",
-                Order = ToolbarItemOrder.Primary,
-                Command = new Command(() => StopButton())
-            };
-            ToolbarItems.Add(tbi);
-            ToolbarItems.Add(tbi2);
-        }
         public void ChangePage(Type page)
         {
+
             ToolbarItems.Clear();
             if (page == typeof(HomePage))
             {
                 Detail = homePage;
-                AddToolBarItems();
+                if(Device.OS == TargetPlatform.iOS)
+                {
+                    //ReuzengildeProject.IOS.IconNavigationPageRenderer.AddSoundButtons();
+                }
+                else if(Device.OS == TargetPlatform.Android)
+                {
+                    AddToolBarItems();
+                }
             } else if(page == typeof(OptochtPage))
             {
                 optochtPage = new NavigationPage(new OptochtPage());
                 Detail = optochtPage;
-                AddToolBarItems();
+                if (Device.OS == TargetPlatform.iOS)
+                {
+                    //ReuzengildeProject.IOS.IconNavigationPageRenderer.AddSoundButtons();
+                }
+                else if (Device.OS == TargetPlatform.Android)
+                {
+                    AddToolBarItems();
+                }
             } else
             {
                 Detail = new NavigationPage((Page)Activator.CreateInstance(page));

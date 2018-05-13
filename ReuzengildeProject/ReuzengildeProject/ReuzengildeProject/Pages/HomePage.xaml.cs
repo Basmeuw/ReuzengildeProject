@@ -23,7 +23,7 @@ namespace ReuzengildeProject.Pages
 		}
         private void StartButtonClicked(object sender, EventArgs e)
         {
-            App.HamburgerPage.ChangePage(typeof(OptochtPage));
+            App.HamburgerPage.CheckInformation(typeof(OptochtPage));
         }
 	}
 }
