@@ -33,6 +33,7 @@ namespace ReuzengildeProject.Pages
             }
             NaamDeelnemer.Text = App.Information.Deelnemers[App.NumberOfDeelnemer - 1].Naam;
             NumberOfDeelnemer.Text = App.NumberOfDeelnemer.ToString();
+            InformatieDeelnemer.Text = App.Information.Deelnemers[App.NumberOfDeelnemer - 1].Beschrijving;
             App.DeelnemerSound.Stop();
             App.HamburgerPage.startPauze = false;
         }

@@ -26,7 +26,8 @@
                FontSize="Large"
                AbsoluteLayout.LayoutBounds="0.5, 0.33, 0.75, 0.055" AbsoluteLayout.LayoutFlags="All"/>
       
-        <Label Text="TekstDeelnemer"
+        <Label x:Name="InformatieDeelnemer"
+            Text="TekstDeelnemer"
                AbsoluteLayout.LayoutBounds="0.5, 0.79, 0.7, 0.5" AbsoluteLayout.LayoutFlags="All"
                BackgroundColor="White" 
                />
