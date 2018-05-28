@@ -11,13 +11,26 @@ namespace ReuzengildeProject
     public partial class App : Application
 	{
         public static string Path;
+
+        //het nummer van de deelnemer waar je bent op de informatie pagina
         public static int NumberOfDeelnemer { get; set; }
+
+        //een reference naar de hamburger page zodat je vanuit andere scripts dingen kan aan passen op de hamburgerpage.
         public static HamburgerPage HamburgerPage { get; set; }
+
+        //een reference naar de class JsonToCs met een list met de informatie uit de database. 
         public static JsonToCs Information { get; set; }
+
         public static bool LatestInformation { get; set; }
+
+        //Een reference naar het background geluid voor als ze dit laterna nog willen.
         public static ISimpleAudioPlayer BackgroundSound = CrossSimpleAudioPlayer.CreateSimpleAudioPlayer();
+
+        //Een reference naar het geluid van de deelnemer op de deelnemers page.
         public static ISimpleAudioPlayer DeelnemerSound = CrossSimpleAudioPlayer.CreateSimpleAudioPlayer();
 
+        //Gebeurt wanneer de app word opgestart en checkt of er een internet connectie is. Als er een internet connectie is haalt hij de informatie uit de database. 
+        //Ook start hij de eerste pagina van de app.
         public App (string path)
 		{
             AddResources();
@@ -57,6 +70,7 @@ namespace ReuzengildeProject
 			// Handle when your app resumes
 		}
 
+        //zorgt ervoor dat de navigation bar wit is 
         private void AddResources()
         {
             Current.Resources = new ResourceDictionary
