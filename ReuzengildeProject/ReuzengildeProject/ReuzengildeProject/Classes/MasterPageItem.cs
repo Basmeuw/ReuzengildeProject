@@ -1,14 +1,16 @@
-﻿using ReuzengildeProject.Pages;
+using ReuzengildeProject.Pages;
 using System;
 using System.Collections.Generic;
 
 namespace ReuzengildeProject.Classes
 { 
+    //Een class voor de masterpage items van de detail page die een titel en een pagina bevat
     public class MasterPageItem
     {
         public string Title { get; set; }
         public Type TargetType { get; set; }
     }
+    //Een class die een list aanmaakt en bevat van masterpageitems
     public class MasterPageItems
     {
         public static List<MasterPageItem> masterPageItems = new List<MasterPageItem>()
