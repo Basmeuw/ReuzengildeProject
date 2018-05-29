@@ -11,10 +11,5 @@ namespace ReuzengildeProject.Pages
 		{
 			InitializeComponent ();
 		}
-        public void Test(object sender, EventArgs e)
-        {
-            DisplayAlert("test", "Werkt", "Oké");
-            Console.WriteLine("Test");
-        }
     }
 }
