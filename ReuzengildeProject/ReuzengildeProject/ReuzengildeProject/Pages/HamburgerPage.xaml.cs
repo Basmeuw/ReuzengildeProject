@@ -15,12 +15,14 @@ namespace ReuzengildeProject.Pages
         public HamburgerPage()
         {
             InitializeComponent();
-
+            //detailpage naar de homepage
             ChangePage(typeof(HomePage));
 
             IsPresented = false;
+            //zorgt ervoor dat er een lijst zichtbaar is met knopjes op de detail page
             MasterPageItems.ItemsSource = Classes.MasterPageItems.masterPageItems;
         }
+        //start de muziek of zet hem op pauze
         public void StartPauzeButton()
         {
             startPauze = !startPauze;
@@ -35,12 +37,14 @@ namespace ReuzengildeProject.Pages
                 App.DeelnemerSound.Pause();
             }
         }
+        //stopt de muziek
         public void StopButton()
         {
             App.DeelnemerSound.Stop();
             Console.WriteLine("Stop");
             startPauze = false;
         }
+        //als je op een knopje duuwd op de detailpage verandert hij de pagina en stopt de muziek.
         private void OnMenuItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
             startPauze = false;
@@ -56,10 +60,12 @@ namespace ReuzengildeProject.Pages
             }
             CheckInformation(page);
         }
+        //Deselect het knopje als je niet via de detailpage naar een pagina toe gaat
         public void DeselectListviewItems()
         {
             MasterPageItems.SelectedItem = null;
         }
+        //voegt de geluidsknopjes toe
         private void AddToolBarItems()
         {
             ToolbarItem tbi = new ToolbarItem
@@ -77,6 +83,7 @@ namespace ReuzengildeProject.Pages
             ToolbarItems.Add(tbi);
             ToolbarItems.Add(tbi2);
         }
+        //checkt of er informatie opgeslagen is op de app zodat de app niet crashed
         public async void CheckInformation(Type page)
         {
             if (page == typeof(OptochtPage) || page == typeof(DeelnemersPage))
@@ -113,6 +120,7 @@ namespace ReuzengildeProject.Pages
                 IsPresented = false;
             }
         }
+        //veranderd de detail page 
         public void ChangePage(Type page)
         {
 
@@ -120,23 +128,16 @@ namespace ReuzengildeProject.Pages
             if (page == typeof(HomePage))
             {
                 Detail = homePage;
-                if(Device.OS == TargetPlatform.iOS)
-                {
-                    //ReuzengildeProject.IOS.IconNavigationPageRenderer.AddSoundButtons();
-                }
-                else if(Device.OS == TargetPlatform.Android)
+                if(Device.OS == TargetPlatform.Android)
                 {
                     AddToolBarItems();
                 }
-            } else if(page == typeof(OptochtPage))
+            }
+            else if(page == typeof(OptochtPage))
             {
                 optochtPage = new NavigationPage(new OptochtPage());
                 Detail = optochtPage;
-                if (Device.OS == TargetPlatform.iOS)
-                {
-                    //ReuzengildeProject.IOS.IconNavigationPageRenderer.AddSoundButtons();
-                }
-                else if (Device.OS == TargetPlatform.Android)
+                if (Device.OS == TargetPlatform.Android)
                 {
                     AddToolBarItems();
                 }

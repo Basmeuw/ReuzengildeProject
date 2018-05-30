@@ -12,8 +12,10 @@ namespace ReuzengildeProject.Pages
 		public DeelnemersPage ()
 		{
 			InitializeComponent ();
+            //maakt een lijst met alle deelnemers
             DeelnemersList.ItemsSource = App.Information.Deelnemers;
 		}
+        //gaat naar de deelnemer toe die je selecteert uit de lijst
         private void OnItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
             var index = (DeelnemersList.ItemsSource as List<Deelnemer>).IndexOf(e.SelectedItem as Deelnemer);
