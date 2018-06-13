@@ -28,6 +28,7 @@
       
         <Label Text="TekstDeelnemer"
                AbsoluteLayout.LayoutBounds="0.5, 0.79, 0.7, 0.5" AbsoluteLayout.LayoutFlags="All"
+               Margin="20"
                BackgroundColor="White" 
                />
         
