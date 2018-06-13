@@ -4,7 +4,6 @@ using ReuzengildeProject.Classes;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using Plugin.Connectivity;
-
 namespace ReuzengildeProject.Pages
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
@@ -12,34 +11,41 @@ namespace ReuzengildeProject.Pages
     {
         private Page homePage = new NavigationPage(new HomePage());
         private Page optochtPage;
-        private bool startPauze = false;
+        public bool startPauze = false;
         public HamburgerPage()
         {
             InitializeComponent();
-
+            //detailpage naar de homepage
             ChangePage(typeof(HomePage));
 
             IsPresented = false;
+            //zorgt ervoor dat er een lijst zichtbaar is met knopjes op de detail page
             MasterPageItems.ItemsSource = Classes.MasterPageItems.masterPageItems;
         }
-        private void StartPauzeButton()
+        //start de muziek of zet hem op pauze
+        public void StartPauzeButton()
         {
             startPauze = !startPauze;
-                if (startPauze)
-                {
-                    App.DeelnemerSound.Play();
-                }
-                else if (!startPauze)
-                {
-                    App.DeelnemerSound.Pause();
-                }
+            if (startPauze)
+            {
+                Console.WriteLine("play");
+                App.DeelnemerSound.Play();
+            }
+            else if (!startPauze)
+            {
+                Console.WriteLine("Pauze");
+                App.DeelnemerSound.Pause();
+            }
         }
-        private void StopButton()
+        //stopt de muziek
+        public void StopButton()
         {
             App.DeelnemerSound.Stop();
+            Console.WriteLine("Stop");
             startPauze = false;
         }
-        private async void OnMenuItemSelected(object sender, SelectedItemChangedEventArgs e)
+        //als je op een knopje duuwd op de detailpage verandert hij de pagina en stopt de muziek.
+        private void OnMenuItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
             startPauze = false;
             if (e.SelectedItem == null)
@@ -52,6 +58,34 @@ namespace ReuzengildeProject.Pages
             {
                 App.DeelnemerSound.Pause();
             }
+            CheckInformation(page);
+        }
+        //Deselect het knopje als je niet via de detailpage naar een pagina toe gaat
+        public void DeselectListviewItems()
+        {
+            MasterPageItems.SelectedItem = null;
+        }
+        //voegt de geluidsknopjes toe
+        private void AddToolBarItems()
+        {
+            ToolbarItem tbi = new ToolbarItem
+            {
+                Icon = "muziek1.png",
+                Order = ToolbarItemOrder.Primary,
+                Command = new Command(() => StartPauzeButton())
+            };
+            ToolbarItem tbi2 = new ToolbarItem
+            {
+                Icon = "muziek2.png",
+                Order = ToolbarItemOrder.Primary,
+                Command = new Command(() => StopButton())
+            };
+            ToolbarItems.Add(tbi);
+            ToolbarItems.Add(tbi2);
+        }
+        //checkt of er informatie opgeslagen is op de app zodat de app niet crashed
+        public async void CheckInformation(Type page)
+        {
             if (page == typeof(OptochtPage) || page == typeof(DeelnemersPage))
             {
                 if (File.Exists(App.Path) && App.Information != null)
@@ -86,39 +120,27 @@ namespace ReuzengildeProject.Pages
                 IsPresented = false;
             }
         }
-        public void DeselectListviewItems()
-        {
-            MasterPageItems.SelectedItem = null;
-        }
-        private void AddToolBarItems()
-        {
-            ToolbarItem tbi = new ToolbarItem
-            {
-                Icon = "muziek1.png",
-                Order = ToolbarItemOrder.Primary,
-                Command = new Command(() => StartPauzeButton())
-            };
-            ToolbarItem tbi2 = new ToolbarItem
-            {
-                Icon = "muziek2.png",
-                Order = ToolbarItemOrder.Primary,
-                Command = new Command(() => StopButton())
-            };
-            ToolbarItems.Add(tbi);
-            ToolbarItems.Add(tbi2);
-        }
+        //veranderd de detail page 
         public void ChangePage(Type page)
         {
+
             ToolbarItems.Clear();
             if (page == typeof(HomePage))
             {
                 Detail = homePage;
-                AddToolBarItems();
-            } else if(page == typeof(OptochtPage))
+                if(Device.OS == TargetPlatform.Android)
+                {
+                    AddToolBarItems();
+                }
+            }
+            else if(page == typeof(OptochtPage))
             {
                 optochtPage = new NavigationPage(new OptochtPage());
                 Detail = optochtPage;
-                AddToolBarItems();
+                if (Device.OS == TargetPlatform.Android)
+                {
+                    AddToolBarItems();
+                }
             } else
             {
                 Detail = new NavigationPage((Page)Activator.CreateInstance(page));

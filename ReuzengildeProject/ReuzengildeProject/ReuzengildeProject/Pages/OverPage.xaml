@@ -15,7 +15,7 @@
                  Opacity="1" />
 <!--maakt rand om NaamDeelnemer label-->
             <BoxView Color="#afafaf"
-                 AbsoluteLayout.LayoutBounds="0.5, 0.945, 0.72, 0.583" AbsoluteLayout.LayoutFlags="All"
+                 AbsoluteLayout.LayoutBounds="0.5, 0.94, 0.72, 0.583" AbsoluteLayout.LayoutFlags="All"
                  Opacity="1" />
 <!--maakt rand om TekstDeelnemer label-->
 

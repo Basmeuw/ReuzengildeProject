@@ -10,9 +10,10 @@ namespace ReuzengildeProject.Pages
 	{
 		public HomePage ()
 		{
+		//zet muziek op het muziek knopje
             try
             {
-                App.DeelnemerSound.Load("Pokemon.mp3");
+                App.DeelnemerSound.Load("beginpagina.mp3");
             }
             catch
             {
@@ -21,9 +22,10 @@ namespace ReuzengildeProject.Pages
 
             InitializeComponent ();
 		}
+		//checkt of er informatie is voor de optochtpage en gaat er dan naartoe
         private void StartButtonClicked(object sender, EventArgs e)
         {
-            App.HamburgerPage.ChangePage(typeof(OptochtPage));
+            App.HamburgerPage.CheckInformation(typeof(OptochtPage));
         }
 	}
 }
