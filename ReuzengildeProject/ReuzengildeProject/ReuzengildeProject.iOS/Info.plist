@@ -50,7 +50,5 @@
 	<string>LaunchScreen</string>
 	<key>CFBundleName</key>
 	<string>ReuzengildeProject</string>
-	<key>XSAppIconAssets</key>
-	<string>Resources/Media.xcassets/AppIcons.appiconset</string>
 </dict>
 </plist>
