@@ -9,12 +9,24 @@ namespace ReuzengildeProject.Pages
 	{
         public OptochtPage ()
 		{
+            try
+            {
+                App.DeelnemerSound.Load( App.Information.Deelnemers[App.NumberOfDeelnemer - 1].Bestandnaam + ".jpg");
+            }
+            catch
+            {
+
+            }
+
             InitializeComponent ();
+
+
             ChangeItems();
+
             //checkt of het een ios device is en zorgt er dan voor dat de detail page open gaat en weer sluit zodat hij de iconnavigationpagerenderer gebruikt zodat
             //het hamburgermenu en de geluidsknopjes zichtbaar worden omdat dit niet werkte als je niet via een van de knopjes via de detail page naar een pagina toe gaat 
             //maar vanuit het start knopje of de deelnemerslijst
-            if(Device.OS == TargetPlatform.iOS)
+            if (Device.OS == TargetPlatform.iOS)
             {
                 App.HamburgerPage.IsPresented = true;
                 App.HamburgerPage.IsPresented = false;
@@ -24,12 +36,13 @@ namespace ReuzengildeProject.Pages
         public void ChangeItems()
         {
             //zet muziek op het geluidsknopje en de foto op het scherm
+            scrollView.ScrollToAsync(0, 0, false);
             try
             {
-                App.DeelnemerSound.Load(App.Information.Deelnemers[App.NumberOfDeelnemer - 1].Bestandnaam + ".mp3");
+                Console.WriteLine(App.Information.Deelnemers[App.NumberOfDeelnemer - 1].Bestandnaam.ToString());
                 DeelnemersImage.Source = App.Information.Deelnemers[App.NumberOfDeelnemer - 1].Bestandnaam + ".jpg";
             }
-            catch{}
+            catch { }
             //checkt er nog deelnemers beschikbaar zijn zodat je als er geen hogere deelnemers meer zijn niet verder kunt klikken
             if (App.NumberOfDeelnemer == 1)
             {
@@ -54,6 +67,8 @@ namespace ReuzengildeProject.Pages
             InformatieDeelnemer.Text = App.Information.Deelnemers[App.NumberOfDeelnemer - 1].Beschrijving;
             App.DeelnemerSound.Stop();
             App.HamburgerPage.startPauze = false;
+
+
         }
         //gaat een deelnemer terug
         private void BackButtonClicked(object sender, EventArgs e)

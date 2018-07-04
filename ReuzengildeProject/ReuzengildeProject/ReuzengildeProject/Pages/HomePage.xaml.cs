@@ -13,7 +13,7 @@ namespace ReuzengildeProject.Pages
 		//zet muziek op het muziek knopje
             try
             {
-                App.DeelnemerSound.Load("beginpagina.mp3");
+                App.DeelnemerSound.Load("akkermansgildevenlo.mp3");
             }
             catch
             {
@@ -26,6 +26,7 @@ namespace ReuzengildeProject.Pages
         private void StartButtonClicked(object sender, EventArgs e)
         {
             App.HamburgerPage.CheckInformation(typeof(OptochtPage));
+            App.HamburgerPage.DeselectListviewItems();
         }
 	}
 }

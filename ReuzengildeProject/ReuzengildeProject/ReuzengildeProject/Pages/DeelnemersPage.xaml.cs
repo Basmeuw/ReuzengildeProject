@@ -25,4 +25,5 @@ namespace ReuzengildeProject.Pages
             App.HamburgerPage.DeselectListviewItems();
         }
 	}
+    
 }
