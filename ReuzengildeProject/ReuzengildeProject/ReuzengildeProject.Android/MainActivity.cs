@@ -17,8 +17,8 @@ namespace ReuzengildeProject.Droid
 
             global::Xamarin.Forms.Forms.Init(this, bundle);
 
-            var folder = System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal);
-            var filePath = Path.Combine(folder, "Data.json");
+            string folder = System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal);
+            string filePath = Path.Combine(folder, "Data.json");
 
             LoadApplication(new App(filePath));
         }

@@ -1,4 +1,7 @@
-﻿using System;
+﻿using Plugin.Connectivity;
+using ReuzengildeProject.Classes;
+using System;
+using System.IO;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -21,7 +24,7 @@ namespace ReuzengildeProject.Pages
             }
 
             InitializeComponent ();
-		}
+        }
 		//checkt of er informatie is voor de optochtpage en gaat er dan naartoe
         private void StartButtonClicked(object sender, EventArgs e)
         {

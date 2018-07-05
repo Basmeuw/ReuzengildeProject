@@ -36,12 +36,15 @@ namespace ReuzengildeProject
             AddResources();
             NumberOfDeelnemer = 1;
             Path = path;
+            InitializeComponent();
+            HamburgerPage = new HamburgerPage();
+            MainPage = HamburgerPage;
             if (CrossConnectivity.Current.IsConnected)
             {
                 DatabaseController.SaveJsonLocal(Path);
                 LatestInformation = true;
             }
-            else if(File.Exists(Path))
+            else if (File.Exists(Path))
             {
                 DatabaseController.GetJson(Path);
                 LatestInformation = false;
@@ -50,10 +53,7 @@ namespace ReuzengildeProject
             {
                 LatestInformation = false;
             }
-            InitializeComponent();
-            HamburgerPage = new HamburgerPage();
-            MainPage = HamburgerPage;
-		}
+        }
 
 		protected override void OnStart ()
 		{

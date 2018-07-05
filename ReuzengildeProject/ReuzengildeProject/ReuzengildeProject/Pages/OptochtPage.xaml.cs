@@ -7,11 +7,12 @@ namespace ReuzengildeProject.Pages
     [XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class OptochtPage : ContentPage
 	{
+        private int NumberOfDeelnemers;
         public OptochtPage ()
 		{
             try
             {
-                App.DeelnemerSound.Load( App.Information.Deelnemers[App.NumberOfDeelnemer - 1].Bestandnaam + ".jpg");
+                App.DeelnemerSound.Load( App.Information.Deelnemers[App.NumberOfDeelnemer - 1].Bestandnaam + ".mp3");
             }
             catch
             {
@@ -90,8 +91,13 @@ namespace ReuzengildeProject.Pages
         //als je een nummer intypt op de entry onderin het scherm kijkt hij of dit nummer bestaat
         private void ChangeNumberOfDeelnemers(object sender, TextChangedEventArgs e)
         {
-            int NumberOfDeelnemers = int.Parse(NumberOfDeelnemer.Text);
-            if(NumberOfDeelnemers >= 1 && NumberOfDeelnemers <= App.Information.Deelnemers.Count)
+            NumberOfDeelnemers = 0;
+            try
+            {
+                NumberOfDeelnemers = int.Parse(NumberOfDeelnemer.Text);
+            }
+            catch { }
+            if (NumberOfDeelnemers >= 1 && NumberOfDeelnemers <= App.Information.Deelnemers.Count)
             {
                 App.NumberOfDeelnemer = NumberOfDeelnemers;
                 ChangeItems();
