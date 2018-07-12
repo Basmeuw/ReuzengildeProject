@@ -2,9 +2,13 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ReuzengildeProject.Pages.OptochtPage"
+             xmlns:local="clr-namespace:ReuzengildeProject"
                           Icon="Hamburger.png"
              >
-    <AbsoluteLayout BackgroundColor="#e0dddd">
+
+    <!--Dit is de pagina, waar de gebruiker meer over één deelnemer kan zien-->
+
+        <AbsoluteLayout BackgroundColor="#e0dddd">
         <BoxView Color="#00758b"
                  AbsoluteLayout.LayoutBounds="0, 1, 1, 0.11" AbsoluteLayout.LayoutFlags="All"
                  Opacity="1"/>
@@ -26,15 +30,18 @@
                FontSize="Large"
                AbsoluteLayout.LayoutBounds="0.5, 0.33, 0.75, 0.055" AbsoluteLayout.LayoutFlags="All"/>
         
-        <ScrollView Orientation="Vertical"
+        <ScrollView x:Name="scrollView"
+            Orientation="Vertical"
                     AbsoluteLayout.LayoutBounds="0.5, 0.79, 0.7, 0.5" AbsoluteLayout.LayoutFlags="All">
         <Label x:Name="InformatieDeelnemer"
             Text="TekstDeelnemer"
-               AbsoluteLayout.LayoutBounds="0.5, 0.79, 0.7, 0.5" AbsoluteLayout.LayoutFlags="All"
+               AbsoluteLayout.LayoutBounds="0.5, 0.79, 0.4, 0.5" AbsoluteLayout.LayoutFlags="All"
                BackgroundColor="White" 
                FontSize="Medium"
                />
         </ScrollView>
+        
+        
         
         <Button x:Name="BackButton"
                 BackgroundColor="White"
@@ -43,7 +50,7 @@
                 Clicked="BackButtonClicked"           
                 AbsoluteLayout.LayoutBounds="0.05, 1, 0.25, 0.1" AbsoluteLayout.LayoutFlags="All"/>
 
-        <Entry x:Name="NumberOfDeelnemer"
+        <local:ExtendedEntry x:Name="NumberOfDeelnemer"
                 AbsoluteLayout.LayoutBounds="0.5, 1, 0.4, 0.1" AbsoluteLayout.LayoutFlags="All"
                 
                 Keyboard="Numeric"

@@ -9,51 +9,26 @@ namespace ReuzengildeProject.Pages
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class DeelnemersPage : ContentPage
 	{
+        private List<DeelnemersPaginaItem> deelnemerPaginaItems = new List<DeelnemersPaginaItem>();
 		public DeelnemersPage ()
 		{
 			InitializeComponent ();
             //maakt een lijst met alle deelnemers
-            DeelnemersList.ItemsSource = App.Information.Deelnemers;
+            for(int i = 0; i < App.Information.Deelnemers.Count; i++)
+            {
+                deelnemerPaginaItems.Add(new DeelnemersPaginaItem { Naam = (i + 1).ToString() + " " + App.Information.Deelnemers[i].Naam });
+            }
+            DeelnemersList.ItemsSource = deelnemerPaginaItems;
 		}
         //gaat naar de deelnemer toe die je selecteert uit de lijst
         private void OnItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
-            var index = (DeelnemersList.ItemsSource as List<Deelnemer>).IndexOf(e.SelectedItem as Deelnemer);
+            var index = (DeelnemersList.ItemsSource as List<DeelnemersPaginaItem>).IndexOf(e.SelectedItem as DeelnemersPaginaItem);
             Console.WriteLine(index.ToString());
             App.NumberOfDeelnemer = index + 1;
             App.HamburgerPage.ChangePage(typeof(OptochtPage));
             App.HamburgerPage.DeselectListviewItems();
         }
 	}
-    public class ExtendedScrollView : ScrollView
-    {
-        public event Action<ScrollView, Rectangle> Scrolled;
-
-        public void UpdateBounds(Rectangle bounds)
-        {
-            Position = bounds.Location;
-            if (Scrolled != null)
-                Scrolled(this, bounds);
-        }
-
-        public static readonly BindableProperty PositionProperty =
-            BindableProperty.Create<ExtendedScrollView, Point>(
-                p => p.Position, default(Point));
-
-        public Point Position
-        {
-            get { return (Point)GetValue(PositionProperty); }
-            set { SetValue(PositionProperty, value); }
-        }
-
-        public static readonly BindableProperty AnimateScrollProperty =
-            BindableProperty.Create<ExtendedScrollView, bool>(
-                p => p.AnimateScroll, true);
-
-        public bool AnimateScroll
-        {
-            get { return (bool)GetValue(AnimateScrollProperty); }
-            set { SetValue(AnimateScrollProperty, value); }
-        }
-    }
+    
 }

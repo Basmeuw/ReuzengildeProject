@@ -140,5 +140,50 @@
   <ItemGroup>
     <AndroidResource Include="Resources\drawable-xxhdpi\Route.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\roermondseschutterij.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-hdpi\roermondseschutterij.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-xhdpi\roermondseschutterij.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-xxhdpi\roermondseschutterij.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\akkermansgildevenlo.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-xhdpi\akkermansgildevenlo.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-xxhdpi\akkermansgildevenlo.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-hdpi\akkermansgildevenlo.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\deautarkybressbend.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-hdpi\deautarkybressbend.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-xhdpi\deautarkybressbend.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-xxhdpi\deautarkybressbend.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\akkermansgildevenlo.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\deautarkybressbend.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\roermondseschutterij.mp3" />
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>

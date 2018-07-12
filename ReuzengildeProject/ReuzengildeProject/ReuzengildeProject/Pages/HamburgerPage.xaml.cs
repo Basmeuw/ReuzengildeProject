@@ -21,6 +21,7 @@ namespace ReuzengildeProject.Pages
             IsPresented = false;
             //zorgt ervoor dat er een lijst zichtbaar is met knopjes op de detail page
             MasterPageItems.ItemsSource = Classes.MasterPageItems.masterPageItems;
+
         }
         //start de muziek of zet hem op pauze
         public void StartPauzeButton()

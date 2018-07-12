@@ -29,7 +29,21 @@
                    BackgroundColor="#00758b" 
                    AbsoluteLayout.LayoutBounds="0.5, 0.33, 0.75, 0.055" AbsoluteLayout.LayoutFlags="All"/>
 <!--titel pagina-->
-            <Label Text="Koen houdt van donuts. jwefkdruireh ju-34yu8h howrw4uy8we rguiwefqhefw u23489y80gw u23r8r89weghguef7 yr23489wty79gfw7yuwfg y7g"
+            <Label Text="De applicatie dient als een toegankelijke informatiebron voor de gebruiker, die deze informatiebron tijdens of na de historische stoet in Roermond kan raadplegen. De 'Historische Stoet Roermond'-app is het eindproduct van een schoolproject en kan ook dienen voor andere historische stoeten of carnavalsoptochten. De opdrachtgever van dit project, Wim Kemp, is een extern lid van de stichting 't Remunjse Reuzegilde. Een ander lid van 't Remunjse Reuzegilde genaamd Ton Spätjens heeft voor alle informatie over de deelnemers, de geluidsbestanden en de afbeeldingen gezorgd. De docenten: Mark Tinnemans, John Klok en Michael Baars, een professionele software ontwikkelaar, hebben deze leerlingen begeleidt tijdens het uitvoeren van dit schoolproject. 
+
+Dit schoolproject is uitgevoerd in een teamverband door vier leerlingen van het Technasium in Lyceum Schöndeln. Heeft u ook interesse voor zo'n informatiebron? 
+Mail één van ons dan en we zullen zo spoedig mogelijk iets regelen!
+
+Contactgegevens leerlingen:
+
+Koen van Dooren
+
+Stef Halmans 
+
+Jip van Hoef 
+
+Bas Meuwissen 
+"
                    TextColor="Black"
                    FontSize="Small"
                    BackgroundColor="White"
