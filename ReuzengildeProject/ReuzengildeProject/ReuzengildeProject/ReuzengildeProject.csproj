@@ -5,6 +5,7 @@
     <ApplicationIcon />
     <OutputType>Library</OutputType>
     <StartupObject />
+    <Win32Resource />
   </PropertyGroup>
 
   <ItemGroup>
