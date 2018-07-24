@@ -104,7 +104,7 @@ namespace ReuzengildeProject.Pages
             }
             else
             {
-                DisplayAlert("Error", "Kies een nummer tussen 1 en " + (App.Information.Deelnemers.Count).ToString(), "Oké");
+                DisplayAlert("Sorry", "Het aantal deelnemers is " + (App.Information.Deelnemers.Count).ToString(), "Oké");
                 NumberOfDeelnemer.Text = App.NumberOfDeelnemer.ToString();
             }
         }

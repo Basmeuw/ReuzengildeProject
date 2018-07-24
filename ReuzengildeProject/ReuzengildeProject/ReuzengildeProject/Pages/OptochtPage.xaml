@@ -52,7 +52,6 @@
 
         <local:ExtendedEntry x:Name="NumberOfDeelnemer"
                 AbsoluteLayout.LayoutBounds="0.5, 1, 0.4, 0.1" AbsoluteLayout.LayoutFlags="All"
-                
                 Keyboard="Numeric"
                 Completed="ChangeNumberOfDeelnemers"
                 Focused="EntryFocused"/>

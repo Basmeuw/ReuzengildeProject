@@ -9,27 +9,35 @@
             <BoxView Color="#00758b"
                  AbsoluteLayout.LayoutBounds="0, 1, 1, 0.11" AbsoluteLayout.LayoutFlags="All"
                  Opacity="1"/>
-<!--maakt blauw vak onderaan scherm-->
+            <!--maakt blauw vak onderaan scherm-->
             <BoxView Color="#666666"
                  AbsoluteLayout.LayoutBounds="0.5, 0.327, 0.77, 0.07" AbsoluteLayout.LayoutFlags="All"
                  Opacity="1" />
-<!--maakt rand om NaamDeelnemer label-->
+            <!--maakt rand om NaamDeelnemer label-->
             <BoxView Color="#afafaf"
                  AbsoluteLayout.LayoutBounds="0.5, 0.94, 0.72, 0.583" AbsoluteLayout.LayoutFlags="All"
                  Opacity="1" />
-<!--maakt rand om TekstDeelnemer label-->
+            <!--maakt rand om TekstDeelnemer label-->
 
             <Image Source="homepageHistorischeStoet.jpg"
                    AbsoluteLayout.LayoutBounds="0.5, 0.03, 0.94, 0.27" AbsoluteLayout.LayoutFlags="All"/>
-<!--logo bovenaan de pagina-->
-            <Label Text="Over"
+            <!--logo bovenaan de pagina-->           
+               
+                <Label Text="Over"
                    HorizontalTextAlignment="Center"
                    TextColor="White"
                    FontSize="Medium"
                    BackgroundColor="#00758b" 
                    AbsoluteLayout.LayoutBounds="0.5, 0.33, 0.75, 0.055" AbsoluteLayout.LayoutFlags="All"/>
-<!--titel pagina-->
-            <Label Text="De applicatie dient als een toegankelijke informatiebron voor de gebruiker, die deze informatiebron tijdens of na de historische stoet in Roermond kan raadplegen. De 'Historische Stoet Roermond'-app is het eindproduct van een schoolproject en kan ook dienen voor andere historische stoeten of carnavalsoptochten. De opdrachtgever van dit project, Wim Kemp, is een extern lid van de stichting 't Remunjse Reuzegilde. Een ander lid van 't Remunjse Reuzegilde genaamd Ton Spätjens heeft voor alle informatie over de deelnemers, de geluidsbestanden en de afbeeldingen gezorgd. De docenten: Mark Tinnemans, John Klok en Michael Baars, een professionele software ontwikkelaar, hebben deze leerlingen begeleidt tijdens het uitvoeren van dit schoolproject. 
+
+            <ScrollView Orientation="Vertical"
+                    AbsoluteLayout.LayoutBounds="0.5, 0.94, 0.7, 0.57" AbsoluteLayout.LayoutFlags="All">
+                <Label TextColor="Black"
+                   FontSize="Small"
+                   BackgroundColor="White"
+                   AbsoluteLayout.LayoutBounds="0.5, 0.94, 0.7, 0.57" AbsoluteLayout.LayoutFlags="All">
+                    <Label.Text>
+                        De applicatie dient als een toegankelijke informatiebron voor de gebruiker, die deze informatiebron tijdens of na de historische stoet in Roermond kan raadplegen. De 'Historische Stoet Roermond'-app is het eindproduct van een schoolproject en kan ook dienen voor andere historische stoeten of carnavalsoptochten. De opdrachtgever van dit project, Wim Kemp, is een extern lid van de stichting 't Remunjse Reuzegilde. Een ander lid van 't Remunjse Reuzegilde genaamd Ton Spätjens heeft voor alle informatie over de deelnemers, de geluidsbestanden en de afbeeldingen gezorgd. De docenten: Mark Tinnemans en John Klok en Michael Baars, een professionele software ontwikkelaar, hebben deze leerlingen begeleidt tijdens het uitvoeren van dit schoolproject. 
 
 Dit schoolproject is uitgevoerd in een teamverband door vier leerlingen van het Technasium in Lyceum Schöndeln. Heeft u ook interesse voor zo'n informatiebron? 
 Mail één van ons dan en we zullen zo spoedig mogelijk iets regelen!
@@ -42,13 +50,12 @@ Stef Halmans
 
 Jip van Hoef 
 
-Bas Meuwissen 
-"
-                   TextColor="Black"
-                   FontSize="Small"
-                   BackgroundColor="White"
-                   AbsoluteLayout.LayoutBounds="0.5, 0.94, 0.7, 0.57" AbsoluteLayout.LayoutFlags="All"/>
-<!--hoofdtekst pagina-->
+Bas Meuwissen
+                    </Label.Text>
+                </Label>
+            </ScrollView>
+
+            <!--hoofdtekst pagina-->
         </AbsoluteLayout>
     </ContentPage.Content>
 </ContentPage>
