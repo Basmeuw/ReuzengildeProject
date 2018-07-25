@@ -16,7 +16,11 @@
                  AbsoluteLayout.LayoutBounds="0.5, 0.795, 0.72, 0.513" AbsoluteLayout.LayoutFlags="All"
                  Opacity="1" />
 <!--maakt rand om tekst label-->
-      
+
+        <BoxView Color = "White"
+                 AbsoluteLayout.LayoutBounds="0.5, 0.79, 0.7, 0.5" AbsoluteLayout.LayoutFlags="All"/>
+<!--Zorgt ervoor dat het tekstvak na het scrollen dezelfde kleur heeft in iOS-->
+        
         <Image Source="homepageHistorischeStoet.jpg"
                AbsoluteLayout.LayoutBounds="0.5, 0.03, 0.94, 0.27" AbsoluteLayout.LayoutFlags="All"/>        
 
