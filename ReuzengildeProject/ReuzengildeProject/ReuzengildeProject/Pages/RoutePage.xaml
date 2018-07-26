@@ -4,8 +4,14 @@
              x:Class="ReuzengildeProject.Pages.RoutePage"
                           Icon="Hamburger.png"
              Title="De route">
-    <AbsoluteLayout BackgroundColor="#ffffff">
+    <ContentPage.Content>
+        <AbsoluteLayout BackgroundColor="#ffffff">
         <Image Source="Route.jpg"
-             AbsoluteLayout.LayoutBounds="1, 1, 1, 1" AbsoluteLayout.LayoutFlags="All"/>
+               AbsoluteLayout.LayoutBounds="1, 1, 1, 1" AbsoluteLayout.LayoutFlags="All">
+            <Image.GestureRecognizers>
+                <PinchGestureRecognizer PinchUpdated="OnPinchUpdated" />
+            </Image.GestureRecognizers>
+        </Image>
     </AbsoluteLayout>
+    </ContentPage.Content>
 </ContentPage>

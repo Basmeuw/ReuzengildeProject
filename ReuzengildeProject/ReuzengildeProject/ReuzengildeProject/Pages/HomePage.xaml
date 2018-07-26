@@ -44,7 +44,7 @@
 Daarvoor is de Stichting Reuzenoptocht Roermond in het leven geroepen, die verantwoordelijk is voor de organisatie van de Reuzenoptocht 2018 en van volgende toekomstige optochten.
             </Label.Text>
         </Label>
-        </ScrollView>   
+        </ScrollView>
 
         <Button Text="Start"
                 TextColor="#985c80"
@@ -52,6 +52,5 @@ Daarvoor is de Stichting Reuzenoptocht Roermond in het leven geroepen, die veran
                 BackgroundColor="White"
                 Clicked="StartButtonClicked"
                 AbsoluteLayout.LayoutBounds="0.5, 1, 0.61, 0.1" AbsoluteLayout.LayoutFlags="All"/>
-
     </AbsoluteLayout>
 </ContentPage>

@@ -7,5 +7,6 @@ namespace ReuzengildeProject
 {
     public class ExtendedEntry : Entry
     {
+
     }
 }
