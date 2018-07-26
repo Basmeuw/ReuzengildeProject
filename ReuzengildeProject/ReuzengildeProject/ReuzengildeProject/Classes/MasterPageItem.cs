@@ -15,10 +15,11 @@ namespace ReuzengildeProject.Classes
     {
         public static List<MasterPageItem> masterPageItems = new List<MasterPageItem>()
         {
-             new MasterPageItem{Title = "Home", TargetType = typeof(HomePage)},
-             new MasterPageItem{Title = "Start", TargetType = typeof(OptochtPage)},
+             new MasterPageItem{Title = "Home", TargetType = typeof(HomePage) },
+             new MasterPageItem{Title = "Start", TargetType = typeof(OptochtPage) },
              new MasterPageItem{Title = "Deelnemers", TargetType = typeof(DeelnemersPage) },
              new MasterPageItem{Title = "Route", TargetType = typeof(RoutePage) },
+             new MasterPageItem{Title = "Sponsoren", TargetType = typeof(SponsorPage) },
              new MasterPageItem{Title = "Over", TargetType = typeof(OverPage) }
         };
     }

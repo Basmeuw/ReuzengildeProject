@@ -45,7 +45,7 @@ namespace ReuzengildeProject.Pages
             Console.WriteLine("Stop");
             startPauze = false;
         }
-        //als je op een knopje duuwd op de detailpage verandert hij de pagina en stopt de muziek.
+        //als je op een knopje duwd op de detailpage verandert hij de pagina en stopt de muziek.
         private void OnMenuItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
             startPauze = false;
@@ -111,7 +111,7 @@ namespace ReuzengildeProject.Pages
                     }
                     else
                     {
-                        await DisplayAlert("Error", "Maak eerst verbinding met het internet om de laatste informatie op te halen en probeer dan opnieuw.", "Oké");
+                        await DisplayAlert("Sorry", "Maak eerst verbinding met het internet om de meest recente informatie op te halen en probeer het dan opnieuw.", "Oké");
                     }
                 }
             }
