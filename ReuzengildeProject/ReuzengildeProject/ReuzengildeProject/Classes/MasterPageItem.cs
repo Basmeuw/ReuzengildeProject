@@ -19,7 +19,7 @@ namespace ReuzengildeProject.Classes
              new MasterPageItem{Title = "Start", TargetType = typeof(OptochtPage) },
              new MasterPageItem{Title = "Deelnemers", TargetType = typeof(DeelnemersPage) },
              new MasterPageItem{Title = "Route", TargetType = typeof(RoutePage) },
-             new MasterPageItem{Title = "Sponsoren", TargetType = typeof(SponsorPage) },
+             new MasterPageItem{Title = "Sponsoren", TargetType = typeof(SponsorListPage) },
              new MasterPageItem{Title = "Over", TargetType = typeof(OverPage) }
         };
     }

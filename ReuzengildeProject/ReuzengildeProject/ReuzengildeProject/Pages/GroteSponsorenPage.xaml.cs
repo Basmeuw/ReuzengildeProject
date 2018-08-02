@@ -10,9 +10,9 @@ using Xamarin.Forms.Xaml;
 namespace ReuzengildeProject.Pages
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class SponsorPage : ContentPage
+	public partial class GroteSponsorenPage : ContentPage
 	{
-		public SponsorPage ()
+		public GroteSponsorenPage()
 		{
 			InitializeComponent ();
 		}
