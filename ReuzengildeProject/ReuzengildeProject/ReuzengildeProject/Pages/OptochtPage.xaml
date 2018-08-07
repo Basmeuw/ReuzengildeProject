@@ -73,6 +73,9 @@
                AbsoluteLayout.LayoutBounds="0.5, 0.03, 0.94, 0.27" AbsoluteLayout.LayoutFlags="All"
             />
 
-
+        <Label x:Name="TimerText"
+               Text="Test"
+               FontSize="Large"
+               AbsoluteLayout.LayoutBounds="0.5, 0.5" AbsoluteLayout.LayoutFlags="PositionProportional"/>
     </AbsoluteLayout>
 </ContentPage>

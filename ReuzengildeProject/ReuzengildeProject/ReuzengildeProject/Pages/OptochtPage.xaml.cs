@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Timers;
+using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -8,8 +10,11 @@ namespace ReuzengildeProject.Pages
 	public partial class OptochtPage : ContentPage
 	{
         private int NumberOfDeelnemers;
+        DateTime dt;
+        DateTime dateTime;
         public OptochtPage ()
 		{
+            Timer();
             try
             {
                 App.DeelnemerSound.Load( App.Information.Deelnemers[App.NumberOfDeelnemer - 1].Bestandnaam + ".mp3");
@@ -33,7 +38,35 @@ namespace ReuzengildeProject.Pages
                 App.HamburgerPage.IsPresented = false;
             }
         }
-       
+        public void Timer()
+        {
+                Timer timer = new Timer(1000);
+                timer.Elapsed += async (sender, e) => await SetTimer();
+                timer.Start();
+        }
+
+        async Task SetTimer()
+        {
+
+            dateTime = new DateTime(2018, 9, 9, 13, 30, 0);
+            dt = DateTime.Now.ToLocalTime();
+            dt = DateTime.ParseExact(dt.ToString("yyyy-MM-dd HH:mm:ss"), "yyyy-MM-dd HH:mm:ss", null);
+            if (dt.Hour == dateTime.Hour && dt.Minute == dateTime.Minute)
+            {
+                Device.BeginInvokeOnMainThread(() =>
+                {
+                    TimerText.Text = "Start Historische Stoet";
+                });
+            }
+            else
+            {
+                Device.BeginInvokeOnMainThread(() =>
+                {
+                    TimerText.Text = (dateTime - dt).ToString();
+                });
+            }
+        }
+
         public void ChangeItems()
         {
             //zet muziek op het geluidsknopje en de foto op het scherm
