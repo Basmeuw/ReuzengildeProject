@@ -24,7 +24,6 @@ namespace ReuzengildeProject.Pages
         private void OnItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
             var index = (DeelnemersList.ItemsSource as List<DeelnemersPaginaItem>).IndexOf(e.SelectedItem as DeelnemersPaginaItem);
-            Console.WriteLine(index.ToString());
             App.NumberOfDeelnemer = index + 1;
             App.HamburgerPage.ChangePage(typeof(OptochtPage));
             App.HamburgerPage.DeselectListviewItems();

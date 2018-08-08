@@ -1,11 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="ReuzengildeProject.Pages.SponsorPage"
+             x:Class="ReuzengildeProject.Pages.GroteSponsorenPage"
               Icon="Hamburger.png"
              Title="Sponsoren">
     <ContentPage.Content>
         <AbsoluteLayout BackgroundColor="#e0dddd">
+            
             <BoxView Color="#00758b"
                  AbsoluteLayout.LayoutBounds="0, 1, 1, 0.11" AbsoluteLayout.LayoutFlags="All"
                  Opacity="1"/>
@@ -20,19 +21,16 @@
                    HorizontalTextAlignment="Center"
                    TextColor="White"
                    FontSize="Medium"
-                   BackgroundColor="#00758b"
+                   BackgroundColor="#00758b"                     
                    AbsoluteLayout.LayoutBounds="0.5, 0.03, 0.75, 0.055" AbsoluteLayout.LayoutFlags="All"/>
 
-            <BoxView BackgroundColor="Black"
-                     AbsoluteLayout.LayoutBounds="0.2, 0.15, 0.3, 0.22" AbsoluteLayout.LayoutFlags="All">
-            </BoxView>
-            <BoxView BackgroundColor="Black"
-                     AbsoluteLayout.LayoutBounds="0.8, 0.15, 0.3, 0.22" AbsoluteLayout.LayoutFlags="All">
-            </BoxView>
+            <ScrollView Orientation="Both"
+                         AbsoluteLayout.LayoutBounds="0.5, 0.438, 1, 0.74" AbsoluteLayout.LayoutFlags="All">
+                <BoxView BackgroundColor="Red"                        
+                         AbsoluteLayout.LayoutBounds="0.5, 0.438, 1, 0.74" AbsoluteLayout.LayoutFlags="All"/>
+
+            </ScrollView>
+            <!--Bij Image 'Source' en Aspect= "AspectFill"-->
         </AbsoluteLayout>
-
-
-
-
     </ContentPage.Content>
 </ContentPage>

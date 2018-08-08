@@ -22,6 +22,10 @@
                  Opacity="1" />
 <!--maakt rand om TekstDeelnemer label-->
 
+        <BoxView Color = "White"
+                 AbsoluteLayout.LayoutBounds="0.5, 0.79, 0.7, 0.5" AbsoluteLayout.LayoutFlags="All"/>
+        <!--Zorgt ervoor dat het tekstvak na het scrollen dezelfde kleur heeft in iOS-->
+
         <Label x:Name="NaamDeelnemer"
                BackgroundColor="#00758b"
                HorizontalTextAlignment="Center"
@@ -69,6 +73,9 @@
                AbsoluteLayout.LayoutBounds="0.5, 0.03, 0.94, 0.27" AbsoluteLayout.LayoutFlags="All"
             />
 
-
+        <Label x:Name="TimerText"
+               Text="Test"
+               FontSize="Large"
+               AbsoluteLayout.LayoutBounds="0.5, 0.5" AbsoluteLayout.LayoutFlags="PositionProportional"/>
     </AbsoluteLayout>
 </ContentPage>

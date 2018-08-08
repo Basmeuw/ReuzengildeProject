@@ -74,6 +74,9 @@
     <MtouchHttpClientHandler>NSUrlSessionHandler</MtouchHttpClientHandler>
     <MtouchLink>SdkOnly</MtouchLink>
     <DeviceSpecificBuild>false</DeviceSpecificBuild>
+    <IpaPackageName>
+    </IpaPackageName>
+    <IpaIncludeArtwork>false</IpaIncludeArtwork>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Ad-Hoc|iPhone' ">
     <DebugType>none</DebugType>
