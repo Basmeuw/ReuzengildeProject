@@ -12,9 +12,12 @@ using Android.Widget;
 
 namespace ReuzengildeProject.Droid
 {
-    [Activity(Theme = "@style/Theme.Splash",
+
+    /*
+     * [Activity(Theme = "@style/Theme.Splash",
         MainLauncher = true,
         NoHistory = true)]
+        */
 
 
     public class LaadschermActivity : Activity
