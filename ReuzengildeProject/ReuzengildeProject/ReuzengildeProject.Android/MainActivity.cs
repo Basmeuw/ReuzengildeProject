@@ -6,9 +6,9 @@ using System.IO;
 namespace ReuzengildeProject.Droid
 {
     [Activity(Label = "ReuzengildeProject", 
-        Icon = "@drawable/icon", 
+        Icon = "@drawable/Icon-60@2x.png", 
         Theme = "@style/MainTheme", 
-        MainLauncher = false, 
+        MainLauncher = true, 
         ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation, ScreenOrientation = ScreenOrientation.Portrait)]
     public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsAppCompatActivity
     {
