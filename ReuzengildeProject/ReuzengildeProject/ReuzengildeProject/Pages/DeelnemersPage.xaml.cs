@@ -15,6 +15,7 @@ namespace ReuzengildeProject.Pages
 		public DeelnemersPage ()
 		{
 			InitializeComponent ();
+            //enne
 		}
 	}
 }
