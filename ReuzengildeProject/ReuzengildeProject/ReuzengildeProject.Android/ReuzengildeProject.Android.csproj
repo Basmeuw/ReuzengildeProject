@@ -84,10 +84,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="IconNaviagationPageRenderer.cs" />
-    <Compile Include="LaadschermActivity.cs" />
     <Compile Include="MainActivity.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SplashScreen.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -194,10 +194,10 @@
     <AndroidAsset Include="Assets\roermondseschutterij.mp3" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\Laadscherm.jpg" />
+    <BundleResource Include="Resources\drawable\Icon-60%402x.png" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\drawable\Icon-60%402x.png" />
+    <AndroidResource Include="Resources\drawable\grotesponsors.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>

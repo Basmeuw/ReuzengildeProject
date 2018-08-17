@@ -5,10 +5,8 @@ using System.IO;
 
 namespace ReuzengildeProject.Droid
 {
-    [Activity(Label = "ReuzengildeProject", 
-        Icon = "@drawable/Icon-60@2x.png", 
-        Theme = "@style/MainTheme", 
-        MainLauncher = true, 
+    [Activity(Label = "Historische stoet", 
+        Theme = "@style/MainTheme",  
         ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation, ScreenOrientation = ScreenOrientation.Portrait)]
     public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsAppCompatActivity
     {
@@ -23,6 +21,8 @@ namespace ReuzengildeProject.Droid
 
             string folder = System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal);
             string filePath = Path.Combine(folder, "Data.json");
+
+            Xamarin.Forms.Forms.Init(this, bundle);
 
             LoadApplication(new App(filePath));
         }
