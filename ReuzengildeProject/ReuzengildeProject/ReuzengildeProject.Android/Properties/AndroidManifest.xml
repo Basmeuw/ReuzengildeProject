@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionName="2.0.1" package="com.ReuzenGilde.HistorischeStoet1.x1" android:installLocation="preferExternal" android:versionCode="2">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionName="4.2" package="com.HistorischeStoetApp" android:installLocation="preferExternal" android:versionCode="5">
 	<uses-sdk android:minSdkVersion="16" android:targetSdkVersion="26" />
 	<application android:label="ReuzengildeProject.Android"></application>
 </manifest>

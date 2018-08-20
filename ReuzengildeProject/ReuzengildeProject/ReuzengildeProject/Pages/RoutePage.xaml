@@ -6,12 +6,9 @@
              Title="De route">
     <ContentPage.Content>
         <AbsoluteLayout BackgroundColor="#ffffff">
-        <Image Source="Route.jpg"
+            <Image Source="Route.jpg"
                AbsoluteLayout.LayoutBounds="1, 1, 1, 1" AbsoluteLayout.LayoutFlags="All">
-            <Image.GestureRecognizers>
-                <PinchGestureRecognizer PinchUpdated="OnPinchUpdated" />
-            </Image.GestureRecognizers>
-        </Image>
+            </Image>
     </AbsoluteLayout>
     </ContentPage.Content>
 </ContentPage>

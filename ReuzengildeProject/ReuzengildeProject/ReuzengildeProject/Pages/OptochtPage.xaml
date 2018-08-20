@@ -31,7 +31,7 @@
                HorizontalTextAlignment="Center"
                VerticalTextAlignment="Center"
                TextColor="White"
-               FontSize="Large"
+               FontSize="Default"
                AbsoluteLayout.LayoutBounds="0.5, 0.33, 0.75, 0.055" AbsoluteLayout.LayoutFlags="All"/>
         
         <ScrollView x:Name="scrollView"
@@ -76,6 +76,9 @@
         <Label x:Name="TimerText"
                Text="Test"
                FontSize="Large"
-               AbsoluteLayout.LayoutBounds="0.5, 0.5" AbsoluteLayout.LayoutFlags="PositionProportional"/>
+               BackgroundColor="White"
+               HorizontalTextAlignment="Center"
+               VerticalTextAlignment="Center"
+               AbsoluteLayout.LayoutBounds="0.5, 0.79, 0.7, 0.5" AbsoluteLayout.LayoutFlags="All"/>
     </AbsoluteLayout>
 </ContentPage>
