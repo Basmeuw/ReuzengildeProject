@@ -42,6 +42,15 @@ namespace ReuzengildeProject.Pages
                 App.HamburgerPage.IsPresented = false;
             }
 
+            if (App.Information.Deelnemers[App.NumberOfDeelnemer - 1].Naam.Length > 30)
+            {
+                NaamDeelnemer.FontSize = Device.GetNamedSize(NamedSize.Small, typeof(Label));
+            }
+            else
+            {
+                NaamDeelnemer.FontSize = Device.GetNamedSize(NamedSize.Large, typeof(Label));
+            }
+
             if (!App.StartOptocht)
             {
                 Console.WriteLine("test");
@@ -138,6 +147,7 @@ namespace ReuzengildeProject.Pages
                 NextButton.IsEnabled = true;
             }
             //verandert alle informatie op het scherm naar informatie uit de database.
+
             NaamDeelnemer.Text = App.Information.Deelnemers[App.NumberOfDeelnemer - 1].Naam;
             NumberOfDeelnemer.Text = App.NumberOfDeelnemer.ToString();
             InformatieDeelnemer.Text = App.Information.Deelnemers[App.NumberOfDeelnemer - 1].Beschrijving;
