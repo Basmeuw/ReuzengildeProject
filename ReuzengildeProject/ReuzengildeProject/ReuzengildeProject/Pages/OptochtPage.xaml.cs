@@ -12,9 +12,37 @@ namespace ReuzengildeProject.Pages
         private int NumberOfDeelnemers;
         DateTime dt;
         DateTime dateTime;
+        Timer timer;
         public OptochtPage ()
 		{
-            Timer();
+
+            InitializeComponent();
+            //checkt of het een ios device is en zorgt er dan voor dat de detail page open gaat en weer sluit zodat hij de iconnavigationpagerenderer gebruikt zodat
+            //het hamburgermenu en de geluidsknopjes zichtbaar worden omdat dit niet werkte als je niet via een van de knopjes via de detail page naar een pagina toe gaat 
+            //maar vanuit het start knopje of de deelnemerslijst
+            if (Device.OS == TargetPlatform.iOS)
+            {
+                App.HamburgerPage.IsPresented = true;
+                App.HamburgerPage.IsPresented = false;
+            }
+
+            if (!App.StartOptocht)
+            {
+                Console.WriteLine("test");
+                Timer();
+                try
+                {
+                    Console.WriteLine(App.Information.Deelnemers[App.NumberOfDeelnemer - 1].Bestandnaam.ToString());
+                    DeelnemersImage.Source = App.Information.Deelnemers[App.NumberOfDeelnemer - 1].Bestandnaam + ".jpg";
+                }
+                catch { }
+                NaamDeelnemer.Text = App.Information.Deelnemers[App.NumberOfDeelnemer - 1].Naam;
+            }
+            else if (App.StartOptocht)
+            {
+                Console.WriteLine("3");
+                ChangeItems();
+            }
             try
             {
                 App.DeelnemerSound.Load( App.Information.Deelnemers[App.NumberOfDeelnemer - 1].Bestandnaam + ".mp3");
@@ -24,53 +52,53 @@ namespace ReuzengildeProject.Pages
 
             }
 
-            InitializeComponent ();
 
-
-            ChangeItems();
-
-            //checkt of het een ios device is en zorgt er dan voor dat de detail page open gaat en weer sluit zodat hij de iconnavigationpagerenderer gebruikt zodat
-            //het hamburgermenu en de geluidsknopjes zichtbaar worden omdat dit niet werkte als je niet via een van de knopjes via de detail page naar een pagina toe gaat 
-            //maar vanuit het start knopje of de deelnemerslijst
-            if (Device.OS == TargetPlatform.iOS)
-            {
-                App.HamburgerPage.IsPresented = true;
-                App.HamburgerPage.IsPresented = false;
-            }
         }
+
         public void Timer()
         {
-                Timer timer = new Timer(1000);
+            timer = new Timer(1000);
                 timer.Elapsed += async (sender, e) => await SetTimer();
                 timer.Start();
         }
 
         async Task SetTimer()
         {
+            
 
             dateTime = new DateTime(2018, 9, 9, 13, 30, 0);
             dt = DateTime.Now.ToLocalTime();
             dt = DateTime.ParseExact(dt.ToString("yyyy-MM-dd HH:mm:ss"), "yyyy-MM-dd HH:mm:ss", null);
-            if (dt.Hour == dateTime.Hour && dt.Minute == dateTime.Minute)
+            if (dt >= dateTime)
             {
                 Device.BeginInvokeOnMainThread(() =>
                 {
-                    TimerText.Text = "Start Historische Stoet";
+                    App.StartOptocht = true;
+                    BackButton.IsEnabled = true;
+                    NextButton.IsEnabled = true;
+                    NumberOfDeelnemer.IsEnabled = true;
+                    ChangeItems();
+                    timer.Stop();
                 });
             }
             else
             {
                 Device.BeginInvokeOnMainThread(() =>
                 {
-                    TimerText.Text = (dateTime - dt).ToString();
+
+                    InformatieDeelnemer.Text = "nog " + (dateTime - dt).ToString() + " tot de optocht!";
+                    App.StartOptocht = false;
+                    BackButton.IsEnabled = false;
+                    NextButton.IsEnabled = false;
+                    NumberOfDeelnemer.IsEnabled = false;
                 });
             }
         }
 
         public void ChangeItems()
         {
+
             //zet muziek op het geluidsknopje en de foto op het scherm
-            scrollView.ScrollToAsync(0, 0, false);
             try
             {
                 Console.WriteLine(App.Information.Deelnemers[App.NumberOfDeelnemer - 1].Bestandnaam.ToString());
@@ -95,13 +123,12 @@ namespace ReuzengildeProject.Pages
                 NextButton.IsEnabled = true;
             }
             //verandert alle informatie op het scherm naar informatie uit de database.
-
             NaamDeelnemer.Text = App.Information.Deelnemers[App.NumberOfDeelnemer - 1].Naam;
             NumberOfDeelnemer.Text = App.NumberOfDeelnemer.ToString();
             InformatieDeelnemer.Text = App.Information.Deelnemers[App.NumberOfDeelnemer - 1].Beschrijving;
             App.DeelnemerSound.Stop();
             App.HamburgerPage.startPauze = false;
-
+            scrollView.ScrollToAsync(0, 0, false);
 
         }
         //gaat een deelnemer terug
