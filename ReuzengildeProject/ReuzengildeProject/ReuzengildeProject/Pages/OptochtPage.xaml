@@ -7,59 +7,66 @@
              >
 
     <!--Dit is de pagina, waar de gebruiker meer over één deelnemer kan zien-->
+    <!--<AbsoluteLayout>
 
-        <AbsoluteLayout BackgroundColor="#e0dddd">
-        <BoxView Color="#00758b"
+    </AbsoluteLayout>-->
+    <AbsoluteLayout>
+        <AbsoluteLayout x:Name="Content"
+                    BackgroundColor="#e0dddd"
+                                AbsoluteLayout.LayoutBounds="0,0,1,1"
+        AbsoluteLayout.LayoutFlags="All">
+
+            <BoxView Color="#00758b"
                  AbsoluteLayout.LayoutBounds="0, 1, 1, 0.11" AbsoluteLayout.LayoutFlags="All"
                  Opacity="1"/>
-<!--maakt blauw vak onderaan scherm-->
-        <BoxView Color="#666666"
+            <!--maakt blauw vak onderaan scherm-->
+            <BoxView Color="#666666"
                  AbsoluteLayout.LayoutBounds="0.5, 0.327, 0.77, 0.07" AbsoluteLayout.LayoutFlags="All"
                  Opacity="1" />
-<!--maakt rand om NaamDeelnemer label-->
-        <BoxView Color="#afafaf"
+            <!--maakt rand om NaamDeelnemer label-->
+            <BoxView Color="#afafaf"
                  AbsoluteLayout.LayoutBounds="0.5, 0.795, 0.72, 0.513" AbsoluteLayout.LayoutFlags="All"
                  Opacity="1" />
-<!--maakt rand om TekstDeelnemer label-->
+            <!--maakt rand om TekstDeelnemer label-->
 
-        <BoxView Color = "White"
+            <BoxView Color = "White"
                  AbsoluteLayout.LayoutBounds="0.5, 0.79, 0.7, 0.5" AbsoluteLayout.LayoutFlags="All"/>
-        <!--Zorgt ervoor dat het tekstvak na het scrollen dezelfde kleur heeft in iOS-->
+            <!--Zorgt ervoor dat het tekstvak na het scrollen dezelfde kleur heeft in iOS-->
 
-        <Label x:Name="NaamDeelnemer"
+            <Label x:Name="NaamDeelnemer"
                BackgroundColor="#00758b"
                HorizontalTextAlignment="Center"
                VerticalTextAlignment="Center"
                TextColor="White"
                FontSize="Large"
                AbsoluteLayout.LayoutBounds="0.5, 0.33, 0.75, 0.055" AbsoluteLayout.LayoutFlags="All"/>
-        
-        <ScrollView x:Name="scrollView"
+
+            <ScrollView x:Name="scrollView"
             Orientation="Vertical"
                     AbsoluteLayout.LayoutBounds="0.5, 0.79, 0.7, 0.5" AbsoluteLayout.LayoutFlags="All">
-        <Label x:Name="InformatieDeelnemer"
+                <Label x:Name="InformatieDeelnemer"
                AbsoluteLayout.LayoutBounds="0.5, 0.79, 0.4, 0.5" AbsoluteLayout.LayoutFlags="All"
                BackgroundColor="White" 
                FontSize="Medium"
                />
-        </ScrollView>
-        
-        
-        
-        <Button x:Name="BackButton"
+            </ScrollView>
+
+
+
+            <Button x:Name="BackButton"
                 BackgroundColor="White"
                 TextColor="Black"
                 Text="terug"
                 Clicked="BackButtonClicked"           
                 AbsoluteLayout.LayoutBounds="0.05, 1, 0.25, 0.1" AbsoluteLayout.LayoutFlags="All"/>
 
-        <local:ExtendedEntry x:Name="NumberOfDeelnemer"
+            <local:ExtendedEntry x:Name="NumberOfDeelnemer"
                 AbsoluteLayout.LayoutBounds="0.5, 1, 0.4, 0.1" AbsoluteLayout.LayoutFlags="All"
                 Keyboard="Numeric"
                 Completed="ChangeNumberOfDeelnemers"
                 Focused="EntryFocused"/>
 
-        <Button x:Name="NextButton"
+            <Button x:Name="NextButton"
                 
                 BackgroundColor="#ebebeb"
                 TextColor="Black"
@@ -68,12 +75,23 @@
                 AbsoluteLayout.LayoutBounds="0.95, 1, 0.25, 0.1" AbsoluteLayout.LayoutFlags="All"/>
 
 
-        <Image x:Name="DeelnemersImage"
+            <Image x:Name="DeelnemersImage"
                AbsoluteLayout.LayoutBounds="0.5, 0.03, 0.94, 0.27" AbsoluteLayout.LayoutFlags="All"
             />
 
-        <Label x:Name="TimerText"
+            <Label x:Name="TimerText"
                FontSize="Large"
                AbsoluteLayout.LayoutBounds="0.5, 0.5" AbsoluteLayout.LayoutFlags="PositionProportional"/>
+
+
+
+        </AbsoluteLayout>
+        <AbsoluteLayout x:Name="Image"
+                                AbsoluteLayout.LayoutBounds="0,0,1,1"
+        AbsoluteLayout.LayoutFlags="All"
+                        BackgroundColor="White">
+            <Image Source="grotesponsors.jpg"/>
+        </AbsoluteLayout>
     </AbsoluteLayout>
+    
 </ContentPage>

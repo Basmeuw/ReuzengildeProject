@@ -3,6 +3,7 @@ using System.Timers;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using System.Threading;
 
 namespace ReuzengildeProject.Pages
 {
@@ -12,11 +13,26 @@ namespace ReuzengildeProject.Pages
         private int NumberOfDeelnemers;
         DateTime dt;
         DateTime dateTime;
-        Timer timer;
+        private System.Timers.Timer optochtTimer;
+        private System.Timers.Timer sponsorTimer;
         public OptochtPage ()
 		{
 
+
+
             InitializeComponent();
+            Content.IsVisible = false;
+            Thread thread = new Thread(() =>
+            {
+                Thread.Sleep(5000);
+                Device.BeginInvokeOnMainThread(() =>
+                {
+                    Content.IsVisible = true;
+                    Image.IsVisible = false;
+                });
+
+            });
+            thread.Start();
             //checkt of het een ios device is en zorgt er dan voor dat de detail page open gaat en weer sluit zodat hij de iconnavigationpagerenderer gebruikt zodat
             //het hamburgermenu en de geluidsknopjes zichtbaar worden omdat dit niet werkte als je niet via een van de knopjes via de detail page naar een pagina toe gaat 
             //maar vanuit het start knopje of de deelnemerslijst
@@ -53,20 +69,19 @@ namespace ReuzengildeProject.Pages
             }
 
 
+
         }
 
         public void Timer()
         {
-            timer = new Timer(1000);
-                timer.Elapsed += async (sender, e) => await SetTimer();
-                timer.Start();
+            optochtTimer = new System.Timers.Timer(1000);
+            optochtTimer.Elapsed += async (sender, e) => await SetTimer();
+            optochtTimer.Start();
         }
 
         async Task SetTimer()
         {
-            
-
-            dateTime = new DateTime(2018, 9, 9, 13, 30, 0);
+            dateTime = new DateTime(2018, 8, 21, 18, 30, 0);
             dt = DateTime.Now.ToLocalTime();
             dt = DateTime.ParseExact(dt.ToString("yyyy-MM-dd HH:mm:ss"), "yyyy-MM-dd HH:mm:ss", null);
             if (dt >= dateTime)
@@ -78,7 +93,7 @@ namespace ReuzengildeProject.Pages
                     NextButton.IsEnabled = true;
                     NumberOfDeelnemer.IsEnabled = true;
                     ChangeItems();
-                    timer.Stop();
+                    optochtTimer.Stop();
                 });
             }
             else

@@ -5,32 +5,9 @@
               Icon="Hamburger.png"
              Title="Sponsoren">
     <ContentPage.Content>
-        <AbsoluteLayout BackgroundColor="#e0dddd">
-            
-            <BoxView Color="#00758b"
-                 AbsoluteLayout.LayoutBounds="0, 1, 1, 0.11" AbsoluteLayout.LayoutFlags="All"
-                 Opacity="1"/>
-            <!--maakt blauw vak onderaan scherm-->
+        <AbsoluteLayout BackgroundColor="Black">
 
-            <BoxView Color="#666666"
-                 AbsoluteLayout.LayoutBounds="0.5, 0.026, 0.77, 0.07" AbsoluteLayout.LayoutFlags="All"
-                 Opacity="1" />
-            <!--maakt rand om label van titel-->
-
-            <Label Text ="Sponsoren"
-                   HorizontalTextAlignment="Center"
-                   TextColor="White"
-                   FontSize="Medium"
-                   BackgroundColor="#00758b"                     
-                   AbsoluteLayout.LayoutBounds="0.5, 0.03, 0.75, 0.055" AbsoluteLayout.LayoutFlags="All"/>
-
-            <ScrollView Orientation="Both"
-                         AbsoluteLayout.LayoutBounds="0.5, 0.438, 1, 0.74" AbsoluteLayout.LayoutFlags="All">
-                <BoxView BackgroundColor="Red"                        
-                         AbsoluteLayout.LayoutBounds="0.5, 0.438, 1, 0.74" AbsoluteLayout.LayoutFlags="All"/>
-
-            </ScrollView>
-            <!--Bij Image 'Source' en Aspect= "AspectFill"-->
+            <Image Source="grotesponsors.jpg"/>
         </AbsoluteLayout>
     </ContentPage.Content>
 </ContentPage>

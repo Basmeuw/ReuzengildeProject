@@ -39,6 +39,8 @@
     <MtouchLink>None</MtouchLink>
     <MtouchArch>x86_64</MtouchArch>
     <ConsolePause>false</ConsolePause>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <CodesignProvision />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
     <DebugSymbols>true</DebugSymbols>
@@ -65,7 +67,7 @@
     <WarningLevel>4</WarningLevel>
     <MtouchArch>ARMv7, ARMv7s, ARM64</MtouchArch>
     <ConsolePause>false</ConsolePause>
-    <CodesignKey>iPhone Distribution</CodesignKey>
+    <CodesignKey>iPhone Distribution: Jean Pierre Halmans (4S98HP62TQ)</CodesignKey>
     <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
     <CodesignProvision>Historische Stoet Appstore</CodesignProvision>
     <BuildIpa>true</BuildIpa>
@@ -470,5 +472,8 @@
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\Meute.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\grotesponsors.jpg" />
   </ItemGroup>
 </Project>
