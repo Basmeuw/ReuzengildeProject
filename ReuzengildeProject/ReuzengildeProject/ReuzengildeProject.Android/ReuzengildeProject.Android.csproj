@@ -75,9 +75,6 @@
     <PackageReference Include="Xam.Plugin.SimpleAudioPlayer">
       <Version>1.0.2</Version>
     </PackageReference>
-    <PackageReference Include="Xam.Plugins.Settings">
-      <Version>3.1.1</Version>
-    </PackageReference>
     <PackageReference Include="Xamarin.Forms" Version="2.5.0.280555" />
     <PackageReference Include="Xamarin.Android.Support.Design" Version="25.4.0.2" />
     <PackageReference Include="Xamarin.Android.Support.v7.AppCompat" Version="25.4.0.2" />
@@ -97,7 +94,6 @@
     <None Include="Assets\AboutAssets.txt" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\icon.png" />
     <AndroidResource Include="Resources\drawable-hdpi\icon.png" />
     <AndroidResource Include="Resources\drawable-xhdpi\icon.png" />
     <AndroidResource Include="Resources\drawable-xxhdpi\icon.png" />
@@ -119,25 +115,22 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\HamburgerMenuImage.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\HamburgerMenuImage.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\homepageHistorischeStoet.jpg" />
+    <AndroidResource Include="Resources\drawable-hdpi\homepageHistorischeStoet.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\muziek1.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\muziek1.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\muziek2.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\muziek2.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\Hamburger.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\Hamburger.png" />
   </ItemGroup>
   <ItemGroup>
     <AndroidAsset Include="Assets\Pokemon.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable\Route.jpg" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable-hdpi\Route.jpg" />
@@ -147,9 +140,6 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable-xxhdpi\Route.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-hdpi\roermondseschutterij.jpg" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable-xhdpi\roermondseschutterij.jpg" />
@@ -162,12 +152,6 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable-xxhdpi\akkermansgildevenlo.jpeg" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-hdpi\akkermansgildevenlo.jpeg" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-hdpi\deautarkybressbend.PNG" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable-xhdpi\deautarkybressbend.PNG" />
@@ -185,223 +169,223 @@
     <AndroidAsset Include="Assets\roermondseschutterij.mp3" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\drawable\Icon-60%402x.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\grotesponsors.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\grotesponsors.jpg" />
+    <AndroidResource Include="Resources\drawable-hdpi\MariaTheresia.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\MariaTheresia.jpg" />
+    <AndroidResource Include="Resources\drawable-hdpi\SteinderGarde.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\SteinderGarde.jpg" />
+    <AndroidResource Include="Resources\drawable-hdpi\Symphonie.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\Symphonie.jpg" />
+    <AndroidResource Include="Resources\drawable-hdpi\Tilburg.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\Tilburg.jpg" />
+    <AndroidResource Include="Resources\drawable-hdpi\Toon.JPG" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\Toon.JPG" />
+    <AndroidResource Include="Resources\drawable-hdpi\Vaandeldragers.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\Vaandeldragers.jpg" />
+    <AndroidResource Include="Resources\drawable-hdpi\Vendeliers.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\Vendeliers.jpg" />
+    <AndroidResource Include="Resources\drawable-hdpi\VendeliersKaulille.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\VendeliersKaulille.jpg" />
+    <AndroidResource Include="Resources\drawable-hdpi\Willibrordus.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\Willibrordus.jpg" />
+    <AndroidResource Include="Resources\drawable-hdpi\ZwitserseGarde.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\ZwitserseGarde.jpg" />
+    <AndroidResource Include="Resources\drawable-hdpi\Abdis.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\Abdis.jpg" />
+    <AndroidResource Include="Resources\drawable-hdpi\Akkermansgilde.jpeg" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\Akkermansgilde.jpeg" />
+    <AndroidResource Include="Resources\drawable-hdpi\AutarkyBrassBand.JPG" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\AutarkyBrassBand.JPG" />
+    <AndroidResource Include="Resources\drawable-hdpi\Bedevaart.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\Bedevaart.jpg" />
+    <AndroidResource Include="Resources\drawable-hdpi\BergenopZoom.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\BergenopZoom.jpg" />
+    <AndroidResource Include="Resources\drawable-hdpi\BisschopMaxfranz.jpeg" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\BisschopMaxfranz.jpeg" />
+    <AndroidResource Include="Resources\drawable-hdpi\BordMarieAntoinette.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\BordMarieAntoinette.jpg" />
+    <AndroidResource Include="Resources\drawable-hdpi\Boxtel.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\Boxtel.jpg" />
+    <AndroidResource Include="Resources\drawable-hdpi\BussenSchutten.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\BussenSchutten.jpg" />
+    <AndroidResource Include="Resources\drawable-hdpi\Damianus.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\Damianus.jpg" />
+    <AndroidResource Include="Resources\drawable-hdpi\deautarkybressbend.PNG" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\deautarkybressbend.PNG" />
+    <AndroidResource Include="Resources\drawable-hdpi\FandelschwenkerWesseling.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\FandelschwenkerWesseling.jpg" />
+    <AndroidResource Include="Resources\drawable-hdpi\fanfare.PNG" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\fanfare.PNG" />
+    <AndroidResource Include="Resources\drawable-hdpi\Gigantius.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\Gigantius.jpg" />
+    <AndroidResource Include="Resources\drawable-hdpi\HeiligeKnachte.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\HeiligeKnachte.jpg" />
+    <AndroidResource Include="Resources\drawable-hdpi\HenrikvanWassenaar.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\HenrikvanWassenaar.jpg" />
+    <AndroidResource Include="Resources\drawable-hdpi\Hofhouding.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\Hofhouding.jpg" />
+    <AndroidResource Include="Resources\drawable-hdpi\HofhoudingLandvoogd.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\HofhoudingLandvoogd.jpg" />
+    <AndroidResource Include="Resources\drawable-hdpi\HofhoudingWenen.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\HofhoudingWenen.jpg" />
+    <AndroidResource Include="Resources\drawable-hdpi\Jachthoornblazers.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\Jachthoornblazers.jpg" />
+    <AndroidResource Include="Resources\drawable-hdpi\JohannaAbcovia.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\JohannaAbcovia.jpg" />
+    <AndroidResource Include="Resources\drawable-hdpi\Kachelpiepers.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\Kachelpiepers.jpg" />
+    <AndroidResource Include="Resources\drawable-hdpi\KeizerinMariaTheresia.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\KeizerinMariaTheresia.jpg" />
+    <AndroidResource Include="Resources\drawable-hdpi\KluizenaarBolderberg.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\KluizenaarBolderberg.jpg" />
+    <AndroidResource Include="Resources\drawable-hdpi\Knapkoekers.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\Knapkoekers.jpg" />
+    <AndroidResource Include="Resources\drawable-hdpi\KoninginMariaChristina.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\KoninginMariaChristina.jpg" />
+    <AndroidResource Include="Resources\drawable-hdpi\KoninklijkeHarmonie.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\KoninklijkeHarmonie.jpg" />
+    <AndroidResource Include="Resources\drawable-hdpi\KoninklijkeHofhouding.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\KoninklijkeHofhouding.jpg" />
+    <AndroidResource Include="Resources\drawable-hdpi\KoninklijkeOrdeHasselt.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\KoninklijkeOrdeHasselt.jpg" />
+    <AndroidResource Include="Resources\drawable-hdpi\Kortessem.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\Kortessem.jpg" />
+    <AndroidResource Include="Resources\drawable-hdpi\KWFLogo.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\KWFLogo.jpg" />
+    <AndroidResource Include="Resources\drawable-hdpi\Landsknachte.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\Landsknachte.jpg" />
+    <AndroidResource Include="Resources\drawable-hdpi\LandvoogdesMarinaChristina.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\LandvoogdesMarinaChristina.jpg" />
+    <AndroidResource Include="Resources\drawable-hdpi\LesChinels.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\LesChinels.jpg" />
+    <AndroidResource Include="Resources\drawable-hdpi\LesChinelsL.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\LesChinelsL.jpg" />
+    <AndroidResource Include="Resources\drawable-hdpi\Lodewijk16.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\Lodewijk16.jpg" />
+    <AndroidResource Include="Resources\drawable-hdpi\MariaCarolinavanOostenrijk.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\MariaCarolinavanOostenrijk.jpg" />
+    <AndroidResource Include="Resources\drawable-hdpi\MariaElisabethAbdis.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\MariaElisabethAbdis.jpg" />
+    <AndroidResource Include="Resources\drawable-hdpi\MariaTheresia60.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\MariaTheresia60.jpg" />
+    <AndroidResource Include="Resources\drawable-hdpi\MarinaChristinavanOostenrijk.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\MarinaChristinavanOostenrijk.jpg" />
+    <AndroidResource Include="Resources\drawable-hdpi\MaximilaanFrans.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\MaximilaanFrans.jpg" />
+    <AndroidResource Include="Resources\drawable-hdpi\Meute.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\Meute.jpg" />
+    <AndroidResource Include="Resources\drawable-hdpi\Neeldergarde.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\Neeldergarde.jpg" />
+    <AndroidResource Include="Resources\drawable-hdpi\Oisterwijk.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\Oisterwijk.jpg" />
+    <AndroidResource Include="Resources\drawable-hdpi\OudKerkhof.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\OudKerkhof.jpg" />
+    <AndroidResource Include="Resources\drawable-hdpi\PSWLogo.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\PSWLogo.jpg" />
+    <AndroidResource Include="Resources\drawable-hdpi\RemunjseReuzegilde.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\RemunjseReuzegilde.jpg" />
+    <AndroidResource Include="Resources\drawable-hdpi\ReusBrabantsewal.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\ReusBrabantsewal.jpg" />
+    <AndroidResource Include="Resources\drawable-hdpi\ReusCaeciliaWillibr.JPG" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\ReusCaeciliaWillibr.JPG" />
+    <AndroidResource Include="Resources\drawable-hdpi\ReusHulst.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\ReusHulst.jpg" />
+    <AndroidResource Include="Resources\drawable-hdpi\reuz.JPG" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\reuz.JPG" />
+    <AndroidResource Include="Resources\drawable-hdpi\Reuzengezelschap.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\Reuzengezelschap.jpg" />
+    <AndroidResource Include="Resources\drawable-hdpi\ReuzenHasselt.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\ReuzenHasselt.jpg" />
+    <AndroidResource Include="Resources\drawable-hdpi\RoermondseSchutterij.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\RoermondseSchutterij.jpg" />
+    <AndroidResource Include="Resources\drawable-hdpi\Roofvogel.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\Roofvogel.jpg" />
+    <AndroidResource Include="Resources\drawable-hdpi\rues.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\rues.jpg" />
+    <AndroidResource Include="Resources\drawable-hdpi\RuitersShowgroep.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\RuitersShowgroep.jpg" />
+    <AndroidResource Include="Resources\drawable-hdpi\ScoutingBordendragers.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\ScoutingBordendragers.jpg" />
+    <AndroidResource Include="Resources\drawable-hdpi\SintAntoniusAbtGildeBlitterswijck.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\SintAntoniusAbtGildeBlitterswijck.jpg" />
+    <AndroidResource Include="Resources\drawable-hdpi\Sjtuf.JPG" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\Sjtuf.JPG" />
+    <AndroidResource Include="Resources\drawable-hdpi\Stadtgarde.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\Stadtgarde.jpg" />
+    <Folder Include="Resources\drawable\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>

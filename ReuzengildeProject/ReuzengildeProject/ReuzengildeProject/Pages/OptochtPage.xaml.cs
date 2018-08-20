@@ -3,7 +3,6 @@ using System.Timers;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
-using ReuzengildeProject.Classes;
 
 namespace ReuzengildeProject.Pages
 {
@@ -67,7 +66,7 @@ namespace ReuzengildeProject.Pages
         {
             
 
-            dateTime = new DateTime(2018, 8, 9, 13, 30, 0);
+            dateTime = new DateTime(2018, 9, 9, 13, 30, 0);
             dt = DateTime.Now.ToLocalTime();
             dt = DateTime.ParseExact(dt.ToString("yyyy-MM-dd HH:mm:ss"), "yyyy-MM-dd HH:mm:ss", null);
             if (dt >= dateTime)
