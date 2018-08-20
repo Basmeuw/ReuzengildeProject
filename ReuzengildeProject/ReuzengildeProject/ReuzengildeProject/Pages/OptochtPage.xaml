@@ -13,8 +13,8 @@
     <AbsoluteLayout>
         <AbsoluteLayout x:Name="Content"
                     BackgroundColor="#e0dddd"
-                                AbsoluteLayout.LayoutBounds="0,0,1,1"
-        AbsoluteLayout.LayoutFlags="All">
+                    AbsoluteLayout.LayoutBounds="0,0,1,1"
+                    AbsoluteLayout.LayoutFlags="All">
 
             <BoxView Color="#00758b"
                  AbsoluteLayout.LayoutBounds="0, 1, 1, 0.11" AbsoluteLayout.LayoutFlags="All"
@@ -38,7 +38,7 @@
                HorizontalTextAlignment="Center"
                VerticalTextAlignment="Center"
                TextColor="White"
-               FontSize="Large"
+               FontSize="Default"
                AbsoluteLayout.LayoutBounds="0.5, 0.33, 0.75, 0.055" AbsoluteLayout.LayoutFlags="All"/>
 
             <ScrollView x:Name="scrollView"
@@ -50,9 +50,7 @@
                FontSize="Medium"
                />
             </ScrollView>
-
-
-
+            
             <Button x:Name="BackButton"
                 BackgroundColor="White"
                 TextColor="Black"
@@ -67,25 +65,16 @@
                 Focused="EntryFocused"/>
 
             <Button x:Name="NextButton"
-                
                 BackgroundColor="#ebebeb"
                 TextColor="Black"
                 Text="verder"
                 Clicked="NextButtonClicked"
                 AbsoluteLayout.LayoutBounds="0.95, 1, 0.25, 0.1" AbsoluteLayout.LayoutFlags="All"/>
 
-
             <Image x:Name="DeelnemersImage"
-               AbsoluteLayout.LayoutBounds="0.5, 0.03, 0.94, 0.27" AbsoluteLayout.LayoutFlags="All"
-            />
-
-            <Label x:Name="TimerText"
-               FontSize="Large"
-               AbsoluteLayout.LayoutBounds="0.5, 0.5" AbsoluteLayout.LayoutFlags="PositionProportional"/>
-
-
-
+               AbsoluteLayout.LayoutBounds="0.5, 0.03, 0.94, 0.27" AbsoluteLayout.LayoutFlags="All"/>
         </AbsoluteLayout>
+        
         <AbsoluteLayout x:Name="Image"
                                 AbsoluteLayout.LayoutBounds="0,0,1,1"
         AbsoluteLayout.LayoutFlags="All"
