@@ -24,7 +24,7 @@ namespace ReuzengildeProject.Pages
             Content.IsVisible = false;
             Thread thread = new Thread(() =>
             {
-                Thread.Sleep(5000);
+                Thread.Sleep(2500);
                 Device.BeginInvokeOnMainThread(() =>
                 {
                     Content.IsVisible = true;
@@ -90,7 +90,7 @@ namespace ReuzengildeProject.Pages
 
         async Task SetTimer()
         {
-            dateTime = new DateTime(2018, 8, 21, 18, 30, 0);
+            dateTime = new DateTime(2018, 9, 9, 13, 30, 0);
             dt = DateTime.Now.ToLocalTime();
             dt = DateTime.ParseExact(dt.ToString("yyyy-MM-dd HH:mm:ss"), "yyyy-MM-dd HH:mm:ss", null);
             if (dt >= dateTime)
@@ -110,7 +110,7 @@ namespace ReuzengildeProject.Pages
                 Device.BeginInvokeOnMainThread(() =>
                 {
 
-                    InformatieDeelnemer.Text = "nog " + (dateTime - dt).ToString() + " tot de optocht!";
+                    InformatieDeelnemer.Text = "Nog " + (dateTime - dt).ToString() + " tot de Historische Stoet!";
                     App.StartOptocht = false;
                     BackButton.IsEnabled = false;
                     NextButton.IsEnabled = false;
@@ -147,7 +147,14 @@ namespace ReuzengildeProject.Pages
                 NextButton.IsEnabled = true;
             }
             //verandert alle informatie op het scherm naar informatie uit de database.
-
+            if (App.Information.Deelnemers[App.NumberOfDeelnemer - 1].Naam.Length > 30)
+            {
+                NaamDeelnemer.FontSize = Device.GetNamedSize(NamedSize.Small, typeof(Label));
+            }
+            else
+            {
+                NaamDeelnemer.FontSize = Device.GetNamedSize(NamedSize.Large, typeof(Label));
+            }
             NaamDeelnemer.Text = App.Information.Deelnemers[App.NumberOfDeelnemer - 1].Naam;
             NumberOfDeelnemer.Text = App.NumberOfDeelnemer.ToString();
             InformatieDeelnemer.Text = App.Information.Deelnemers[App.NumberOfDeelnemer - 1].Beschrijving;
