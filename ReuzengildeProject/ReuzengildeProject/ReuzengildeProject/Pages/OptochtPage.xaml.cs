@@ -91,10 +91,11 @@ namespace ReuzengildeProject.Pages
         async Task SetTimer()
         {
             dateTime = new DateTime(2018, 9, 9, 13, 30, 0);
-            dt = DateTime.Now.ToLocalTime();
+           // dateTime = DateTime.ParseExact(dt.ToString("yyyy-MM-dd HH:mm:ss"), "yyyy-MM-dd HH:mm:ss", null);
             dt = DateTime.ParseExact(dt.ToString("yyyy-MM-dd HH:mm:ss"), "yyyy-MM-dd HH:mm:ss", null);
             if (dt >= dateTime)
             {
+                Console.WriteLine("Test");
                 Device.BeginInvokeOnMainThread(() =>
                 {
                     App.StartOptocht = true;
@@ -109,8 +110,15 @@ namespace ReuzengildeProject.Pages
             {
                 Device.BeginInvokeOnMainThread(() =>
                 {
-
-                    InformatieDeelnemer.Text = "Nog " + (dateTime - dt).ToString() + " tot de Historische Stoet!";
+                    if((dateTime - dt).Days > 0)
+                    { 
+                        Console.WriteLine(dateTime.Day.ToString() + "      " + dt.Day.ToString());
+                        InformatieDeelnemer.Text = "Nog " + (dateTime - dt).Days.ToString() + " dagen tot de Historische Stoet!";
+                    }
+                    else if((dateTime - dt).Days < 0)
+                    {
+                        InformatieDeelnemer.Text = "Nog " + (dateTime - dt).Hours.ToString() + " uur, " + (dateTime - dt).Minutes.ToString() + " minuten en " + (dateTime - dt).Seconds.ToString() + "tot de Historische Stoet!";
+                    }
                     App.StartOptocht = false;
                     BackButton.IsEnabled = false;
                     NextButton.IsEnabled = false;
