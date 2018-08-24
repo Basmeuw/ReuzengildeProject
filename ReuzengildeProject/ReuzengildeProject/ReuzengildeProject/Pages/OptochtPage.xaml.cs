@@ -4,17 +4,42 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using System.Threading;
+using System.Collections.Generic;
 
 namespace ReuzengildeProject.Pages
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class OptochtPage : ContentPage
 	{
+
+        private List<string> enkelvoud = new List<string>()
+        {
+            " uur, ",
+            " minuut en ",
+            " seconde "
+        };
+
+        private List<string> meervoud = new List<string>()
+        {
+            " uren, ",
+            " minuten en ",
+            " seconden "
+        };
+
+        private List<string> timerText = new List<string>()
+        {
+            "",
+            "",
+            ""
+        };
+
         private int NumberOfDeelnemers;
-        DateTime dt;
-        DateTime dateTime;
+
+        private DateTime localTime;
+        private DateTime optochtTime;
+
         private System.Timers.Timer optochtTimer;
-        private System.Timers.Timer sponsorTimer;
+
         public OptochtPage ()
 		{
 
@@ -90,10 +115,12 @@ namespace ReuzengildeProject.Pages
 
         async Task SetTimer()
         {
-            dateTime = new DateTime(2018, 9, 9, 13, 30, 0);
-           // dateTime = DateTime.ParseExact(dt.ToString("yyyy-MM-dd HH:mm:ss"), "yyyy-MM-dd HH:mm:ss", null);
-            dt = DateTime.ParseExact(dt.ToString("yyyy-MM-dd HH:mm:ss"), "yyyy-MM-dd HH:mm:ss", null);
-            if (dt >= dateTime)
+            optochtTime = new DateTime(2018, 8, 24, 19, 21, 0);
+
+            localTime = DateTime.Now.ToLocalTime();
+            localTime = DateTime.ParseExact(localTime.ToString("yyyy-MM-dd HH:mm:ss"), "yyyy-MM-dd HH:mm:ss", null);
+
+            if (localTime >= optochtTime)
             {
                 Console.WriteLine("Test");
                 Device.BeginInvokeOnMainThread(() =>
@@ -110,14 +137,15 @@ namespace ReuzengildeProject.Pages
             {
                 Device.BeginInvokeOnMainThread(() =>
                 {
-                    if((dateTime - dt).Days > 0)
+                    if((optochtTime - localTime).Days > 0)
                     { 
-                        Console.WriteLine(dateTime.Day.ToString() + "      " + dt.Day.ToString());
-                        InformatieDeelnemer.Text = "Nog " + (dateTime - dt).Days.ToString() + " dagen tot de Historische Stoet!";
+                        Console.WriteLine(optochtTime.ToString() + "      " + localTime.ToString());
+                        InformatieDeelnemer.Text = "De Historische Stoet vindt plaats op 9 September 2018. Dit betekent dat het nog maar " + (optochtTime - localTime).Days.ToString() + " dagen is totdat alle informatie over de Historische Stoet beschikbaar wordt! \nVanaf dit moment zal u hier de informatie over de deelnemers kunnen lezen!";
                     }
-                    else if((dateTime - dt).Days < 0)
+                    else if((optochtTime - localTime).Days <= 0)
                     {
-                        InformatieDeelnemer.Text = "Nog " + (dateTime - dt).Hours.ToString() + " uur, " + (dateTime - dt).Minutes.ToString() + " minuten en " + (dateTime - dt).Seconds.ToString() + "tot de Historische Stoet!";
+                        CheckTime(optochtTime, localTime);
+                        InformatieDeelnemer.Text = "De Historische Stoet vindt plaats op 9 September 2018. Dit betekent dat het nog maar " + (optochtTime - localTime).Hours.ToString() + timerText[0] + (optochtTime - localTime).Minutes.ToString() + timerText[1] + (optochtTime - localTime).Seconds.ToString() + timerText[2] + "is totdat alle informatie over de Historische Stoet beschikbaar wordt! \nVanaf dit moment zal u hier de informatie over de deelnemers kunnen lezen!";
                     }
                     App.StartOptocht = false;
                     BackButton.IsEnabled = false;
@@ -127,6 +155,26 @@ namespace ReuzengildeProject.Pages
             }
         }
 
+        private void CheckTime(DateTime optochtTime, DateTime localTime)
+        {
+            List<int> dateTimes = new List<int>()
+            {
+                (optochtTime - localTime).Hours,
+                (optochtTime - localTime).Minutes,
+                (optochtTime - localTime).Seconds
+            };
+            for(int i = 0; i < dateTimes.Count; i++)
+            {
+                if(dateTimes[i] != 1)
+                {
+                    timerText[i] = meervoud[i];
+                }
+                else if(dateTimes[i] == 1 || dateTimes[i] == 0)
+                {
+                    timerText[i] = enkelvoud[i];
+                }
+            }
+        }
         public void ChangeItems()
         {
 
