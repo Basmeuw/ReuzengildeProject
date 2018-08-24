@@ -139,7 +139,6 @@ namespace ReuzengildeProject.Pages
                 {
                     if((optochtTime - localTime).Days > 0)
                     { 
-                        Console.WriteLine(optochtTime.ToString() + "      " + localTime.ToString());
                         InformatieDeelnemer.Text = "De Historische Stoet vindt plaats op 9 September 2018. Dit betekent dat het nog maar " + (optochtTime - localTime).Days.ToString() + " dagen is totdat alle informatie over de Historische Stoet beschikbaar wordt! \nVanaf dit moment zal u hier de informatie over de deelnemers kunnen lezen!";
                     }
                     else if((optochtTime - localTime).Days <= 0)

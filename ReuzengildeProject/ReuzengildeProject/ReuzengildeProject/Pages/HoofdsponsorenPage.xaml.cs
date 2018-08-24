@@ -11,10 +11,16 @@ namespace ReuzengildeProject.Pages
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class HoofdsponsorenPage : ContentPage
-	{
+    {
 		public HoofdsponsorenPage ()
 		{
 			InitializeComponent ();
-		}
-	}
+            if (Device.OS == TargetPlatform.iOS)
+            {
+                App.HamburgerPage.IsPresented = true;
+                App.HamburgerPage.IsPresented = false;
+            }
+
+        }
+    }
 }

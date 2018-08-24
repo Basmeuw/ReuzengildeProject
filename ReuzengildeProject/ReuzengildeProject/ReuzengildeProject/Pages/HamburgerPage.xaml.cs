@@ -145,10 +145,6 @@ namespace ReuzengildeProject.Pages
                 {
                     AddToolBarItems();
                 }
-                //Detail = new NavigationPage(new GroteSponsorenPage());
-                //timer = new Timer(5000);
-                //timer.Start();
-                //timer.Elapsed += Timer_Elapsed;
 
             }
             else
@@ -156,16 +152,5 @@ namespace ReuzengildeProject.Pages
                 Detail = new NavigationPage((Page)Activator.CreateInstance(page));
             }
         }
-
-        //private void Timer_Elapsed(object sender, ElapsedEventArgs e)
-        //{
-        //    timer.Stop();
-        //    optochtPage = new NavigationPage(new OptochtPage());
-        //    Detail = optochtPage;
-        //    if (Device.OS == TargetPlatform.Android)
-        //    {
-        //        AddToolBarItems();
-        //    }
-        //}
     }
 }

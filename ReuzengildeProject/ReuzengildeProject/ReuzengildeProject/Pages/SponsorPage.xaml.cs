@@ -15,6 +15,12 @@ namespace ReuzengildeProject.Pages
 		public SponsorPage ()
 		{
 			InitializeComponent ();
-		}
-	}
+            if (Device.OS == TargetPlatform.iOS)
+            {
+                App.HamburgerPage.IsPresented = true;
+                App.HamburgerPage.IsPresented = false;
+            }
+
+        }
+    }
 }
