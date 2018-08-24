@@ -26,8 +26,8 @@
     <Compile Condition=" '$(EnableDefaultCompileItems)' == 'true' " Update="App.xaml.cs">
       <DependentUpon>*.xaml</DependentUpon>
     </Compile>
-    <Compile Update="Pages\SponserListPage.xaml.cs">
-      <DependentUpon>SponserListPage.xaml</DependentUpon>
+    <Compile Update="Pages\SponsorPagina.xaml.cs">
+      <DependentUpon>SponsorPagina.xaml</DependentUpon>
     </Compile>
     <Compile Update="Pages\GroteSponsorenPage.xaml.cs">
       <DependentUpon>GroteSponsorenPage.xaml</DependentUpon>
@@ -50,7 +50,7 @@
     <EmbeddedResource Update="Pages\OverPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Pages\SponserListPage.xaml">
+    <EmbeddedResource Update="Pages\SponsorPagina.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Pages\RoutePage.xaml">
