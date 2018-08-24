@@ -30,7 +30,7 @@ namespace ReuzengildeProject.Pages
 
         private void Button_Clicked_1(object sender, EventArgs e)
         {
-
+            App.HamburgerPage.ChangePage(typeof(SponsorPage));
         }
 
         private void Button_Clicked_2(object sender, EventArgs e)
