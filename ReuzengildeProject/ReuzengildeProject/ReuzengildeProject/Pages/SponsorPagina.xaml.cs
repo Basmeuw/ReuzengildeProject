@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using ReuzengildeProject.Classes;
+using ReuzengildeProject.Pages;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -25,17 +25,17 @@ namespace ReuzengildeProject.Pages
 
         private void Button_Clicked(object sender, EventArgs e)
         {
-            Console.WriteLine("Grote sponsoren");
+            App.HamburgerPage.ChangePage(typeof(HoofdsponsorenPage));
         }
 
         private void Button_Clicked_1(object sender, EventArgs e)
         {
-            Console.WriteLine("Sponsoren");
+
         }
 
         private void Button_Clicked_2(object sender, EventArgs e)
         {
-            Console.WriteLine("Vrienden");
+            App.HamburgerPage.ChangePage(typeof(VriendenPage));
         }
     }
 }

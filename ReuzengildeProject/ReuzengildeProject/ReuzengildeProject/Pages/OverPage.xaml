@@ -41,20 +41,9 @@
                    BackgroundColor="White"
                    AbsoluteLayout.LayoutBounds="0.5, 0.94, 0.7, 0.57" AbsoluteLayout.LayoutFlags="All">
                     <Label.Text>
-                        De applicatie dient als een toegankelijke informatiebron voor de gebruiker, die deze informatiebron tijdens of na de historische stoet in Roermond kan raadplegen. De 'Historische Stoet Roermond'-app is het eindproduct van een schoolproject en kan ook dienen voor andere historische stoeten of carnavalsoptochten. De opdrachtgever van dit project, Wim Kemp, is een extern lid van de stichting 't Remunjse Reuzegilde. Een ander lid van 't Remunjse Reuzegilde genaamd Ton Spätjens heeft voor alle informatie over de deelnemers, de geluidsbestanden en de afbeeldingen gezorgd. De docenten: Mark Tinnemans en John Klok en Michael Baars, een professionele software ontwikkelaar, hebben deze leerlingen begeleidt tijdens het uitvoeren van dit schoolproject. 
-
-Dit schoolproject is uitgevoerd in een teamverband door vier leerlingen van het Technasium in Lyceum Schöndeln. Heeft u ook interesse voor zo'n informatiebron? 
-Mail één van ons dan en we zullen zo spoedig mogelijk iets regelen!
-
-Contactgegevens leerlingen:
-
-Koen van Dooren
-
-Stef Halmans 
-
-Jip van Hoef 
-
-Bas Meuwissen
+                        De Historische Stoet app is gemaakt door 4 leerlingen van Lyceum Schöndeln. De app maken was een opdracht voor het vak Onderzoek &amp; Ontwerpen, en Wim Kemp was de opdrachtgever. Het doel was om een app te maken waardoor mensen altijd alle informatie over de stoet hebben. Omdat we het erg interessant vonden om apps te maken zijn we nu ook ons eigen bedrijf, BSJ Technologies begonnen om voor andere opdrachtgevers apps en dergelijke te maken. 
+                        
+Voor meer contact mail ons op business@bsjtechnologies.com.
                     </Label.Text>
                 </Label>
             </ScrollView>
