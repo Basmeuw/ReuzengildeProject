@@ -15,27 +15,25 @@ namespace ReuzengildeProject.Pages
 		public SponsorPagina()
 		{
 			InitializeComponent ();
-          //  SponsorenList.ItemsSource = Sponsoren.SponsorList;
-		}
-        public void OnItemSelected(object sender, SelectedItemChangedEventArgs e)
-        {
-           // var index = (SponsorenList.ItemsSource as List<Sponsor>).IndexOf(e.SelectedItem as Sponsor);
-           // Device.OpenUri(new Uri(Sponsoren.SponsorList[index].Link));
+
         }
 
         private void Button_Clicked(object sender, EventArgs e)
         {
             App.HamburgerPage.ChangePage(typeof(HoofdsponsorenPage));
+            App.HamburgerPage.DeselectListviewItems();
         }
 
         private void Button_Clicked_1(object sender, EventArgs e)
         {
             App.HamburgerPage.ChangePage(typeof(SponsorPage));
+            App.HamburgerPage.DeselectListviewItems();
         }
 
         private void Button_Clicked_2(object sender, EventArgs e)
         {
             App.HamburgerPage.ChangePage(typeof(VriendenPage));
+            App.HamburgerPage.DeselectListviewItems();
         }
     }
 }

@@ -4,7 +4,7 @@
   <style name="Theme.Splash"
          parent="android:Theme">
     <item name="android:windowBackground">
-      @drawable/grotesponsors
+      @drawable/hoofdsponsors
     </item>
     <item name="android:windowNoTitle">true</item>
     <item name="android:windowIsTranslucent">false</item>
