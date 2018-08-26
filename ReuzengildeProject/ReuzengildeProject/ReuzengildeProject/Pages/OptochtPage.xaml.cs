@@ -39,17 +39,35 @@ namespace ReuzengildeProject.Pages
         private DateTime optochtTime;
 
         private System.Timers.Timer optochtTimer;
-
         public OptochtPage ()
 		{
 
 
 
             InitializeComponent();
-            Content.IsVisible = false;
             Thread thread = new Thread(() =>
             {
-                Thread.Sleep(2500);
+                
+                Thread thread1 = new Thread(() =>
+                {
+                    for(int i = 0; i < 3; i++)
+                    {
+                        Thread.Sleep(1000);
+                        Device.BeginInvokeOnMainThread(() =>
+                        {
+                            if (int.Parse(SponsorText.Text) != 0)
+                            {
+                                SponsorText.Text = (int.Parse(SponsorText.Text) - 1).ToString();
+                            }
+                            else if(int.Parse(SponsorText.Text) == 0)
+                            {
+                                SponsorText.Text = "0";
+                            }
+                        });
+                    }
+                });
+                thread1.Start();
+                Thread.Sleep(3000);
                 Device.BeginInvokeOnMainThread(() =>
                 {
                     Content.IsVisible = true;
@@ -97,12 +115,11 @@ namespace ReuzengildeProject.Pages
             {
                 App.DeelnemerSound.Load( App.Information.Deelnemers[App.NumberOfDeelnemer - 1].Bestandnaam + ".mp3");
             }
-            catch
-            {
+            catch{}
+        }
 
-            }
-
-
+        private void UpdateSponsorenText()
+        {
 
         }
 
@@ -122,7 +139,6 @@ namespace ReuzengildeProject.Pages
 
             if (localTime >= optochtTime)
             {
-                Console.WriteLine("Test");
                 Device.BeginInvokeOnMainThread(() =>
                 {
                     App.StartOptocht = true;
@@ -259,6 +275,21 @@ namespace ReuzengildeProject.Pages
         private void EntryFocused(object sender, TextChangedEventArgs e)
         {
             NumberOfDeelnemer.Text = string.Empty;
+        }
+
+        private async void TapGestureRecognizer_Tapped(object sender, EventArgs e)
+        {
+            bool GoToGroteSponsorPage =  await DisplayAlert("Melding", "Wilt u naar de pagina van de grote sponsoren gaan?", "Ja", "Nee");
+            if (GoToGroteSponsorPage)
+            {
+                App.HamburgerPage.ChangePage(typeof(HoofdsponsorenPage));
+                App.HamburgerPage.DeselectListviewItems();
+            }
+            else if (!GoToGroteSponsorPage)
+            {
+                Content.IsVisible = true;
+                Image.IsVisible = false;
+            }
         }
     }
 }

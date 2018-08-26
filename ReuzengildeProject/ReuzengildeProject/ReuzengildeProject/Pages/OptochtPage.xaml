@@ -14,7 +14,8 @@
         <AbsoluteLayout x:Name="Content"
                     BackgroundColor="#e0dddd"
                     AbsoluteLayout.LayoutBounds="0,0,1,1"
-                    AbsoluteLayout.LayoutFlags="All">
+                    AbsoluteLayout.LayoutFlags="All"
+                        IsVisible="False">
 
             <BoxView Color="#00758b"
                  AbsoluteLayout.LayoutBounds="0, 1, 1, 0.11" AbsoluteLayout.LayoutFlags="All"
@@ -74,12 +75,23 @@
             <Image x:Name="DeelnemersImage"
                AbsoluteLayout.LayoutBounds="0.5, 0.03, 0.94, 0.27" AbsoluteLayout.LayoutFlags="All"/>
         </AbsoluteLayout>
-        
+
         <AbsoluteLayout x:Name="Image"
-                                AbsoluteLayout.LayoutBounds="0,0,1,1"
-        AbsoluteLayout.LayoutFlags="All"
+                        AbsoluteLayout.LayoutBounds="0,0,1,1"
+                        AbsoluteLayout.LayoutFlags="All"
                         BackgroundColor="White">
-            <Image Source="hoofdsponsors.jpg"/>
+            <Image Source="hoofdsponsors.jpg">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer
+                        Tapped="TapGestureRecognizer_Tapped"/>
+                </Image.GestureRecognizers>
+            </Image>
+            <Label x:Name="SponsorText"
+                Text="3"
+               AbsoluteLayout.LayoutBounds="1,0,0.04,0.1"
+               AbsoluteLayout.LayoutFlags="All"
+               FontSize="Large"/>
+
         </AbsoluteLayout>
     </AbsoluteLayout>
     

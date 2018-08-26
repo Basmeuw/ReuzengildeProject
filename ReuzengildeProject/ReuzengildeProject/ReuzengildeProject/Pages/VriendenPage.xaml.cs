@@ -25,10 +25,18 @@ namespace ReuzengildeProject.Pages
             VriendenList.ItemsSource = Vrienden.VriendenList;
         }
 
-        private void VriendenList_ItemSelected(object sender, SelectedItemChangedEventArgs e)
+        private async void VriendenList_ItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
             var index = (VriendenList.ItemsSource as List<Vriend>).IndexOf(e.SelectedItem as Vriend);
-            Device.OpenUri(new Uri(Vrienden.VriendenList[index].Link));
+            if(Vrienden.VriendenList[index].Link != string.Empty)
+            {
+                Device.OpenUri(new Uri(Vrienden.VriendenList[index].Link));
+            }
+            else if(Vrienden.VriendenList[index].Link == string.Empty)
+            {
+                await DisplayAlert("Error", "Dit bedrijf of deze persoon heeft geen site!", "Oké");
+            }
+
         }
     }
 }

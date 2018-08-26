@@ -34,7 +34,7 @@ namespace ReuzengildeProject.Classes
             new Vriend{Name = "Christoffelgilde", Link = "https://nl-nl.facebook.com/StChristoffelgildeRoermond/"},
             new Vriend{Name = "Gerard Nizet", Link = "http://nl.gnizet.com/"},
             new Vriend{Name = "René Imkamp", Link = string.Empty},
-            new Vriend{Name = "Wim Kamp", Link = string.Empty},
+            new Vriend{Name = "Wim Kemp", Link = string.Empty},
             new Vriend{Name = "Pierre Rutten interieurbouw", Link = "http://www.pierrerutteninterieurbouw.nl/"},
            
 
