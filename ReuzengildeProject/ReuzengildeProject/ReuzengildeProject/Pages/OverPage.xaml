@@ -23,7 +23,7 @@
                      AbsoluteLayout.LayoutBounds="0.5, 0.94, 0.7, 0.57" AbsoluteLayout.LayoutFlags="All"/>
             <!--Zorgt ervoor dat het tekstvak na het scrollen dezelfde kleur heeft in iOS-->
 
-            <Image Source="homepageHistorischeStoet.jpg"
+            <Image Source="LogoBSJ.png"
                    AbsoluteLayout.LayoutBounds="0.5, 0.03, 0.94, 0.27" AbsoluteLayout.LayoutFlags="All"/>
             <!--logo bovenaan de pagina-->           
                
