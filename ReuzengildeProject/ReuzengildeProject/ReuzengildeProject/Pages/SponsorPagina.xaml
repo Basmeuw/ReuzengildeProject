@@ -5,7 +5,7 @@
     <AbsoluteLayout BackgroundColor="#afafaf">
         <Button AbsoluteLayout.LayoutBounds="0.25,0,1,0.33"
                 AbsoluteLayout.LayoutFlags="All"
-                Text="Grote Sponsoren"
+                Text="Hoofdsponsoren"
                 TextColor="White"
                 BackgroundColor="#00758b"
                 FontSize="Large"
