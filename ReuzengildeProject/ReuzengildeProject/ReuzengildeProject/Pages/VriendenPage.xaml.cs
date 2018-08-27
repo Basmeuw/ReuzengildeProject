@@ -39,7 +39,7 @@ namespace ReuzengildeProject.Pages
             }
             else if(Vrienden.VriendenList[index].Link == string.Empty)
             {
-                await DisplayAlert("Error", "Dit bedrijf of deze persoon heeft geen site!", "Oké");
+                await DisplayAlert("Sorry", "Dit bedrijf of deze persoon heeft geen site!", "Oké");
             }
 
         }
