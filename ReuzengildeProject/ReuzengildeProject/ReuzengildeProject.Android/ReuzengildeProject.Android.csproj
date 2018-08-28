@@ -129,9 +129,6 @@
     <AndroidResource Include="Resources\drawable-hdpi\Hamburger.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidAsset Include="Assets\Pokemon.mp3" />
-  </ItemGroup>
-  <ItemGroup>
     <AndroidResource Include="Resources\drawable-hdpi\Route.jpg" />
   </ItemGroup>
   <ItemGroup>
