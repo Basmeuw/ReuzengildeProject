@@ -172,9 +172,6 @@
     <BundleResource Include="Resources\muziek2.png" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Resources\Pokemon.mp3" />
-  </ItemGroup>
-  <ItemGroup>
     <BundleResource Include="Resources\Route.jpg" />
   </ItemGroup>
   <ItemGroup>

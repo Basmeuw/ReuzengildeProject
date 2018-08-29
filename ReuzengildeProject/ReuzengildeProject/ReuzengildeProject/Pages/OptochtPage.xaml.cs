@@ -155,12 +155,12 @@ namespace ReuzengildeProject.Pages
                 {
                     if((optochtTime - localTime).Days > 0)
                     { 
-                        InformatieDeelnemer.Text = "De Historische Stoet vindt plaats op 9 September 2018. Dit betekent dat het nog maar " + (optochtTime - localTime).Days.ToString() + " dagen is totdat alle informatie over de Historische Stoet beschikbaar wordt! \nVanaf dit moment zal u hier de informatie over de deelnemers kunnen lezen!";
+                        InformatieDeelnemer.Text = "De Historische Stoet vindt plaats op 9 September 2018. Dit betekent dat het nog maar " + (optochtTime - localTime).Days.ToString() + " dagen is totdat alle informatie over de Historische Stoet beschikbaar wordt! \nVanaf dat moment zal u hier de informatie over de deelnemers kunnen lezen!";
                     }
                     else if((optochtTime - localTime).Days <= 0)
                     {
                         CheckTime(optochtTime, localTime);
-                        InformatieDeelnemer.Text = "De Historische Stoet vindt plaats op 9 September 2018. Dit betekent dat het nog maar " + (optochtTime - localTime).Hours.ToString() + timerText[0] + (optochtTime - localTime).Minutes.ToString() + timerText[1] + (optochtTime - localTime).Seconds.ToString() + timerText[2] + "is totdat alle informatie over de Historische Stoet beschikbaar wordt! \nVanaf dit moment zal u hier de informatie over de deelnemers kunnen lezen!";
+                        InformatieDeelnemer.Text = "De Historische Stoet vindt plaats op 9 September 2018. Dit betekent dat het nog maar " + (optochtTime - localTime).Hours.ToString() + timerText[0] + (optochtTime - localTime).Minutes.ToString() + timerText[1] + (optochtTime - localTime).Seconds.ToString() + timerText[2] + "is totdat alle informatie over de Historische Stoet beschikbaar wordt! \nVanaf dat moment zal u hier de informatie over de deelnemers kunnen lezen!";
                     }
                     App.StartOptocht = false;
                     BackButton.IsEnabled = false;

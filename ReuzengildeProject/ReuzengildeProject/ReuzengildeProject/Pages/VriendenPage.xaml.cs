@@ -30,7 +30,12 @@ namespace ReuzengildeProject.Pages
             var index = (VriendenList.ItemsSource as List<Vriend>).IndexOf(e.SelectedItem as Vriend);
             if(Vrienden.VriendenList[index].Link != string.Empty)
             {
-                Device.OpenUri(new Uri(Vrienden.VriendenList[index].Link));
+                bool GoToSite = await DisplayAlert("Melding", "Wilt u doorgaan naar de site van dit bedrijf of deze persoon?", "Ja", "Nee");
+                if (GoToSite)
+                {
+                    Device.OpenUri(new Uri(Vrienden.VriendenList[index].Link));
+                }
+                App.HamburgerPage.ChangePage(typeof(VriendenPage));
             }
             else if(Vrienden.VriendenList[index].Link == string.Empty)
             {
