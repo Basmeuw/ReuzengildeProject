@@ -348,9 +348,6 @@
     <BundleResource Include="Resources\Abdis.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\Akkermansgilde.jpeg" />
-  </ItemGroup>
-  <ItemGroup>
     <BundleResource Include="Resources\AutarkyBrassBand.JPG" />
   </ItemGroup>
   <ItemGroup>
@@ -453,9 +450,6 @@
     <BundleResource Include="Resources\Lodewijk16.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\Maria-CarolinavanOostenrijk.jpg" />
-  </ItemGroup>
-  <ItemGroup>
     <BundleResource Include="Resources\MariaElisabethAbdis.jpg" />
   </ItemGroup>
   <ItemGroup>
@@ -484,5 +478,11 @@
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\LogoBSJ.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\MariaCarolinavanOostenrijk.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Akkermansgilde.jpg" />
   </ItemGroup>
 </Project>
