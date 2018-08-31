@@ -45,37 +45,49 @@ namespace ReuzengildeProject.Pages
 
 
             InitializeComponent();
-            Thread thread = new Thread(() =>
+            if (App.StartSponsorFoto)
             {
-                
-                Thread thread1 = new Thread(() =>
-                {
-                    for(int i = 0; i < 3; i++)
-                    {
-                        Thread.Sleep(1000);
-                        Device.BeginInvokeOnMainThread(() =>
-                        {
-                            if (int.Parse(SponsorText.Text) != 0)
-                            {
-                                SponsorText.Text = (int.Parse(SponsorText.Text) - 1).ToString();
-                            }
-                            else if(int.Parse(SponsorText.Text) == 0)
-                            {
-                                SponsorText.Text = "0";
-                            }
-                        });
-                    }
-                });
-                thread1.Start();
-                Thread.Sleep(3000);
-                Device.BeginInvokeOnMainThread(() =>
-                {
-                    Content.IsVisible = true;
-                    Image.IsVisible = false;
-                });
 
-            });
-            thread.Start();
+                Thread thread = new Thread(() =>
+                {
+
+                    Thread thread1 = new Thread(() =>
+                    {
+                        for (int i = 0; i < 3; i++)
+                        {
+                            Thread.Sleep(1000);
+                            Device.BeginInvokeOnMainThread(() =>
+                            {
+                                if (int.Parse(SponsorText.Text) != 0)
+                                {
+                                    SponsorText.Text = (int.Parse(SponsorText.Text) - 1).ToString();
+                                }
+                                else if (int.Parse(SponsorText.Text) == 0)
+                                {
+                                    SponsorText.Text = "0";
+                                }
+                            });
+                        }
+                    });
+                    thread1.Start();
+                    Thread.Sleep(3000);
+                    Device.BeginInvokeOnMainThread(() =>
+                    {
+                        Content.IsVisible = true;
+                        Image.IsVisible = false;
+                    });
+
+                });
+                thread.Start();
+            }
+            else if (!App.StartSponsorFoto)
+            {
+                App.StartSponsorFoto = true;
+                Image.IsVisible = false;
+                Content.IsVisible = true;
+            }
+           
+
             //checkt of het een ios device is en zorgt er dan voor dat de detail page open gaat en weer sluit zodat hij de iconnavigationpagerenderer gebruikt zodat
             //het hamburgermenu en de geluidsknopjes zichtbaar worden omdat dit niet werkte als je niet via een van de knopjes via de detail page naar een pagina toe gaat 
             //maar vanuit het start knopje of de deelnemerslijst
