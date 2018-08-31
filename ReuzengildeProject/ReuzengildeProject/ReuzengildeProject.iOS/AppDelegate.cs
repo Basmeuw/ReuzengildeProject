@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Linq;
-
 using Foundation;
 using UIKit;
 
@@ -25,8 +22,8 @@ namespace ReuzengildeProject.iOS
         {
             global::Xamarin.Forms.Forms.Init();
 
-            var folder = Environment.GetFolderPath(Environment.SpecialFolder.Personal);
-            var filePath = Path.Combine(folder, "Data.json");
+            string folder = Environment.GetFolderPath(Environment.SpecialFolder.Personal);
+            string filePath = Path.Combine(folder, "Data.json");
 
             LoadApplication(new App(filePath));
 

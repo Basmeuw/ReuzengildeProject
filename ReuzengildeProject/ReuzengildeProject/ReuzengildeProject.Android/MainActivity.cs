@@ -1,16 +1,13 @@
-﻿using System;
-
-using Android.App;
+﻿using Android.App;
 using Android.Content.PM;
-using Android.Runtime;
-using Android.Views;
-using Android.Widget;
 using Android.OS;
 using System.IO;
 
 namespace ReuzengildeProject.Droid
 {
-    [Activity(Label = "ReuzengildeProject", Icon = "@drawable/icon", Theme = "@style/MainTheme", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
+    [Activity(Label = "Historische stoet", 
+        Theme = "@style/MainTheme",  
+        ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation, ScreenOrientation = ScreenOrientation.Portrait)]
     public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsAppCompatActivity
     {
         protected override void OnCreate(Bundle bundle)
@@ -22,8 +19,10 @@ namespace ReuzengildeProject.Droid
 
             global::Xamarin.Forms.Forms.Init(this, bundle);
 
-            var folder = System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal);
-            var filePath = Path.Combine(folder, "Data.json");
+            string folder = System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal);
+            string filePath = Path.Combine(folder, "Data.json");
+
+            Xamarin.Forms.Forms.Init(this, bundle);
 
             LoadApplication(new App(filePath));
         }

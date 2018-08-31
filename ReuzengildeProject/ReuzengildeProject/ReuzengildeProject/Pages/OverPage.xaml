@@ -2,29 +2,53 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ReuzengildeProject.Pages.OverPage"
+                          Icon="Hamburger.png"
              Title="Over">
     <ContentPage.Content>
         <AbsoluteLayout BackgroundColor="#e0dddd">
             <BoxView Color="#00758b"
                  AbsoluteLayout.LayoutBounds="0, 1, 1, 0.11" AbsoluteLayout.LayoutFlags="All"
                  Opacity="1"/>
-            
-            <Image Source="homepageHistorischeStoet.jpg"
-                   AbsoluteLayout.LayoutBounds="0.5, 0.08, 0.94, 0.27" AbsoluteLayout.LayoutFlags="All"/>
+            <!--maakt blauw vak onderaan scherm-->
+            <BoxView Color="#666666"
+                 AbsoluteLayout.LayoutBounds="0.5, 0.327, 0.77, 0.07" AbsoluteLayout.LayoutFlags="All"
+                 Opacity="1" />
+            <!--maakt rand om NaamDeelnemer label-->
+            <BoxView Color="#afafaf"
+                 AbsoluteLayout.LayoutBounds="0.5, 0.94, 0.72, 0.583" AbsoluteLayout.LayoutFlags="All"
+                 Opacity="1" />
+            <!--maakt rand om TekstDeelnemer label-->
 
-            <Label Text="Over"
+            <BoxView Color = "White"
+                     AbsoluteLayout.LayoutBounds="0.5, 0.94, 0.7, 0.57" AbsoluteLayout.LayoutFlags="All"/>
+            <!--Zorgt ervoor dat het tekstvak na het scrollen dezelfde kleur heeft in iOS-->
+
+            <Image Source="LogoBSJ.png"
+                   AbsoluteLayout.LayoutBounds="0.5, 0.03, 0.94, 0.27" AbsoluteLayout.LayoutFlags="All"/>
+            <!--logo bovenaan de pagina-->           
+               
+                <Label Text="BSJ Technologies"
                    HorizontalTextAlignment="Center"
-                   TextColor="#985c80"
-                   FontSize="Medium"
+                   TextColor="White"
+                   FontSize="Large"
                    BackgroundColor="#00758b" 
-                   AbsoluteLayout.LayoutBounds="0.5, 0.36, 0.75, 0.055" AbsoluteLayout.LayoutFlags="All"/>
+                   AbsoluteLayout.LayoutBounds="0.5, 0.33, 0.75, 0.055" AbsoluteLayout.LayoutFlags="All"/>
 
-            <Label Text="Koen houdt van donuts. jwefkdruireh ju-34yu8h howrw4uy8we rguiwefqhefw u23489y80gw u23r8r89weghguef7 yr23489wty79gfw7yuwfg y7g"
-                   TextColor="Black"
+            <ScrollView Orientation="Vertical"
+                    AbsoluteLayout.LayoutBounds="0.5, 0.94, 0.7, 0.57" AbsoluteLayout.LayoutFlags="All">
+                <Label TextColor="Black"
                    FontSize="Small"
                    BackgroundColor="White"
-                   AbsoluteLayout.LayoutBounds="0.5, 0.80, 0.70, 0.5" AbsoluteLayout.LayoutFlags="All"/>
+                   AbsoluteLayout.LayoutBounds="0.5, 0.94, 0.7, 0.57" AbsoluteLayout.LayoutFlags="All">
+                    <Label.Text>
+                        De Historische Stoet app is gemaakt door 4 leerlingen van Lyceum Schöndeln. Namelijk door Jip van Hoef, Stef Halmans, Bas Meuwissen en Koen van Dooren. De app maken was een opdracht voor het vak Onderzoek &amp; Ontwerpen, en Wim Kemp was de opdrachtgever. Het doel was om een app te maken waardoor mensen altijd alle informatie over de stoet kunnen lezen. Omdat we het erg interessant vonden om apps te maken zijn we nu ook ons eigen bedrijf, BSJ Technologies begonnen om voor andere opdrachtgevers apps en dergelijke te maken. 
+                        
+Voor meer contact mail ons op business@bsjtechnologies.com.
+                    </Label.Text>
+                </Label>
+            </ScrollView>
 
+            <!--hoofdtekst pagina-->
         </AbsoluteLayout>
     </ContentPage.Content>
 </ContentPage>
