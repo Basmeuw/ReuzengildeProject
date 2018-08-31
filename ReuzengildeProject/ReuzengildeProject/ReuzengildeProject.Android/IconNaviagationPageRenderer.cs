@@ -32,11 +32,13 @@ namespace ReuzengildeProject.Droid
                 {
                     var imageButton = toolbar.GetChildAt(i) as ImageButton;
                     var startPauzeButton = toolbar.GetChildAt(i) as ImageButton;
+                    var link = toolbar.GetChildAt(i) as ImageButton;
                     var drawerArrow = imageButton?.Drawable as DrawerArrowDrawable;
                     if (drawerArrow == null)
                         continue;
 
                     imageButton.SetImageResource(Resource.Drawable.Hamburger);
+                    link.SetImageResource(Resource.Drawable.Hamburger);
 
                 }
             }
