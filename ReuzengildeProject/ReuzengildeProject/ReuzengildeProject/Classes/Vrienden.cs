@@ -15,7 +15,7 @@ namespace ReuzengildeProject.Classes
         public static List<Vriend> VriendenList = new List<Vriend>()
         {
             new Vriend{Name = "Sif", Link = "https://sif-group.com/nl/"},
-            new Vriend{Name = "Horeca-ondernemers Stationsplein", Link = string.Empty},
+            new Vriend{Name = "Horecaondernemers Stationsplein", Link = string.Empty},
             new Vriend{Name = "Sligro", Link = "https://www.sligro.nl/"},
             new Vriend{Name = "Tjeu Linssen Mode in Wonen en Slapen", Link = "https://www.tjeulinssen.nl/"},
             new Vriend{Name = "Red Security", Link = "http://www.redsecurity.nl/"},

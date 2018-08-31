@@ -11,7 +11,7 @@ namespace ReuzengildeProject.Classes
         [JsonProperty("deelnemers")]
         public List<Deelnemer> Deelnemers { get; set; }
     }
-    //de deelnemer class waar een beschrijving, bestandnaam en naam in staat
+    //de deelnemer class waar een beschrijving, bestandsnaam en naam in staat
     public partial class Deelnemer
     {
         [JsonProperty("beschrijving")]

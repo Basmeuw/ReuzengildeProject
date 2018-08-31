@@ -45,37 +45,49 @@ namespace ReuzengildeProject.Pages
 
 
             InitializeComponent();
-            Thread thread = new Thread(() =>
+            if (App.StartSponsorFoto)
             {
-                
-                Thread thread1 = new Thread(() =>
-                {
-                    for(int i = 0; i < 3; i++)
-                    {
-                        Thread.Sleep(1000);
-                        Device.BeginInvokeOnMainThread(() =>
-                        {
-                            if (int.Parse(SponsorText.Text) != 0)
-                            {
-                                SponsorText.Text = (int.Parse(SponsorText.Text) - 1).ToString();
-                            }
-                            else if(int.Parse(SponsorText.Text) == 0)
-                            {
-                                SponsorText.Text = "0";
-                            }
-                        });
-                    }
-                });
-                thread1.Start();
-                Thread.Sleep(3000);
-                Device.BeginInvokeOnMainThread(() =>
-                {
-                    Content.IsVisible = true;
-                    Image.IsVisible = false;
-                });
 
-            });
-            thread.Start();
+                Thread thread = new Thread(() =>
+                {
+
+                    Thread thread1 = new Thread(() =>
+                    {
+                        for (int i = 0; i < 3; i++)
+                        {
+                            Thread.Sleep(1000);
+                            Device.BeginInvokeOnMainThread(() =>
+                            {
+                                if (int.Parse(SponsorText.Text) != 0)
+                                {
+                                    SponsorText.Text = (int.Parse(SponsorText.Text) - 1).ToString();
+                                }
+                                else if (int.Parse(SponsorText.Text) == 0)
+                                {
+                                    SponsorText.Text = "0";
+                                }
+                            });
+                        }
+                    });
+                    thread1.Start();
+                    Thread.Sleep(3000);
+                    Device.BeginInvokeOnMainThread(() =>
+                    {
+                        Content.IsVisible = true;
+                        Image.IsVisible = false;
+                    });
+
+                });
+                thread.Start();
+            }
+            else if (!App.StartSponsorFoto)
+            {
+                App.StartSponsorFoto = true;
+                Image.IsVisible = false;
+                Content.IsVisible = true;
+            }
+           
+
             //checkt of het een ios device is en zorgt er dan voor dat de detail page open gaat en weer sluit zodat hij de iconnavigationpagerenderer gebruikt zodat
             //het hamburgermenu en de geluidsknopjes zichtbaar worden omdat dit niet werkte als je niet via een van de knopjes via de detail page naar een pagina toe gaat 
             //maar vanuit het start knopje of de deelnemerslijst
@@ -155,12 +167,12 @@ namespace ReuzengildeProject.Pages
                 {
                     if((optochtTime - localTime).Days > 0)
                     { 
-                        InformatieDeelnemer.Text = "De Historische Stoet vindt plaats op 9 September 2018. Dit betekent dat het nog maar " + (optochtTime - localTime).Days.ToString() + " dagen is totdat alle informatie over de Historische Stoet beschikbaar wordt! \nVanaf dit moment zal u hier de informatie over de deelnemers kunnen lezen!";
+                        InformatieDeelnemer.Text = "De Historische Stoet vindt plaats op 9 September 2018. Dit betekent dat het nog maar " + (optochtTime - localTime).Days.ToString() + " dagen is totdat alle informatie over de Historische Stoet beschikbaar wordt! \nVanaf dat moment zal u hier de informatie over de deelnemers kunnen lezen!";
                     }
                     else if((optochtTime - localTime).Days <= 0)
                     {
                         CheckTime(optochtTime, localTime);
-                        InformatieDeelnemer.Text = "De Historische Stoet vindt plaats op 9 September 2018. Dit betekent dat het nog maar " + (optochtTime - localTime).Hours.ToString() + timerText[0] + (optochtTime - localTime).Minutes.ToString() + timerText[1] + (optochtTime - localTime).Seconds.ToString() + timerText[2] + "is totdat alle informatie over de Historische Stoet beschikbaar wordt! \nVanaf dit moment zal u hier de informatie over de deelnemers kunnen lezen!";
+                        InformatieDeelnemer.Text = "De Historische Stoet vindt plaats op 9 September 2018. Dit betekent dat het nog maar " + (optochtTime - localTime).Hours.ToString() + timerText[0] + (optochtTime - localTime).Minutes.ToString() + timerText[1] + (optochtTime - localTime).Seconds.ToString() + timerText[2] + "is totdat alle informatie over de Historische Stoet beschikbaar wordt! \nVanaf dat moment zal u hier de informatie over de deelnemers kunnen lezen!";
                     }
                     App.StartOptocht = false;
                     BackButton.IsEnabled = false;
