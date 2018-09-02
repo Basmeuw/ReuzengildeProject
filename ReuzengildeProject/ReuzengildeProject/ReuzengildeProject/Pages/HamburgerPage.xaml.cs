@@ -5,6 +5,7 @@ using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using Plugin.Connectivity;
 using System.Timers;
+using System.Windows.Input;
 
 namespace ReuzengildeProject.Pages
 {
@@ -69,10 +70,18 @@ namespace ReuzengildeProject.Pages
         {
             MasterPageItems.SelectedItem = null;
         }
+
+        //Iets met de link
+        public void LinkButton()
+        {
+        }
+      
+        
         //voegt de geluidsknopjes toe
         private void AddToolBarItems()
         {
             ToolbarItem tbi = new ToolbarItem
+
             {
                 Icon = "muziek1.png",
                 Order = ToolbarItemOrder.Primary,
@@ -84,9 +93,18 @@ namespace ReuzengildeProject.Pages
                 Order = ToolbarItemOrder.Primary,
                 Command = new Command(() => StopButton())
             };
+            ToolbarItem tbi3 = new ToolbarItem
+            {
+                Icon = "link.png",
+                Order = ToolbarItemOrder.Primary,
+                Command = new Command( () => LinkButton())
+            };           
+          
             ToolbarItems.Add(tbi);
+            ToolbarItems.Add(tbi3);
             ToolbarItems.Add(tbi2);
         }
+
         //checkt of er informatie opgeslagen is op de app zodat de app niet crashed
         public async void CheckInformation(Type page)
         {
