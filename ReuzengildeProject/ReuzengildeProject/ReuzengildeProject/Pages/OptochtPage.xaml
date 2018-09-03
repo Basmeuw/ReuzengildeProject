@@ -55,7 +55,7 @@
             <Button x:Name="BackButton"
                 BackgroundColor="White"
                 TextColor="Black"
-                Text="terug"
+                Text="vorige"
                 Clicked="BackButtonClicked"           
                 AbsoluteLayout.LayoutBounds="0.05, 1, 0.25, 0.1" AbsoluteLayout.LayoutFlags="All"/>
 
@@ -68,7 +68,7 @@
             <Button x:Name="NextButton"
                 BackgroundColor="#ebebeb"
                 TextColor="Black"
-                Text="verder"
+                Text="volgende"
                 Clicked="NextButtonClicked"
                 AbsoluteLayout.LayoutBounds="0.95, 1, 0.25, 0.1" AbsoluteLayout.LayoutFlags="All"/>
 
