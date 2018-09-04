@@ -72,8 +72,22 @@ namespace ReuzengildeProject.Pages
         }
 
         //Iets met de link
-        public void LinkButton()
+        public async void LinkButton()
         {
+            if (App.Information.Deelnemers[App.NumberOfDeelnemer - 1].Link == null || App.Information.Deelnemers[App.NumberOfDeelnemer - 1].Link == string.Empty)
+            {
+                await DisplayAlert("Melding", "Deze deelnemer heeft geen site", "Oké");
+            }
+            else
+            {
+                bool GoToSite = await DisplayAlert("Melding", "Wilt u doorgaan naar de site van deze deelnemer?", "Ja", "Nee");
+                if (GoToSite)
+                {
+                    Device.OpenUri(new Uri(App.Information.Deelnemers[App.NumberOfDeelnemer - 1].Link));
+                }
+            }
+
+
         }
       
         
@@ -95,13 +109,12 @@ namespace ReuzengildeProject.Pages
             };
             ToolbarItem tbi3 = new ToolbarItem
             {
-                Icon = "link.png",
+                Icon = "link.jpg",
                 Order = ToolbarItemOrder.Primary,
                 Command = new Command( () => LinkButton())
-            };           
-          
-            ToolbarItems.Add(tbi);
+            };
             ToolbarItems.Add(tbi3);
+            ToolbarItems.Add(tbi);
             ToolbarItems.Add(tbi2);
         }
 
