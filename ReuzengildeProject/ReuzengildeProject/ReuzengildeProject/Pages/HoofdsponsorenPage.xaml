@@ -3,11 +3,20 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ReuzengildeProject.Pages.HoofdsponsorenPage"
              Title="Grote Sponsoren">
-    <AbsoluteLayout BackgroundColor="White">
-        <Image Source="hoofdsponsors.jpg" 
-                   AbsoluteLayout.LayoutBounds="0,0,1,1" AbsoluteLayout.LayoutFlags="All"/>
-
-
-    </AbsoluteLayout>
-
+    <ScrollView BackgroundColor="White">
+        <StackLayout BackgroundColor="White">
+            <Image Source="gemeente"/>
+            <!-- https://www.roermond.nl/   -->
+            <Image Source="limburg"/>
+            <!--  https://www.limburg.nl/  -->
+            <Image Source="remunjs"/>
+            <!--  http://www.historischestoetroermond.nl/ -->
+            <Image Source="rabobank"/>
+            <!--  https://www.rabobank.nl/lokale-bank/roermond-echt/  -->
+            <Image Source="brasserie"/>
+            <!--  https://www.hoteldux.nl/nl/  -->
+            <Image Source="stichting"/>
+            <!--  http://www.stichting1880.nl/home.html  -->
+        </StackLayout>
+    </ScrollView>
 </ContentPage>

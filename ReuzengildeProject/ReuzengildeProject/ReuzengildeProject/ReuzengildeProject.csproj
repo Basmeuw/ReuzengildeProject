@@ -8,6 +8,12 @@
     <Win32Resource />
   </PropertyGroup>
 
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningsAsErrors />
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+  </PropertyGroup>
+
   <ItemGroup>
     <PackageReference Include="FireSharp" Version="2.0.4" />
     <PackageReference Include="Newtonsoft.Json" Version="11.0.2" />
@@ -28,9 +34,6 @@
     </Compile>
     <Compile Update="Pages\SponsorPagina.xaml.cs">
       <DependentUpon>SponsorPagina.xaml</DependentUpon>
-    </Compile>
-    <Compile Update="Pages\GroteSponsorenPage.xaml.cs">
-      <DependentUpon>GroteSponsorenPage.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
 
@@ -63,9 +66,6 @@
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Pages\RoutePage.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
-    <EmbeddedResource Update="Pages\GroteSponsorenPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Pages\VriendenPage.xaml">

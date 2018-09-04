@@ -468,9 +468,6 @@
     <BundleResource Include="Resources\Meute.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\grotesponsors.jpg" />
-  </ItemGroup>
-  <ItemGroup>
     <BundleResource Include="Resources\sponsors.jpg" />
   </ItemGroup>
   <ItemGroup>
@@ -487,5 +484,62 @@
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\link.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\mooren.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\nett.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\oranjerie.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\prins.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\rockwool.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\rotraco.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\ABS.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\arsprintmedia.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Binnenstad.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\cox.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Gs.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\horeca.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Incognito.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\rabobank.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\remunjs.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\roermond.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\stichting.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\brasserie.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\limburg.jpg" />
   </ItemGroup>
 </Project>

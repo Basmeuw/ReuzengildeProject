@@ -3,9 +3,35 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ReuzengildeProject.Pages.SponsorPage">
     <ContentPage.Content>
-        <AbsoluteLayout BackgroundColor="White">
-            <Image Source="sponsors.jpg" 
-                   AbsoluteLayout.LayoutBounds="0,0,1,1" AbsoluteLayout.LayoutFlags="All"/>
-        </AbsoluteLayout>
+        <ScrollView BackgroundColor="White">
+            <StackLayout BackgroundColor="White">
+                <Image Source="ABS"/>
+                <!-- https://www.absautoherstel.nl/site/vestigingen/provincie/limburg/peterbrouwers   -->
+                <Image Source="arsprintmedia"/>
+                <!--  http://www.arsprintmedia.nl/  -->
+                <Image Source="Binnenstad"/>
+                <!--  https://www.bizroermond.nl/ -->
+                <Image Source="cox"/>
+                <!--  https://coxenco.com/  -->
+                <Image Source="Gs"/>
+                <!--  https://www.gs-advocatuur.nl/  -->
+                <Image Source="horeca"/>
+                <!--  geen  -->
+                <Image Source="Incognito"/>
+                <!--   http://www.incognitoroermond.nl/  -->
+                <Image Source="mooren"/>
+                <!-- https://www.moorenmachines.nl/   -->
+                <Image Source="nett"/>
+                <!--  https://www.nettt.nl/  -->
+                <Image Source="oranjerie"/>
+                <!--  https://www.theaterhotelroermond.nl/  -->
+                <Image Source="prins"/>
+                <!--  https://www.cultuurfonds.nl/provinciale-afdelingen/limburg  -->
+                <Image Source="rockwool"/>
+                <!--  https://www.rockwool.nl/  -->
+                <Image Source="rotraco"/>
+                <!--  http://www.rotraco.nl/  -->
+            </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>
