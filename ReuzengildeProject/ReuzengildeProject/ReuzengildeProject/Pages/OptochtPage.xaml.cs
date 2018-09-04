@@ -208,7 +208,6 @@ namespace ReuzengildeProject.Pages
             //zet muziek op het geluidsknopje en de foto op het scherm
             try
             {
-                Console.WriteLine(App.Information.Deelnemers[App.NumberOfDeelnemer - 1].Bestandnaam.ToString());
                 DeelnemersImage.Source = App.Information.Deelnemers[App.NumberOfDeelnemer - 1].Bestandnaam + ".jpg";
             }
             catch { }
@@ -237,6 +236,15 @@ namespace ReuzengildeProject.Pages
             else
             {
                 NaamDeelnemer.FontSize = Device.GetNamedSize(NamedSize.Large, typeof(Label));
+            }
+            App.DeelnemerSound.Stop();
+            try
+            {
+                App.DeelnemerSound.Load("akkermansgildevenlo.mp3");
+            }
+            catch
+            {
+
             }
             NaamDeelnemer.Text = App.Information.Deelnemers[App.NumberOfDeelnemer - 1].Naam;
             NumberOfDeelnemer.Text = App.NumberOfDeelnemer.ToString();
