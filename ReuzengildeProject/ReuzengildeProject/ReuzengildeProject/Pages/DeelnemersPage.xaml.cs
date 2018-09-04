@@ -25,6 +25,7 @@ namespace ReuzengildeProject.Pages
         {
             var index = (DeelnemersList.ItemsSource as List<DeelnemersPaginaItem>).IndexOf(e.SelectedItem as DeelnemersPaginaItem);
             App.NumberOfDeelnemer = index + 1;
+            App.StartSponsorFoto = false;
             App.HamburgerPage.ChangePage(typeof(OptochtPage));
             App.HamburgerPage.DeselectListviewItems();
         }

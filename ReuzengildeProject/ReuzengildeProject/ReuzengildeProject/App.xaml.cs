@@ -31,6 +31,8 @@ namespace ReuzengildeProject
         public static ISimpleAudioPlayer DeelnemerSound = CrossSimpleAudioPlayer.CreateSimpleAudioPlayer();
 
         public static bool StartOptocht;
+
+        public static bool StartSponsorFoto = true;
         //Gebeurt wanneer de app word opgestart en checkt of er een internet connectie is. Als er een internet connectie is haalt hij de informatie uit de database. 
         //Ook start hij de eerste pagina van de app.
         public App (string path)
