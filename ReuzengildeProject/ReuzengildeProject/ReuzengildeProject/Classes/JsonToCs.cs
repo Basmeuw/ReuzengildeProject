@@ -22,6 +22,9 @@ namespace ReuzengildeProject.Classes
 
         [JsonProperty("naam")]
         public string Naam { get; set; }
+
+        [JsonProperty("website")]
+        public string Link { get; set; }
     }
     //class die een json file omzet naar c# objecten
     public partial class JsonToCs
