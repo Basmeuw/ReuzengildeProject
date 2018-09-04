@@ -144,7 +144,7 @@ namespace ReuzengildeProject.Pages
 
         async Task SetTimer()
         {
-            optochtTime = new DateTime(2018, 9, 9, 13, 30, 0);
+            optochtTime = new DateTime(2018, 8, 9, 13, 30, 0);
 
             localTime = DateTime.Now.ToLocalTime();
             localTime = DateTime.ParseExact(localTime.ToString("yyyy-MM-dd HH:mm:ss"), "yyyy-MM-dd HH:mm:ss", null);
@@ -244,6 +244,7 @@ namespace ReuzengildeProject.Pages
             App.DeelnemerSound.Stop();
             App.HamburgerPage.startPauze = false;
             scrollView.ScrollToAsync(0, 0, false);
+            Console.WriteLine(App.Information.Deelnemers[App.NumberOfDeelnemer - 1].Link);
 
         }
         //gaat een deelnemer terug
