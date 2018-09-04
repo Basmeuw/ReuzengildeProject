@@ -54,7 +54,6 @@ namespace ReuzengildeProject.iOS
             var lbbi3 = new UIBarButtonItem(btn2);
 
             navigationController.NavigationBar.TopItem.LeftBarButtonItem = lbbi;
-
             navigationController.NavigationBar.TopItem.RightBarButtonItems = new UIBarButtonItem[2]{
                 lbbi3,
                 lbbi2

@@ -485,4 +485,7 @@
   <ItemGroup>
     <BundleResource Include="Resources\Akkermansgilde.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\link.png" />
+  </ItemGroup>
 </Project>
