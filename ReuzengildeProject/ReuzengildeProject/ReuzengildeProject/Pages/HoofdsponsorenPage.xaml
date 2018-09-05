@@ -5,17 +5,45 @@
              Title="Grote Sponsoren">
     <ScrollView BackgroundColor="White">
         <StackLayout BackgroundColor="White">
-            <Image Source="gemeente"/>
-            <!-- https://www.roermond.nl/   -->
-            <Image Source="limburg"/>
+            <Image Source="GemeenteRoermond">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                </Image.GestureRecognizers>
+            </Image>
+                <!-- https://www.roermond.nl/   -->
+            <Image Source="limburg">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped1"/>
+                </Image.GestureRecognizers>
+            </Image>
+            <Image Source="remunjs">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped2"/>
+                </Image.GestureRecognizers>
+            </Image>
+            <Image Source="RaboBank">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped3"/>
+                </Image.GestureRecognizers>
+            </Image>
+            <Image Source="brasserie">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped4"/>
+                </Image.GestureRecognizers>
+            </Image>
+            <Image Source="stichting">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped5"/>
+                </Image.GestureRecognizers>
+            </Image>
             <!--  https://www.limburg.nl/  -->
-            <Image Source="remunjs"/>
+
             <!--  http://www.historischestoetroermond.nl/ -->
-            <Image Source="rabobank"/>
+
             <!--  https://www.rabobank.nl/lokale-bank/roermond-echt/  -->
-            <Image Source="brasserie"/>
+
             <!--  https://www.hoteldux.nl/nl/  -->
-            <Image Source="stichting"/>
+
             <!--  http://www.stichting1880.nl/home.html  -->
         </StackLayout>
     </ScrollView>

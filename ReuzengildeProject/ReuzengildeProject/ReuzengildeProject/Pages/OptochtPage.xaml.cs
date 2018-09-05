@@ -5,6 +5,8 @@ using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using System.Threading;
 using System.Collections.Generic;
+using Plugin.SimpleAudioPlayer;
+using Plugin.SimpleAudioPlayer.Abstractions;
 
 namespace ReuzengildeProject.Pages
 {
@@ -37,7 +39,7 @@ namespace ReuzengildeProject.Pages
 
         private DateTime localTime;
         private DateTime optochtTime;
-
+       
         private System.Timers.Timer optochtTimer;
         public OptochtPage ()
 		{
@@ -45,6 +47,7 @@ namespace ReuzengildeProject.Pages
 
 
             InitializeComponent();
+            App.DeelnemerSound = CrossSimpleAudioPlayer.CreateSimpleAudioPlayer();
             if (App.StartSponsorFoto)
             {
 
@@ -123,11 +126,7 @@ namespace ReuzengildeProject.Pages
                 Console.WriteLine("3");
                 ChangeItems();
             }
-            try
-            {
-                App.DeelnemerSound.Load( App.Information.Deelnemers[App.NumberOfDeelnemer - 1].Bestandnaam + ".mp3");
-            }
-            catch{}
+
         }
 
         private void UpdateSponsorenText()
@@ -144,7 +143,7 @@ namespace ReuzengildeProject.Pages
 
         async Task SetTimer()
         {
-            optochtTime = new DateTime(2018, 8, 9, 13, 30, 0);
+            optochtTime = new DateTime(2018, 9, 7, 10, 30, 0);
 
             localTime = DateTime.Now.ToLocalTime();
             localTime = DateTime.ParseExact(localTime.ToString("yyyy-MM-dd HH:mm:ss"), "yyyy-MM-dd HH:mm:ss", null);
@@ -204,6 +203,11 @@ namespace ReuzengildeProject.Pages
         }
         public void ChangeItems()
         {
+            //if (App.DeelnemerSound.IsPlaying)
+            //{
+            //    App.DeelnemerSound.Stop();
+            //}
+
 
             //zet muziek op het geluidsknopje en de foto op het scherm
             try
@@ -229,7 +233,7 @@ namespace ReuzengildeProject.Pages
                 NextButton.IsEnabled = true;
             }
             //verandert alle informatie op het scherm naar informatie uit de database.
-            if (App.Information.Deelnemers[App.NumberOfDeelnemer - 1].Naam.Length > 30)
+            if (App.Information.Deelnemers[App.NumberOfDeelnemer - 1].Naam.Length > 25)
             {
                 NaamDeelnemer.FontSize = Device.GetNamedSize(NamedSize.Small, typeof(Label));
             }
@@ -237,15 +241,7 @@ namespace ReuzengildeProject.Pages
             {
                 NaamDeelnemer.FontSize = Device.GetNamedSize(NamedSize.Large, typeof(Label));
             }
-            App.DeelnemerSound.Stop();
-            try
-            {
-                App.DeelnemerSound.Load("akkermansgildevenlo.mp3");
-            }
-            catch
-            {
 
-            }
             NaamDeelnemer.Text = App.Information.Deelnemers[App.NumberOfDeelnemer - 1].Naam;
             NumberOfDeelnemer.Text = App.NumberOfDeelnemer.ToString();
             InformatieDeelnemer.Text = App.Information.Deelnemers[App.NumberOfDeelnemer - 1].Beschrijving;
@@ -253,7 +249,11 @@ namespace ReuzengildeProject.Pages
             App.HamburgerPage.startPauze = false;
             scrollView.ScrollToAsync(0, 0, false);
             Console.WriteLine(App.Information.Deelnemers[App.NumberOfDeelnemer - 1].Link);
-
+            try
+            {
+                App.DeelnemerSound.Load(App.Information.Deelnemers[App.NumberOfDeelnemer - 1].Bestandnaam + ".m4a");
+            }
+            catch { }
         }
         //gaat een deelnemer terug
         private void BackButtonClicked(object sender, EventArgs e)

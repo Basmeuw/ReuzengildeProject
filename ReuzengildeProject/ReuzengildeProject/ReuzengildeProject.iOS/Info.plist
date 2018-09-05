@@ -25,7 +25,7 @@
 	<key>CFBundleIdentifier</key>
 	<string>com.Reuzengilde.HistorischeStoet</string>
 	<key>CFBundleVersion</key>
-	<string>1.20</string>
+	<string>1.25</string>
 	<key>CFBundleIcons</key>
 	<dict>
 		<key>CFBundlePrimaryIcon</key>
@@ -37,6 +37,7 @@
 				<string>Icon-60@2x</string>
 				<string>Icon-76@2x</string>
 				<string>Icon-83.5@2x</string>
+				<string>Icon.png</string>
 			</array>
 		</dict>
 	</dict>
@@ -45,8 +46,10 @@
 	<key>CFBundleName</key>
 	<string>ReuzengildeProject</string>
 	<key>CFBundleShortVersionString</key>
-	<string>7</string>
+	<string>8</string>
 	<key>UIMainStoryboardFile</key>
 	<string>LaunchScreen</string>
+	<key>XSAppIconAssets</key>
+	<string>Resources/Media.xcassets/AppIcons.appiconset</string>
 </dict>
 </plist>

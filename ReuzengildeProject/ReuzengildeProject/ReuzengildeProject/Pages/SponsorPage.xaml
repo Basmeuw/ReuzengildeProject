@@ -5,32 +5,81 @@
     <ContentPage.Content>
         <ScrollView BackgroundColor="White">
             <StackLayout BackgroundColor="White">
-                <Image Source="ABS"/>
+                <Image Source="ABS">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                    </Image.GestureRecognizers>
+                </Image>
                 <!-- https://www.absautoherstel.nl/site/vestigingen/provincie/limburg/peterbrouwers   -->
-                <Image Source="arsprintmedia"/>
-                <!--  http://www.arsprintmedia.nl/  -->
-                <Image Source="Binnenstad"/>
-                <!--  https://www.bizroermond.nl/ -->
-                <Image Source="cox"/>
-                <!--  https://coxenco.com/  -->
-                <Image Source="Gs"/>
-                <!--  https://www.gs-advocatuur.nl/  -->
-                <Image Source="horeca"/>
-                <!--  geen  -->
-                <Image Source="Incognito"/>
-                <!--   http://www.incognitoroermond.nl/  -->
-                <Image Source="mooren"/>
-                <!-- https://www.moorenmachines.nl/   -->
-                <Image Source="nett"/>
-                <!--  https://www.nettt.nl/  -->
-                <Image Source="oranjerie"/>
-                <!--  https://www.theaterhotelroermond.nl/  -->
-                <Image Source="prins"/>
-                <!--  https://www.cultuurfonds.nl/provinciale-afdelingen/limburg  -->
-                <Image Source="rockwool"/>
-                <!--  https://www.rockwool.nl/  -->
-                <Image Source="rotraco"/>
-                <!--  http://www.rotraco.nl/  -->
+                <Image Source="arsprintmedia">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                    </Image.GestureRecognizers>
+                </Image>
+
+                <Image Source="Binnenstad">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped1"/>
+                    </Image.GestureRecognizers>
+                </Image>
+
+                <Image Source="cox">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped2"/>
+                    </Image.GestureRecognizers>
+                </Image>
+
+                <Image Source="Gs">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped3"/>
+                    </Image.GestureRecognizers>
+                </Image>
+
+                <Image Source="horeca">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped4"/>
+                    </Image.GestureRecognizers>
+                </Image>
+
+                <Image Source="Incognito">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped5"/>
+                    </Image.GestureRecognizers>
+                </Image>
+
+                <Image Source="mooren">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped6"/>
+                    </Image.GestureRecognizers>
+                </Image>
+
+                <Image Source="nett">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped7"/>
+                    </Image.GestureRecognizers>
+                </Image>
+                <Image Source="oranjerie">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped8"/>
+                    </Image.GestureRecognizers>
+                </Image>
+                <Image Source="prins">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped9"/>
+                    </Image.GestureRecognizers>
+                </Image>
+                <Image Source="rockwool">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped10"/>
+                    </Image.GestureRecognizers>
+                </Image>
+
+
+                <Image Source="rotraco">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped11"/>
+                    </Image.GestureRecognizers>
+                </Image>
             </StackLayout>
         </ScrollView>
     </ContentPage.Content>

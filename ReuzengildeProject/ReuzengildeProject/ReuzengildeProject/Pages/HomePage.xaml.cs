@@ -13,17 +13,21 @@ namespace ReuzengildeProject.Pages
 	{
 		public HomePage ()
 		{
+
+            InitializeComponent();
+
+            App.HomePage = true;
+            Console.WriteLine(App.HomePage.ToString());
 		//zet muziek op het muziek knopje
             try
             {
-                App.DeelnemerSound.Load("akkermansgildevenlo.mp3");
+                App.HomePageSound.Load("Instructie.m4a");
             }
             catch
             {
 
             }
 
-            InitializeComponent ();
         }
 		//checkt of er informatie is voor de optochtpage en gaat er dan naartoe
         private void StartButtonClicked(object sender, EventArgs e)

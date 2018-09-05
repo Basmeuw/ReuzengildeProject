@@ -21,6 +21,7 @@ namespace ReuzengildeProject.Pages
             InitializeComponent();
             //detailpage naar de homepage
             ChangePage(typeof(HomePage));
+            App.HomePage = true;
 
             IsPresented = false;
             //zorgt ervoor dat er een lijst zichtbaar is met knopjes op de detail page
@@ -30,39 +31,68 @@ namespace ReuzengildeProject.Pages
         //start de muziek of zet hem op pauze
         public void StartPauzeButton()
         {
-            startPauze = !startPauze;
-            if (startPauze)
+            if (App.HomePage)
             {
-                Console.WriteLine("play");
-                App.DeelnemerSound.Play();
+                startPauze = !startPauze;
+                if (startPauze)
+                {
+                    Console.WriteLine("play");
+                    App.HomePageSound.Play();
+                }
+                else if (!startPauze)
+                {
+                    Console.WriteLine("Pauze");
+                    App.HomePageSound.Pause();
+                }
             }
-            else if (!startPauze)
+
+            else
             {
-                Console.WriteLine("Pauze");
-                App.DeelnemerSound.Pause();
+                startPauze = !startPauze;
+                if (startPauze)
+                {
+                    Console.WriteLine("play");
+                    App.DeelnemerSound.Play();
+                }
+                else if (!startPauze)
+                {
+                    Console.WriteLine("Pauze");
+                    App.DeelnemerSound.Pause();
+                }
             }
+
         }
         //stopt de muziek
         public void StopButton()
         {
-            App.DeelnemerSound.Stop();
-            Console.WriteLine("Stop");
-            startPauze = false;
+            if(App.HomePageSound.IsPlaying || App.DeelnemerSound.IsPlaying)
+            if (App.HomePage)
+            {
+                App.HomePageSound.Stop();
+                Console.WriteLine("Stop");
+                startPauze = false;
+            }
+            else
+            {
+                App.DeelnemerSound.Stop();
+                Console.WriteLine("Stop");
+                startPauze = false;
+            }
+
+
         }
         //als je op een knopje duwd op de detailpage verandert hij de pagina en stopt de muziek.
         private void OnMenuItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
-            startPauze = false;
+
+
             if (e.SelectedItem == null)
             {
                 return;
             }
             var item = (MasterPageItem)e.SelectedItem;
             Type page = item.TargetType;
-            if (App.DeelnemerSound.IsPlaying)
-            {
-                App.DeelnemerSound.Pause();
-            }
+
             CheckInformation(page);
         }
         //Deselect het knopje als je niet via de detailpage naar een pagina toe gaat
@@ -158,10 +188,30 @@ namespace ReuzengildeProject.Pages
         //veranderd de detail page 
         public void ChangePage(Type page)
         {
+            startPauze = false;
+            App.HomePage = false;
+            try
+            {
+                if (App.DeelnemerSound.IsPlaying)
+                {
+                    App.DeelnemerSound.Stop();
+                }
 
+            }
+            catch { }
+            try
+            {
+                if (App.HomePageSound.IsPlaying)
+                {
+                    App.HomePageSound.Stop();
+                }
+            }
+            catch { }
+           
             ToolbarItems.Clear();
             if (page == typeof(HomePage))
             {
+                App.HomePage = true;
                 Detail = homePage;
                 if(Device.OS == TargetPlatform.Android)
                 {
