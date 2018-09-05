@@ -542,4 +542,241 @@
   <ItemGroup>
     <BundleResource Include="Resources\limburg.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\ReuzenpaarVenlo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\GoudenBeeld.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Marie.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Adelijk.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Begraafplaats.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Tilburg2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Heusden.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\BergseStadsreuzen.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\FandelschwenkerWesseling.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Gigantius.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\GoudenBeeld.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\HeiligeKnachte.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\HenrikvanWassenaar.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Heusden.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Hofhouding.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\HofhoudingLandvoogd.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\HofhoudingWenen.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Jachthoornblazers.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\JohannaAbcovia.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Kachelpiepers.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\KeizerinMariaTheresia.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\KluizenaarBolderberg.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Knapkoekers.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\KoninginMariaChristina.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\KoninklijkeHarmonie.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\KoninklijkeHofhouding.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\KoninklijkeOrdeHasselt.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Kortessem.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\KWFLogo.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Landsknachte.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\LandvoogdesMarinaChristina.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\LesChinels.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Lodewijk16.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\MariaCarolinavanOostenrijk.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\MariaElisabethAbdis.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\MariaTheresia.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Marie.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\MarinaChristinavanOostenrijk.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\MaximilaanFrans.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Oisterwijk.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\PSWLogo.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\PuurMuur.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\RemunjseReuzegilde.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\ReusBrabantsewal.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Reuzengezelschap.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\ReuzenpaarVenlo.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\RoermondseSchutterij.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Roofvogel.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Scouting 2.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Scouting8.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Scouting18.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Scouting26.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Scouting36.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Scouting47.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Scouting56.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Scouting64.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\SintAntoniusAbtGildeBlitterswijck.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Sjtuf.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Stadtgarde.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\SteinderGarde.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Symphonie.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Tilburg.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Tilburg2.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Toon.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Vaandeldragers.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Vendeliers.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\VendeliersKaulille.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Willibrordus.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\ZwitserseGarde.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Abdis.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Adelijk.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Akkermansgilde.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\AutarkyBrassBand.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Bedevaart.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\BergseStadsreuzen.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\BisschopMaxfranz.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Boxtel.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\BussenSchutten.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Damianus.m4a" />
+  </ItemGroup>
 </Project>
