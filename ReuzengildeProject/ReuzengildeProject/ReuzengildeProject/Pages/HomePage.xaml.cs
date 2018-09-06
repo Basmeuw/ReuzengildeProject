@@ -22,6 +22,7 @@ namespace ReuzengildeProject.Pages
             try
             {
                 App.HomePageSound.Load("Instructie.m4a");
+                Console.WriteLine("Werkt");
             }
             catch
             {
