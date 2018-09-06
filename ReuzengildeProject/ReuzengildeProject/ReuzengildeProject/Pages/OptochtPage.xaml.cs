@@ -207,14 +207,42 @@ namespace ReuzengildeProject.Pages
             //{
             //    App.DeelnemerSound.Stop();
             //}
+            if(App.Information.Deelnemers[App.NumberOfDeelnemer -1].Naam.Length >= 8)
+            {
+                if (App.Information.Deelnemers[App.NumberOfDeelnemer - 1].Naam.Substring(0, 8) == "Scouting")
+                {
+                    try
+                    {
+                        DeelnemersImage.Source = "ScoutingBordendragers.jpg";
+                    }
+                    catch
+                    {
 
+                    }
+                }
+                else
+                {
+                    try
+                    {
+                        DeelnemersImage.Source = App.Information.Deelnemers[App.NumberOfDeelnemer - 1].Bestandnaam + ".jpg";
+                        Console.WriteLine("Werkt");
+                    }
+                    catch { }
+                }
+            }
+            else
+            {
+                try
+                {
+                    DeelnemersImage.Source = App.Information.Deelnemers[App.NumberOfDeelnemer - 1].Bestandnaam + ".jpg";
+                    Console.WriteLine("Werkt");
+                }
+                catch { }
+            }
+                
 
             //zet muziek op het geluidsknopje en de foto op het scherm
-            try
-            {
-                DeelnemersImage.Source = App.Information.Deelnemers[App.NumberOfDeelnemer - 1].Bestandnaam + ".jpg";
-            }
-            catch { }
+
             //checkt er nog deelnemers beschikbaar zijn zodat je als er geen hogere deelnemers meer zijn niet verder kunt klikken
             if (App.NumberOfDeelnemer == 1)
             {
@@ -252,6 +280,7 @@ namespace ReuzengildeProject.Pages
             try
             {
                 App.DeelnemerSound.Load(App.Information.Deelnemers[App.NumberOfDeelnemer - 1].Bestandnaam + ".m4a");
+                Console.WriteLine("Werkt");
             }
             catch { }
         }

@@ -283,7 +283,7 @@
     <BundleResource Include="Resources\ReuzenHasselt.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\Roermondseschutterij.jpg" />
+    <BundleResource Include="Resources\RoermondseSchutterij.jpg" />
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\Roofvogel.jpg" />
@@ -301,9 +301,6 @@
     <BundleResource Include="Resources\SintAntoniusAbtGildeBlitterswijck.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\Sjtuf.JPG" />
-  </ItemGroup>
-  <ItemGroup>
     <BundleResource Include="Resources\Stadtgarde.jpg" />
   </ItemGroup>
   <ItemGroup>
@@ -314,9 +311,6 @@
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\Tilburg.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\Toon.JPG" />
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\Vaandeldragers.jpg" />
@@ -337,16 +331,10 @@
     <BundleResource Include="Resources\Abdis.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\AutarkyBrassBand.JPG" />
-  </ItemGroup>
-  <ItemGroup>
     <BundleResource Include="Resources\Bedevaart.jpg" />
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\BergenopZoom.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\BisschopMaxfranz.jpeg" />
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\BordMarieAntoinette.jpg" />
@@ -362,9 +350,6 @@
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\deautarkybressbend.PNG" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\FändelschwenkerWesseling.jpg" />
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\fanfare.PNG" />
@@ -424,7 +409,7 @@
     <BundleResource Include="Resources\KWFLogo.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\Landsknächte.jpg" />
+    <BundleResource Include="Resources\Landsknachte.jpg" />
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\LandvoogdesMarinaChristina.jpg" />
@@ -556,217 +541,217 @@
     <BundleResource Include="Resources\BergseStadsreuzen.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Resources\FandelschwenkerWesseling.m4a" />
+    <BundleResource Include="Resources\FandelschwenkerWesseling.m4a" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Resources\Gigantius.m4a" />
+    <BundleResource Include="Resources\Gigantius.m4a" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Resources\GoudenBeeld.m4a" />
+    <BundleResource Include="Resources\GoudenBeeld.m4a" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Resources\HeiligeKnachte.m4a" />
+    <BundleResource Include="Resources\HeiligeKnachte.m4a" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Resources\HenrikvanWassenaar.m4a" />
+    <BundleResource Include="Resources\HenrikvanWassenaar.m4a" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Resources\Heusden.m4a" />
+    <BundleResource Include="Resources\Heusden.m4a" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Resources\Hofhouding.m4a" />
+    <BundleResource Include="Resources\Hofhouding.m4a" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Resources\HofhoudingLandvoogd.m4a" />
+    <BundleResource Include="Resources\HofhoudingLandvoogd.m4a" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Resources\HofhoudingWenen.m4a" />
+    <BundleResource Include="Resources\HofhoudingWenen.m4a" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Resources\Jachthoornblazers.m4a" />
+    <BundleResource Include="Resources\Jachthoornblazers.m4a" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Resources\JohannaAbcovia.m4a" />
+    <BundleResource Include="Resources\JohannaAbcovia.m4a" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Resources\Kachelpiepers.m4a" />
+    <BundleResource Include="Resources\Kachelpiepers.m4a" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Resources\KeizerinMariaTheresia.m4a" />
+    <BundleResource Include="Resources\KeizerinMariaTheresia.m4a" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Resources\KluizenaarBolderberg.m4a" />
+    <BundleResource Include="Resources\KluizenaarBolderberg.m4a" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Resources\Knapkoekers.m4a" />
+    <BundleResource Include="Resources\Knapkoekers.m4a" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Resources\KoninginMariaChristina.m4a" />
+    <BundleResource Include="Resources\KoninginMariaChristina.m4a" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Resources\KoninklijkeHarmonie.m4a" />
+    <BundleResource Include="Resources\KoninklijkeHarmonie.m4a" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Resources\KoninklijkeHofhouding.m4a" />
+    <BundleResource Include="Resources\KoninklijkeHofhouding.m4a" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Resources\KoninklijkeOrdeHasselt.m4a" />
+    <BundleResource Include="Resources\KoninklijkeOrdeHasselt.m4a" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Resources\Kortessem.m4a" />
+    <BundleResource Include="Resources\Kortessem.m4a" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Resources\KWFLogo.m4a" />
+    <BundleResource Include="Resources\KWFLogo.m4a" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Resources\Landsknachte.m4a" />
+    <BundleResource Include="Resources\Landsknachte.m4a" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Resources\LandvoogdesMarinaChristina.m4a" />
+    <BundleResource Include="Resources\LandvoogdesMarinaChristina.m4a" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Resources\LesChinels.m4a" />
+    <BundleResource Include="Resources\LesChinels.m4a" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Resources\Lodewijk16.m4a" />
+    <BundleResource Include="Resources\Lodewijk16.m4a" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Resources\MariaCarolinavanOostenrijk.m4a" />
+    <BundleResource Include="Resources\MariaCarolinavanOostenrijk.m4a" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Resources\MariaElisabethAbdis.m4a" />
+    <BundleResource Include="Resources\MariaElisabethAbdis.m4a" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Resources\MariaTheresia.m4a" />
+    <BundleResource Include="Resources\MariaTheresia.m4a" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Resources\Marie.m4a" />
+    <BundleResource Include="Resources\Marie.m4a" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Resources\MarinaChristinavanOostenrijk.m4a" />
+    <BundleResource Include="Resources\MarinaChristinavanOostenrijk.m4a" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Resources\MaximilaanFrans.m4a" />
+    <BundleResource Include="Resources\MaximilaanFrans.m4a" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Resources\Oisterwijk.m4a" />
+    <BundleResource Include="Resources\Oisterwijk.m4a" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Resources\PSWLogo.m4a" />
+    <BundleResource Include="Resources\PSWLogo.m4a" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Resources\PuurMuur.m4a" />
+    <BundleResource Include="Resources\PuurMuur.m4a" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Resources\RemunjseReuzegilde.m4a" />
+    <BundleResource Include="Resources\RemunjseReuzegilde.m4a" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Resources\ReusBrabantsewal.m4a" />
+    <BundleResource Include="Resources\ReusBrabantsewal.m4a" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Resources\Reuzengezelschap.m4a" />
+    <BundleResource Include="Resources\Reuzengezelschap.m4a" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Resources\ReuzenpaarVenlo.m4a" />
+    <BundleResource Include="Resources\ReuzenpaarVenlo.m4a" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Resources\RoermondseSchutterij.m4a" />
+    <BundleResource Include="Resources\RoermondseSchutterij.m4a" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Resources\Roofvogel.m4a" />
+    <BundleResource Include="Resources\Roofvogel.m4a" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Resources\Scouting 2.m4a" />
+    <BundleResource Include="Resources\Scouting 2.m4a" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Resources\Scouting8.m4a" />
+    <BundleResource Include="Resources\Scouting8.m4a" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Resources\Scouting18.m4a" />
+    <BundleResource Include="Resources\Scouting18.m4a" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Resources\Scouting26.m4a" />
+    <BundleResource Include="Resources\Scouting26.m4a" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Resources\Scouting36.m4a" />
+    <BundleResource Include="Resources\Scouting36.m4a" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Resources\Scouting47.m4a" />
+    <BundleResource Include="Resources\Scouting47.m4a" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Resources\Scouting56.m4a" />
+    <BundleResource Include="Resources\Scouting56.m4a" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Resources\Scouting64.m4a" />
+    <BundleResource Include="Resources\Scouting64.m4a" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Resources\SintAntoniusAbtGildeBlitterswijck.m4a" />
+    <BundleResource Include="Resources\SintAntoniusAbtGildeBlitterswijck.m4a" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Resources\Sjtuf.m4a" />
+    <BundleResource Include="Resources\Sjtuf.m4a" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Resources\Stadtgarde.m4a" />
+    <BundleResource Include="Resources\Stadtgarde.m4a" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Resources\SteinderGarde.m4a" />
+    <BundleResource Include="Resources\SteinderGarde.m4a" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Resources\Symphonie.m4a" />
+    <BundleResource Include="Resources\Symphonie.m4a" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Resources\Tilburg.m4a" />
+    <BundleResource Include="Resources\Tilburg.m4a" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Resources\Tilburg2.m4a" />
+    <BundleResource Include="Resources\Tilburg2.m4a" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Resources\Toon.m4a" />
+    <BundleResource Include="Resources\Toon.m4a" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Resources\Vaandeldragers.m4a" />
+    <BundleResource Include="Resources\Vaandeldragers.m4a" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Resources\Vendeliers.m4a" />
+    <BundleResource Include="Resources\Vendeliers.m4a" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Resources\VendeliersKaulille.m4a" />
+    <BundleResource Include="Resources\VendeliersKaulille.m4a" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Resources\Willibrordus.m4a" />
+    <BundleResource Include="Resources\Willibrordus.m4a" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Resources\ZwitserseGarde.m4a" />
+    <BundleResource Include="Resources\ZwitserseGarde.m4a" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Resources\Abdis.m4a" />
+    <BundleResource Include="Resources\Abdis.m4a" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Resources\Adelijk.m4a" />
+    <BundleResource Include="Resources\Adelijk.m4a" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Resources\Akkermansgilde.m4a" />
+    <BundleResource Include="Resources\Akkermansgilde.m4a" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Resources\AutarkyBrassBand.m4a" />
+    <BundleResource Include="Resources\AutarkyBrassBand.m4a" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Resources\Bedevaart.m4a" />
+    <BundleResource Include="Resources\Bedevaart.m4a" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Resources\BergseStadsreuzen.m4a" />
+    <BundleResource Include="Resources\BergseStadsreuzen.m4a" />
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\BisschopMaxfranz.m4a" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Resources\Boxtel.m4a" />
+    <BundleResource Include="Resources\Boxtel.m4a" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Resources\BussenSchutten.m4a" />
+    <BundleResource Include="Resources\BussenSchutten.m4a" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Resources\Damianus.m4a" />
+    <BundleResource Include="Resources\Damianus.m4a" />
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\Icon.png" />
@@ -781,9 +766,24 @@
     <BundleResource Include="Resources\Icon-83.5%402x.png" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Resources\Instructie.m4a" />
+    <BundleResource Include="Resources\Instructie.m4a" />
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\PuurMuur.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\AutarkyBrassBand.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\FandelschwenkerWesseling.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\BisschopMaxfranz.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Toon.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Sjtuf.jpg" />
   </ItemGroup>
 </Project>
