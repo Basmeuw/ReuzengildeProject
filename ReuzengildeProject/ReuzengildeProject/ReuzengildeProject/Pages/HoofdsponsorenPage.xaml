@@ -3,11 +3,48 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ReuzengildeProject.Pages.HoofdsponsorenPage"
              Title="Grote Sponsoren">
-    <AbsoluteLayout BackgroundColor="White">
-        <Image Source="hoofdsponsors.jpg" 
-                   AbsoluteLayout.LayoutBounds="0,0,1,1" AbsoluteLayout.LayoutFlags="All"/>
+    <ScrollView BackgroundColor="White">
+        <StackLayout BackgroundColor="White">
+            <Image Source="GemeenteRoermond">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                </Image.GestureRecognizers>
+            </Image>
+                <!-- https://www.roermond.nl/   -->
+            <Image Source="limburg">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped1"/>
+                </Image.GestureRecognizers>
+            </Image>
+            <Image Source="remunjs">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped2"/>
+                </Image.GestureRecognizers>
+            </Image>
+            <Image Source="RaboBank">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped3"/>
+                </Image.GestureRecognizers>
+            </Image>
+            <Image Source="brasserie">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped4"/>
+                </Image.GestureRecognizers>
+            </Image>
+            <Image Source="stichting">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped5"/>
+                </Image.GestureRecognizers>
+            </Image>
+            <!--  https://www.limburg.nl/  -->
 
+            <!--  http://www.historischestoetroermond.nl/ -->
 
-    </AbsoluteLayout>
+            <!--  https://www.rabobank.nl/lokale-bank/roermond-echt/  -->
 
+            <!--  https://www.hoteldux.nl/nl/  -->
+
+            <!--  http://www.stichting1880.nl/home.html  -->
+        </StackLayout>
+    </ScrollView>
 </ContentPage>

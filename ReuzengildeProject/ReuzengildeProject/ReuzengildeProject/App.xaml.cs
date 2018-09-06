@@ -25,14 +25,16 @@ namespace ReuzengildeProject
         public static bool LatestInformation { get; set; }
 
         //Een reference naar het background geluid voor als ze dit laterna nog willen.
-        public static ISimpleAudioPlayer BackgroundSound = CrossSimpleAudioPlayer.CreateSimpleAudioPlayer();
+        public static ISimpleAudioPlayer HomePageSound = CrossSimpleAudioPlayer.CreateSimpleAudioPlayer();
 
         //Een reference naar het geluid van de deelnemer op de deelnemers page.
-        public static ISimpleAudioPlayer DeelnemerSound = CrossSimpleAudioPlayer.CreateSimpleAudioPlayer();
+        public static ISimpleAudioPlayer DeelnemerSound;
 
         public static bool StartOptocht;
 
         public static bool StartSponsorFoto = true;
+
+        public static bool HomePage = false;
         //Gebeurt wanneer de app word opgestart en checkt of er een internet connectie is. Als er een internet connectie is haalt hij de informatie uit de database. 
         //Ook start hij de eerste pagina van de app.
         public App (string path)
