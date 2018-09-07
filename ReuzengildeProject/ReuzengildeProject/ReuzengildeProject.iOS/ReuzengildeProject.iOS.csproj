@@ -71,9 +71,10 @@
     <WarningLevel>4</WarningLevel>
     <MtouchArch>ARMv7, ARMv7s, ARM64</MtouchArch>
     <ConsolePause>false</ConsolePause>
-    <CodesignKey>iPhone Distribution: Jean Pierre Halmans (4S98HP62TQ)</CodesignKey>
+    <CodesignKey>iPhone Developer</CodesignKey>
     <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
-    <CodesignProvision>Historische Stoet Appstore</CodesignProvision>
+    <CodesignProvision>
+    </CodesignProvision>
     <BuildIpa>true</BuildIpa>
     <MtouchNoSymbolStrip>false</MtouchNoSymbolStrip>
     <OptimizePNGs>true</OptimizePNGs>
@@ -83,6 +84,8 @@
     <IpaPackageName>
     </IpaPackageName>
     <IpaIncludeArtwork>false</IpaIncludeArtwork>
+    <MtouchUseLlvm>true</MtouchUseLlvm>
+    <MtouchUseThumb>true</MtouchUseThumb>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Ad-Hoc|iPhone' ">
     <DebugType>none</DebugType>

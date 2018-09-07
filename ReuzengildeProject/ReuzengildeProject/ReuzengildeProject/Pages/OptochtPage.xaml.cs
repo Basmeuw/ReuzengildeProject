@@ -143,7 +143,7 @@ namespace ReuzengildeProject.Pages
 
         async Task SetTimer()
         {
-            optochtTime = new DateTime(2018, 9, 7, 10, 30, 0);
+            optochtTime = new DateTime(2018, 8, 7, 10, 30, 0);
 
             localTime = DateTime.Now.ToLocalTime();
             localTime = DateTime.ParseExact(localTime.ToString("yyyy-MM-dd HH:mm:ss"), "yyyy-MM-dd HH:mm:ss", null);
@@ -207,6 +207,7 @@ namespace ReuzengildeProject.Pages
             //{
             //    App.DeelnemerSound.Stop();
             //}
+
             if(App.Information.Deelnemers[App.NumberOfDeelnemer -1].Naam.Length >= 8)
             {
                 if (App.Information.Deelnemers[App.NumberOfDeelnemer - 1].Naam.Substring(0, 8) == "Scouting")
@@ -277,12 +278,24 @@ namespace ReuzengildeProject.Pages
             App.HamburgerPage.startPauze = false;
             scrollView.ScrollToAsync(0, 0, false);
             Console.WriteLine(App.Information.Deelnemers[App.NumberOfDeelnemer - 1].Link);
-            try
+            if(Device.OS == TargetPlatform.iOS)
             {
-                App.DeelnemerSound.Load(App.Information.Deelnemers[App.NumberOfDeelnemer - 1].Bestandnaam + ".m4a");
-                Console.WriteLine("Werkt");
+                try
+                {
+                    App.DeelnemerSound.Load(App.Information.Deelnemers[App.NumberOfDeelnemer - 1].Bestandnaam + ".m4a");
+                    Console.WriteLine("Werkt");
+                }
+                catch { }
             }
-            catch { }
+            else if(Device.OS == TargetPlatform.Android){
+                try
+                {
+                    App.DeelnemerSound.Load(App.Information.Deelnemers[App.NumberOfDeelnemer - 1].Bestandnaam + ".mp3");
+                    Console.WriteLine("Werkt");
+                }
+                catch { }
+            }
+           
         }
         //gaat een deelnemer terug
         private void BackButtonClicked(object sender, EventArgs e)
