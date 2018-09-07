@@ -11,16 +11,6 @@ namespace ReuzengildeProject.Pages
     {
         public RoutePage()
         {         
-            Content = new Grid
-            {
-                Padding = new Thickness(20),
-                Children = {
-        new PinchToZoomContainer {
-          Content = new Image { Source = ImageSource.FromFile ("Route.jpg") }
-        }
-      }
-            };
-
             InitializeComponent();
         }
     }

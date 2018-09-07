@@ -8,9 +8,6 @@
         <AbsoluteLayout BackgroundColor="White">
             <Image Source="Route.jpg"
                AbsoluteLayout.LayoutBounds ="1, 1, 1, 1" AbsoluteLayout.LayoutFlags="All">
-                <!--Image.GestureRecognizers>
-                    <PinchGestureRecognizer PinchUpdated="OnPinchUpdated" />
-                </-->
             </Image>
     </AbsoluteLayout>
     </ContentPage.Content>
