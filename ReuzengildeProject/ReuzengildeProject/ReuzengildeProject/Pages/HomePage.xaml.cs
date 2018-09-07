@@ -21,7 +21,7 @@ namespace ReuzengildeProject.Pages
 		//zet muziek op het muziek knopje
             try
             {
-                App.HomePageSound.Load("Instructie.m4a");
+                App.HomePageSound.Load("Instructie.mp3");
                 Console.WriteLine("Werkt");
             }
             catch
