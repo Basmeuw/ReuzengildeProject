@@ -16,6 +16,7 @@ namespace ReuzengildeProject.Pages
         private Page optochtPage;
         public bool startPauze = false;
         private Timer timer;
+        bool optochtPageBool = false;
         public HamburgerPage()
         {
             InitializeComponent();
@@ -104,18 +105,30 @@ namespace ReuzengildeProject.Pages
         //Iets met de link
         public async void LinkButton()
         {
-            if (App.Information.Deelnemers[App.NumberOfDeelnemer - 1].Link == null || App.Information.Deelnemers[App.NumberOfDeelnemer - 1].Link == string.Empty)
+            if (optochtPageBool)
             {
-                await DisplayAlert("Melding", "Deze deelnemer heeft geen site", "Oké");
+                if (App.Information.Deelnemers[App.NumberOfDeelnemer - 1].Link == null || App.Information.Deelnemers[App.NumberOfDeelnemer - 1].Link == string.Empty)
+                {
+                    await DisplayAlert("Melding", "Deze deelnemer heeft geen site", "Oké");
+                }
+                else
+                {
+                    bool GoToSite = await DisplayAlert("Melding", "Wilt u doorgaan naar de site van deze deelnemer?", "Ja", "Nee");
+                    if (GoToSite)
+                    {
+                        Device.OpenUri(new Uri(App.Information.Deelnemers[App.NumberOfDeelnemer - 1].Link));
+                    }
+                }
             }
             else
             {
-                bool GoToSite = await DisplayAlert("Melding", "Wilt u doorgaan naar de site van deze deelnemer?", "Ja", "Nee");
-                if (GoToSite)
-                {
-                    Device.OpenUri(new Uri(App.Information.Deelnemers[App.NumberOfDeelnemer - 1].Link));
-                }
+                    bool GoToSite = await DisplayAlert("Melding", "Wilt u doorgaan naar de site van de makers van deze app?", "Ja", "Nee");
+                    if (GoToSite)
+                    {
+                        Device.OpenUri(new Uri("https://bsjtechnologies.nl/"));
+                    }
             }
+            
 
 
         }
@@ -153,6 +166,7 @@ namespace ReuzengildeProject.Pages
         {
             if (page == typeof(OptochtPage) || page == typeof(DeelnemersPage))
             {
+
                 if (File.Exists(App.Path) && App.Information != null)
                 {
                     ChangePage(page);
@@ -220,6 +234,7 @@ namespace ReuzengildeProject.Pages
             }
             else if(page == typeof(OptochtPage))
             {
+                optochtPageBool = true;
                 optochtPage = new NavigationPage(new OptochtPage());
                 Detail = optochtPage;
                 if (Device.OS == TargetPlatform.Android)
@@ -230,6 +245,7 @@ namespace ReuzengildeProject.Pages
             }
             else
             {
+                optochtPageBool = false;
                 Detail = new NavigationPage((Page)Activator.CreateInstance(page));
             }
         }

@@ -793,6 +793,6 @@
     <BundleResource Include="Resources\Herkenbosch.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\Jeroen Bosch Verkennersband - Esprit.m4a" />
+    <BundleResource Include="Resources\Herkenbosch.m4a" />
   </ItemGroup>
 </Project>
