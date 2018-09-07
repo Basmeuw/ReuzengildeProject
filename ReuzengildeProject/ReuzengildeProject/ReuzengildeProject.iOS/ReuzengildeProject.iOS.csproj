@@ -789,4 +789,7 @@
   <ItemGroup>
     <BundleResource Include="Resources\Sjtuf.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Herkenbosch.jpg" />
+  </ItemGroup>
 </Project>
