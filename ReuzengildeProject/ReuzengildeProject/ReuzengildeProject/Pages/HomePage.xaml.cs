@@ -19,15 +19,31 @@ namespace ReuzengildeProject.Pages
             App.HomePage = true;
             Console.WriteLine(App.HomePage.ToString());
 		//zet muziek op het muziek knopje
-            try
+            if(Device.OS == TargetPlatform.Android)
             {
-                App.HomePageSound.Load("Instructie.mp3");
-                Console.WriteLine("Werkt");
-            }
-            catch
-            {
+                try
+                {
+                    App.HomePageSound.Load("Instructie.mp3");
+                    Console.WriteLine("Werkt");
+                }
+                catch
+                {
 
+                }
             }
+            else if(Device.OS == TargetPlatform.iOS)
+            {
+                try
+                {
+                    App.HomePageSound.Load("Instructie.m4a");
+                    Console.WriteLine("Werkt");
+                }
+                catch
+                {
+
+                }
+            }
+           
 
         }
 		//checkt of er informatie is voor de optochtpage en gaat er dan naartoe

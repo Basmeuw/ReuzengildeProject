@@ -21,11 +21,12 @@
     <AndroidKeyStore>false</AndroidKeyStore>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <DebugSymbols>true</DebugSymbols>
+    <DebugSymbols>false</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
     <OutputPath>bin\Debug</OutputPath>
-    <DefineConstants>TRACE;DEBUG;</DefineConstants>
+    <DefineConstants>
+    </DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <AndroidLinkMode>SdkOnly</AndroidLinkMode>
@@ -34,8 +35,8 @@
     <BundleAssemblies>false</BundleAssemblies>
     <AndroidSupportedAbis>
     </AndroidSupportedAbis>
-    <AndroidUseSharedRuntime>true</AndroidUseSharedRuntime>
-    <EmbedAssembliesIntoApk>false</EmbedAssembliesIntoApk>
+    <AndroidUseSharedRuntime>false</AndroidUseSharedRuntime>
+    <EmbedAssembliesIntoApk>true</EmbedAssembliesIntoApk>
     <EnableProguard>false</EnableProguard>
     <AndroidEnableMultiDex>true</AndroidEnableMultiDex>
     <JavaMaximumHeapSize>1G</JavaMaximumHeapSize>
