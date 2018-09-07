@@ -453,223 +453,223 @@
     <AndroidResource Include="Resources\drawable-hdpi\BergseStadsreuzen.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidAsset Include="Assets\GoudenBeeld.m4a" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidAsset Include="Assets\HeiligeKnachte.m4a" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidAsset Include="Assets\HenrikvanWassenaar.m4a" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidAsset Include="Assets\Heusden.m4a" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidAsset Include="Assets\Hofhouding.m4a" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidAsset Include="Assets\HofhoudingLandvoogd.m4a" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidAsset Include="Assets\HofhoudingWenen.m4a" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidAsset Include="Assets\Jachthoornblazers.m4a" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidAsset Include="Assets\JohannaAbcovia.m4a" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidAsset Include="Assets\Kachelpiepers.m4a" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidAsset Include="Assets\KeizerinMariaTheresia.m4a" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidAsset Include="Assets\KluizenaarBolderberg.m4a" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidAsset Include="Assets\Knapkoekers.m4a" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidAsset Include="Assets\KoninginMariaChristina.m4a" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidAsset Include="Assets\KoninklijkeHarmonie.m4a" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidAsset Include="Assets\KoninklijkeHofhouding.m4a" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidAsset Include="Assets\KoninklijkeOrdeHasselt.m4a" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidAsset Include="Assets\Kortessem.m4a" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidAsset Include="Assets\KWFLogo.m4a" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidAsset Include="Assets\Landsknachte.m4a" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidAsset Include="Assets\LandvoogdesMarinaChristina.m4a" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidAsset Include="Assets\LesChinels.m4a" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidAsset Include="Assets\Lodewijk16.m4a" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidAsset Include="Assets\MariaCarolinavanOostenrijk.m4a" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidAsset Include="Assets\MariaElisabethAbdis.m4a" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidAsset Include="Assets\MariaTheresia.m4a" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidAsset Include="Assets\Marie.m4a" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidAsset Include="Assets\MarinaChristinavanOostenrijk.m4a" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidAsset Include="Assets\MaximilaanFrans.m4a" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidAsset Include="Assets\Oisterwijk.m4a" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidAsset Include="Assets\PSWLogo.m4a" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidAsset Include="Assets\PuurMuur.m4a" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidAsset Include="Assets\RemunjseReuzegilde.m4a" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidAsset Include="Assets\ReusBrabantsewal.m4a" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidAsset Include="Assets\Reuzengezelschap.m4a" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidAsset Include="Assets\ReuzenpaarVenlo.m4a" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidAsset Include="Assets\RoermondseSchutterij.m4a" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidAsset Include="Assets\Roofvogel.m4a" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidAsset Include="Assets\Scouting 2.m4a" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidAsset Include="Assets\Scouting8.m4a" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidAsset Include="Assets\Scouting18.m4a" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidAsset Include="Assets\Scouting26.m4a" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidAsset Include="Assets\Scouting36.m4a" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidAsset Include="Assets\Scouting47.m4a" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidAsset Include="Assets\Scouting56.m4a" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidAsset Include="Assets\Scouting64.m4a" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidAsset Include="Assets\SintAntoniusAbtGildeBlitterswijck.m4a" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidAsset Include="Assets\Sjtuf.m4a" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidAsset Include="Assets\Stadtgarde.m4a" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidAsset Include="Assets\SteinderGarde.m4a" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidAsset Include="Assets\Symphonie.m4a" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidAsset Include="Assets\Tilburg.m4a" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidAsset Include="Assets\Tilburg2.m4a" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidAsset Include="Assets\Toon.m4a" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidAsset Include="Assets\Vaandeldragers.m4a" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidAsset Include="Assets\Vendeliers.m4a" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidAsset Include="Assets\VendeliersKaulille.m4a" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidAsset Include="Assets\Willibrordus.m4a" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidAsset Include="Assets\ZwitserseGarde.m4a" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidAsset Include="Assets\Abdis.m4a" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidAsset Include="Assets\Adelijk.m4a" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidAsset Include="Assets\Akkermansgilde.m4a" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidAsset Include="Assets\AutarkyBrassBand.m4a" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidAsset Include="Assets\Bedevaart.m4a" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidAsset Include="Assets\BergseStadsreuzen.m4a" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidAsset Include="Assets\BisschopMaxfranz.m4a" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidAsset Include="Assets\Boxtel.m4a" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidAsset Include="Assets\BussenSchutten.m4a" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidAsset Include="Assets\Damianus.m4a" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidAsset Include="Assets\FandelschwenkerWesseling.m4a" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidAsset Include="Assets\Gigantius.m4a" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidAsset Include="Assets\Instructie.m4a" />
-  </ItemGroup>
-  <ItemGroup>
     <AndroidResource Include="Resources\drawable-hdpi\PuurMuur.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\HeiligeKnachte.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\HenrikvanWassenaar.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Heusden.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Hofhouding.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\HofhoudingLandvoogd.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\HofhoudingWenen.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Instructie.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Jachthoornblazers.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\JohannaAbcovia.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Kachelpiepers.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\KeizerinMariaTheresia.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\KluizenaarBolderberg.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Knapkoekers.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\KoninginMariaChristina.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\KoninklijkeHarmonie.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\KoninklijkeHofhouding.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\KoninklijkeOrdeHasselt.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Kortessem.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\KWFLogo.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Landsknachte.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\LandvoogdesMarinaChristina.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\LesChinels.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Lodewijk16.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\MariaCarolinavanOostenrijk.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\MariaElisabethAbdis.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\MariaTheresia.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Marie.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\MarinaChristinavanOostenrijk.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\MaximilaanFrans.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Oisterwijk.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\PSWLogo.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\PuurMuur.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\RemunjseReuzegilde.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\ReusBrabantsewal.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Reuzengezelschap.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\ReuzenpaarVenlo.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\RoermondseSchutterij.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Roofvogel.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Scouting 2.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Scouting8.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Scouting18.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Scouting26.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Scouting36.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Scouting47.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Scouting56.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Scouting64.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\SintAntoniusAbtGildeBlitterswijck.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Sjtuf.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Stadtgarde.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\SteinderGarde.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Symphonie.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Tilburg.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Tilburg2.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Toon.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Vaandeldragers.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Vendeliers.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\VendeliersKaulille.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Willibrordus.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\ZwitserseGarde.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Abdis.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Adelijk.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Akkermansgilde.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\AutarkyBrassBand.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Bedevaart.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\BergseStadsreuzen.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\BisschopMaxfranz.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Boxtel.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\BussenSchutten.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Damianus.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\FandelschwenkerWesseling.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Gigantius.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\GoudenBeeld.mp3" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>
