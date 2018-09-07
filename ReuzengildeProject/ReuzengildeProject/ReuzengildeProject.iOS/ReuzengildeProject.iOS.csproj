@@ -792,4 +792,7 @@
   <ItemGroup>
     <BundleResource Include="Resources\Herkenbosch.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Herkenbosch.m4a" />
+  </ItemGroup>
 </Project>
