@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ReuzengildeProject.Pages.HomePage"
+                          Icon="Hamburger.png">
+    <AbsoluteLayout BackgroundColor="#e0dddd">
+        <BoxView Color="#00758b"                                                                  
+        AbsoluteLayout.LayoutBounds="0, 1, 1, 0.11" AbsoluteLayout.LayoutFlags="All"
+                 Opacity="1"/>
+ <!--maakt blauw vak onderaan scherm-->                                                                                          
+        <BoxView Color="#666666"
+                 AbsoluteLayout.LayoutBounds="0.5, 0.327, 0.77, 0.07" AbsoluteLayout.LayoutFlags="All"
+                 Opacity="1" />
+<!--maakt rand om optocht label-->
+        <BoxView Color="#afafaf"
+                 AbsoluteLayout.LayoutBounds="0.5, 0.795, 0.72, 0.513" AbsoluteLayout.LayoutFlags="All"
+                 Opacity="1" />
+<!--maakt rand om tekst label-->
+
+        <BoxView Color = "White"
+                 AbsoluteLayout.LayoutBounds="0.5, 0.79, 0.7, 0.5" AbsoluteLayout.LayoutFlags="All"/>
+<!--Zorgt ervoor dat het tekstvak na het scrollen dezelfde kleur heeft in iOS-->
+        
+        <Image Source="homepageHistorischeStoet.jpg"
+               AbsoluteLayout.LayoutBounds="0.5, 0.03, 0.94, 0.27" AbsoluteLayout.LayoutFlags="All"/>        
+
+        <Label Text="De optocht"
+              HorizontalTextAlignment="Center"
+               TextColor="White"
+               FontSize="Large"
+               BackgroundColor="#00758b"
+               AbsoluteLayout.LayoutBounds="0.5, 0.33, 0.75, 0.055" AbsoluteLayout.LayoutFlags="All"/>
+        <ScrollView Orientation="Vertical"
+                    AbsoluteLayout.LayoutBounds="0.5, 0.79, 0.7, 0.5" AbsoluteLayout.LayoutFlags="All"> 
+        <Label TextColor="Black"
+               FontSize="Medium"
+               BackgroundColor="White"
+               AbsoluteLayout.LayoutBounds="0.5, 0.79, 0.7, 0.5" AbsoluteLayout.LayoutFlags="All"
+               HorizontalTextAlignment="Center">
+           
+            <Label.Text>
+                Het initiatief voor de Reuzenoptocht Roermond 2018 is genomen door de vereniging 't remunjse Reuzengilde Roermond dat in 2018 haar 35-jarig bestaan viert. De laatste - historische - optocht dateert van 2006. Het streven is om iedere vijf jaar een reuzenoptocht in Roermond te organiseren.
+                
+Daarvoor is de Stichting Reuzenoptocht Roermond in het leven geroepen, die verantwoordelijk is voor de organisatie van de Reuzenoptocht 2018 en van volgende toekomstige optochten.
+            </Label.Text>
+        </Label>
+        </ScrollView>
+
+        <Button Text="Start"
+                TextColor="#985c80"
+                FontSize="Medium"
+                BackgroundColor="White"
+                Clicked="StartButtonClicked"
+                AbsoluteLayout.LayoutBounds="0.5, 1, 0.61, 0.1" AbsoluteLayout.LayoutFlags="All"/>
+    </AbsoluteLayout>
+</ContentPage>

@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ReuzengildeProject.Pages.OptochtPage"
+             xmlns:local="clr-namespace:ReuzengildeProject"
+                          Icon="Hamburger.png"
+             >
+
+    <!--Dit is de pagina, waar de gebruiker meer over één deelnemer kan zien-->
+    <!--<AbsoluteLayout>
+
+    </AbsoluteLayout>-->
+    <AbsoluteLayout>
+        <AbsoluteLayout x:Name="Content"
+                    BackgroundColor="#e0dddd"
+                    AbsoluteLayout.LayoutBounds="0,0,1,1"
+                    AbsoluteLayout.LayoutFlags="All"
+                        IsVisible="False">
+
+            <BoxView Color="#00758b"
+                 AbsoluteLayout.LayoutBounds="0, 1, 1, 0.11" AbsoluteLayout.LayoutFlags="All"
+                 Opacity="1"/>
+            <!--maakt blauw vak onderaan scherm-->
+            <BoxView 
+                 AbsoluteLayout.LayoutBounds="0.5, 0.327, 0.77, 0.07" AbsoluteLayout.LayoutFlags="All"
+                 Opacity="1" />
+            <!--maakt rand om NaamDeelnemer label-->
+            <BoxView Color="#afafaf"
+                 AbsoluteLayout.LayoutBounds="0.5, 0.795, 0.72, 0.513" AbsoluteLayout.LayoutFlags="All"
+                 Opacity="1" />
+            <!--maakt rand om TekstDeelnemer label-->
+
+            <BoxView Color = "White"
+                 AbsoluteLayout.LayoutBounds="0.5, 0.79, 0.7, 0.5" AbsoluteLayout.LayoutFlags="All"/>
+            <!--Zorgt ervoor dat het tekstvak na het scrollen dezelfde kleur heeft in iOS-->
+
+            <Label x:Name="NaamDeelnemer"
+               BackgroundColor="#00758b"
+               HorizontalTextAlignment="Center"
+               VerticalTextAlignment="Center"
+               TextColor="White"
+               FontSize="Large"
+               AbsoluteLayout.LayoutBounds="0.5, 0.33, 0.75, 0.055" AbsoluteLayout.LayoutFlags="All"/>
+
+            <ScrollView x:Name="scrollView"
+            Orientation="Vertical"
+                    AbsoluteLayout.LayoutBounds="0.5, 0.79, 0.7, 0.5" AbsoluteLayout.LayoutFlags="All">
+                <Label x:Name="InformatieDeelnemer"
+               AbsoluteLayout.LayoutBounds="0.5, 0.79, 0.4, 0.5" AbsoluteLayout.LayoutFlags="All"
+               BackgroundColor="White" 
+               FontSize="Medium"
+               />
+            </ScrollView>
+            
+            <Button x:Name="BackButton"
+                BackgroundColor="White"
+                TextColor="Black"
+                Text="vorige"
+                Clicked="BackButtonClicked"           
+                AbsoluteLayout.LayoutBounds="0.05, 1, 0.25, 0.1" AbsoluteLayout.LayoutFlags="All"/>
+
+            <local:ExtendedEntry x:Name="NumberOfDeelnemer"
+                AbsoluteLayout.LayoutBounds="0.5, 1, 0.4, 0.1" AbsoluteLayout.LayoutFlags="All"
+                Keyboard="Numeric"
+                Completed="ChangeNumberOfDeelnemers"
+                Focused="EntryFocused"/>
+
+            <Button x:Name="NextButton"
+                BackgroundColor="#ebebeb"
+                TextColor="Black"
+                Text="volgende"
+                Clicked="NextButtonClicked"
+                AbsoluteLayout.LayoutBounds="0.95, 1, 0.25, 0.1" AbsoluteLayout.LayoutFlags="All"/>
+
+            <Image x:Name="DeelnemersImage"
+               AbsoluteLayout.LayoutBounds="0.5, 0.03, 0.94, 0.27" AbsoluteLayout.LayoutFlags="All"/>
+        </AbsoluteLayout>
+
+        <AbsoluteLayout x:Name="Image"
+                        AbsoluteLayout.LayoutBounds="0,0,1,1"
+                        AbsoluteLayout.LayoutFlags="All"
+                        BackgroundColor="White">
+            <Image Source="hoofdsponsors.jpg">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer
+                        Tapped="TapGestureRecognizer_Tapped"/>
+                </Image.GestureRecognizers>
+            </Image>
+            <Label x:Name="SponsorText"
+                Text="3"
+               AbsoluteLayout.LayoutBounds="1,0,0.04,0.1"
+               AbsoluteLayout.LayoutFlags="All"
+               FontSize="Large"/>
+
+        </AbsoluteLayout>
+    </AbsoluteLayout>
+    
+</ContentPage>

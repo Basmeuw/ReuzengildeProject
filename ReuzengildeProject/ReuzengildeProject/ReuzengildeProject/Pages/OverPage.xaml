@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ReuzengildeProject.Pages.OverPage"
+                          Icon="Hamburger.png"
+             Title="Over">
+    <ContentPage.Content>
+        <AbsoluteLayout BackgroundColor="#e0dddd">
+            <BoxView Color="#00758b"
+                 AbsoluteLayout.LayoutBounds="0, 1, 1, 0.11" AbsoluteLayout.LayoutFlags="All"
+                 Opacity="1"/>
+            <!--maakt blauw vak onderaan scherm-->
+            <BoxView Color="#666666"
+                 AbsoluteLayout.LayoutBounds="0.5, 0.327, 0.77, 0.07" AbsoluteLayout.LayoutFlags="All"
+                 Opacity="1" />
+            <!--maakt rand om NaamDeelnemer label-->
+            <BoxView Color="#afafaf"
+                 AbsoluteLayout.LayoutBounds="0.5, 0.956, 0.72, 0.59" AbsoluteLayout.LayoutFlags="All"
+                 Opacity="1" />
+            <!--maakt rand om TekstDeelnemer label-->
+
+            <BoxView Color = "White"
+                     AbsoluteLayout.LayoutBounds="0.5, 0.94, 0.7, 0.57" AbsoluteLayout.LayoutFlags="All"/>
+            <!--Zorgt ervoor dat het tekstvak na het scrollen dezelfde kleur heeft in iOS-->
+
+            <Image Source="LogoBSJ.png"
+                   AbsoluteLayout.LayoutBounds="0.5, 0.03, 0.94, 0.27" AbsoluteLayout.LayoutFlags="All"/>
+            <!--logo bovenaan de pagina-->
+
+            <Label Text="Over"
+                   HorizontalTextAlignment="Center"
+                   TextColor="White"
+                   FontSize="Large"
+                   BackgroundColor="#00758b" 
+                   AbsoluteLayout.LayoutBounds="0.5, 0.33, 0.75, 0.055" AbsoluteLayout.LayoutFlags="All"/>
+
+            <ScrollView Orientation="Vertical"
+                    AbsoluteLayout.LayoutBounds="0.5, 0.94, 0.7, 0.57" AbsoluteLayout.LayoutFlags="All">
+                <Label TextColor="Black"
+                   FontSize="Small"
+                   BackgroundColor="White"
+                   AbsoluteLayout.LayoutBounds="0.5, 0.94, 0.7, 0.57" AbsoluteLayout.LayoutFlags="All">
+                    <Label.Text>
+                        De Historische Stoet app is gemaakt door vier leerlingen van Lyceum Schöndeln. Namelijk door: Jip van Hoef, Stef Halmans, Bas Meuwissen en Koen van Dooren. De app maken was een opdracht voor het vak Onderzoek &amp; Ontwerpen. We zijn hierbij geholpen door onze leraar Mark Tinnemans en een ICT-expert Michael Baars. Onze opdrachtgever was de stichting historische stoet roermond. Het doel was om een app te maken waar toeschouwers makkelijk informatie over een stoet kunnen lezen. Omdat we het erg interessant vonden om apps te maken, zijn we nu ook ons eigen bedrijf, BSJ Technologies, begonnen om voor andere opdrachtgevers apps en dergelijke te maken. 
+                        
+Voor meer contact mail ons op business@bsjtechnologies.com
+                    </Label.Text>
+                </Label>
+            </ScrollView>
+            <!--hoofdtekst pagina-->
+        </AbsoluteLayout>
+    </ContentPage.Content>
+</ContentPage>

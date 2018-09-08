@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ReuzengildeProject.Pages.RoutePage"
+                          Icon="Hamburger.png"
+             Title="De route">
+    <ContentPage.Content>
+        <AbsoluteLayout BackgroundColor="White">
+            <Image Source="Route.jpg"
+               AbsoluteLayout.LayoutBounds ="1, 1, 1, 1" AbsoluteLayout.LayoutFlags="All">
+            </Image>
+    </AbsoluteLayout>
+    </ContentPage.Content>
+</ContentPage>
