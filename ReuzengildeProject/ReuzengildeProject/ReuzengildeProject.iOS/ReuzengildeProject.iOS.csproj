@@ -41,9 +41,8 @@
     <MtouchLink>None</MtouchLink>
     <MtouchArch>x86_64</MtouchArch>
     <ConsolePause>false</ConsolePause>
-    <CodesignKey>iPhone Developer</CodesignKey>
-    <CodesignProvision>
-    </CodesignProvision>
+    <CodesignKey>iPhone Distribution: Jean Pierre Halmans (4S98HP62TQ)</CodesignKey>
+    <CodesignProvision>Historische Stoet Appstore</CodesignProvision>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
     <DebugSymbols>true</DebugSymbols>
@@ -71,10 +70,9 @@
     <WarningLevel>4</WarningLevel>
     <MtouchArch>ARMv7, ARMv7s, ARM64</MtouchArch>
     <ConsolePause>false</ConsolePause>
-    <CodesignKey>iPhone Developer</CodesignKey>
+    <CodesignKey>iPhone Distribution: Jean Pierre Halmans (4S98HP62TQ)</CodesignKey>
     <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
-    <CodesignProvision>
-    </CodesignProvision>
+    <CodesignProvision>Historische Stoet Appstore</CodesignProvision>
     <BuildIpa>true</BuildIpa>
     <MtouchNoSymbolStrip>false</MtouchNoSymbolStrip>
     <OptimizePNGs>true</OptimizePNGs>
@@ -502,7 +500,7 @@
     <BundleResource Include="Resources\Incognito.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\rabobank.jpg" />
+    <BundleResource Include="Resources\RaboBank.jpg" />
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\remunjs.jpg" />
@@ -794,5 +792,8 @@
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\Herkenbosch.m4a" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\GemeenteRoermond.png" />
   </ItemGroup>
 </Project>
