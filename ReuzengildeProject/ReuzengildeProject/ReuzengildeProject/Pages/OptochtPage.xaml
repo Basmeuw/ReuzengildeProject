@@ -17,6 +17,7 @@
                     AbsoluteLayout.LayoutFlags="All"
                         IsVisible="False">
 
+
             <BoxView Color="#00758b"
                  AbsoluteLayout.LayoutBounds="0, 1, 1, 0.11" AbsoluteLayout.LayoutFlags="All"
                  Opacity="1"/>
@@ -74,6 +75,15 @@
 
             <Image x:Name="DeelnemersImage"
                AbsoluteLayout.LayoutBounds="0.5, 0.03, 0.94, 0.27" AbsoluteLayout.LayoutFlags="All"/>
+            <Image x:Name="DeelnemersImageTest"
+                   Source="button.png"
+               AbsoluteLayout.LayoutBounds="0.5, 1, 0.8, 0.8" AbsoluteLayout.LayoutFlags="All">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_1"/>
+                </Image.GestureRecognizers>
+            </Image>
+
+
         </AbsoluteLayout>
 
         <AbsoluteLayout x:Name="Image"

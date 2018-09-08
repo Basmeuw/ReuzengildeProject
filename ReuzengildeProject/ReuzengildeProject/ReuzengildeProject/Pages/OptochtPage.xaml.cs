@@ -37,15 +37,9 @@ namespace ReuzengildeProject.Pages
 
         private int NumberOfDeelnemers;
 
-        private DateTime localTime;
-        private DateTime optochtTime;
-       
-        private System.Timers.Timer optochtTimer;
+
         public OptochtPage ()
 		{
-
-
-
             InitializeComponent();
             App.DeelnemerSound = CrossSimpleAudioPlayer.CreateSimpleAudioPlayer();
             if (App.StartSponsorFoto)
@@ -108,11 +102,14 @@ namespace ReuzengildeProject.Pages
             {
                 NaamDeelnemer.FontSize = Device.GetNamedSize(NamedSize.Large, typeof(Label));
             }
-
-            if (!App.StartOptocht)
+            if (App.StartOptocht)
             {
-                Console.WriteLine("test");
-                Timer();
+                DeelnemersImageTest.IsVisible = false;
+                ChangeItems();
+            }
+            else if (!App.StartOptocht)
+            {
+                DeelnemersImageTest.IsVisible = true;
                 try
                 {
                     Console.WriteLine(App.Information.Deelnemers[App.NumberOfDeelnemer - 1].Bestandnaam.ToString());
@@ -120,87 +117,15 @@ namespace ReuzengildeProject.Pages
                 }
                 catch { }
                 NaamDeelnemer.Text = App.Information.Deelnemers[App.NumberOfDeelnemer - 1].Naam;
+                BackButton.IsEnabled = false;
+                NextButton.IsEnabled = false;
             }
-            else if (App.StartOptocht)
-            {
-                Console.WriteLine("3");
-                ChangeItems();
-            }
+
+
 
         }
 
-        private void UpdateSponsorenText()
-        {
-
-        }
-
-        public void Timer()
-        {
-            optochtTimer = new System.Timers.Timer(1000);
-            optochtTimer.Elapsed += async (sender, e) => await SetTimer();
-            optochtTimer.Start();
-        }
-
-        async Task SetTimer()
-        {
-            optochtTime = new DateTime(2018, 8, 7, 10, 30, 0);
-
-            localTime = DateTime.Now.ToLocalTime();
-            localTime = DateTime.ParseExact(localTime.ToString("yyyy-MM-dd HH:mm:ss"), "yyyy-MM-dd HH:mm:ss", null);
-
-            if (localTime >= optochtTime)
-            {
-                Device.BeginInvokeOnMainThread(() =>
-                {
-                    App.StartOptocht = true;
-                    BackButton.IsEnabled = true;
-                    NextButton.IsEnabled = true;
-                    NumberOfDeelnemer.IsEnabled = true;
-                    ChangeItems();
-                    optochtTimer.Stop();
-                });
-            }
-            else
-            {
-                Device.BeginInvokeOnMainThread(() =>
-                {
-                    if((optochtTime - localTime).Days > 0)
-                    { 
-                        InformatieDeelnemer.Text = "De Historische Stoet vindt plaats op 9 September 2018. Dit betekent dat het nog maar " + (optochtTime - localTime).Days.ToString() + " dagen is totdat alle informatie over de Historische Stoet beschikbaar wordt! \nVanaf dat moment zal u hier de informatie over de deelnemers kunnen lezen!";
-                    }
-                    else if((optochtTime - localTime).Days <= 0)
-                    {
-                        CheckTime(optochtTime, localTime);
-                        InformatieDeelnemer.Text = "De Historische Stoet vindt plaats op 9 September 2018. Dit betekent dat het nog maar " + (optochtTime - localTime).Hours.ToString() + timerText[0] + (optochtTime - localTime).Minutes.ToString() + timerText[1] + (optochtTime - localTime).Seconds.ToString() + timerText[2] + "is totdat alle informatie over de Historische Stoet beschikbaar wordt! \nVanaf dat moment zal u hier de informatie over de deelnemers kunnen lezen!";
-                    }
-                    App.StartOptocht = false;
-                    BackButton.IsEnabled = false;
-                    NextButton.IsEnabled = false;
-                    NumberOfDeelnemer.IsEnabled = false;
-                });
-            }
-        }
-
-        private void CheckTime(DateTime optochtTime, DateTime localTime)
-        {
-            List<int> dateTimes = new List<int>()
-            {
-                (optochtTime - localTime).Hours,
-                (optochtTime - localTime).Minutes,
-                (optochtTime - localTime).Seconds
-            };
-            for(int i = 0; i < dateTimes.Count; i++)
-            {
-                if(dateTimes[i] != 1)
-                {
-                    timerText[i] = meervoud[i];
-                }
-                else if(dateTimes[i] == 1 || dateTimes[i] == 0)
-                {
-                    timerText[i] = enkelvoud[i];
-                }
-            }
-        }
+     
         public void ChangeItems()
         {
             //if (App.DeelnemerSound.IsPlaying)
@@ -350,9 +275,17 @@ namespace ReuzengildeProject.Pages
             }
             else if (!GoToGroteSponsorPage)
             {
+                
                 Content.IsVisible = true;
                 Image.IsVisible = false;
             }
+        }
+
+        private void TapGestureRecognizer_Tapped_1(object sender, EventArgs e)
+        {
+            DeelnemersImageTest.IsVisible = false;
+            ChangeItems();
+            App.StartOptocht = true;
         }
     }
 }

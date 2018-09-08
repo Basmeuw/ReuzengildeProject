@@ -30,7 +30,7 @@ namespace ReuzengildeProject
         //Een reference naar het geluid van de deelnemer op de deelnemers page.
         public static ISimpleAudioPlayer DeelnemerSound;
 
-        public static bool StartOptocht;
+        public static bool StartOptocht = false;
 
         public static bool StartSponsorFoto = true;
 
