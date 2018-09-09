@@ -66,18 +66,14 @@ namespace ReuzengildeProject.Pages
         }
         private async void TapGestureRecognizer_Tapped5(object sender, EventArgs e)
         {
-            bool GoToSite = await DisplayAlert("Melding", "Wilt u doorgaan naar de site van dit bedrijf of deze persoon?", "Ja", "Nee");
-            if (GoToSite)
-            {
-                Device.OpenUri(new Uri("http://www.incognitoroermond.nl/"));
-            }
+            await DisplayAlert("Melding","Dit bedrijf of deze persoon heeft geen site.", "Oké");
         }
         private async void TapGestureRecognizer_Tapped6(object sender, EventArgs e)
         {
             bool GoToSite = await DisplayAlert("Melding", "Wilt u doorgaan naar de site van dit bedrijf of deze persoon?", "Ja", "Nee");
             if (GoToSite)
             {
-                Device.OpenUri(new Uri(" https://www.moorenmachines.nl/"));
+                Device.OpenUri(new Uri("http://www.incognitoroermond.nl/"));
             }
         }
         private async void TapGestureRecognizer_Tapped7(object sender, EventArgs e)
@@ -85,7 +81,7 @@ namespace ReuzengildeProject.Pages
             bool GoToSite = await DisplayAlert("Melding", "Wilt u doorgaan naar de site van dit bedrijf of deze persoon?", "Ja", "Nee");
             if (GoToSite)
             {
-                Device.OpenUri(new Uri("https://www.nettt.nl/"));
+                Device.OpenUri(new Uri("https://www.moorenmachines.nl/"));
             }
         }
         private async void TapGestureRecognizer_Tapped8(object sender, EventArgs e)
@@ -93,7 +89,7 @@ namespace ReuzengildeProject.Pages
             bool GoToSite = await DisplayAlert("Melding", "Wilt u doorgaan naar de site van dit bedrijf of deze persoon?", "Ja", "Nee");
             if (GoToSite)
             {
-                Device.OpenUri(new Uri("https://www.theaterhotelroermond.nl/"));
+                Device.OpenUri(new Uri("https://www.nettt.nl/"));
             }
         }
         private async void TapGestureRecognizer_Tapped9(object sender, EventArgs e)
@@ -101,7 +97,7 @@ namespace ReuzengildeProject.Pages
             bool GoToSite = await DisplayAlert("Melding", "Wilt u doorgaan naar de site van dit bedrijf of deze persoon?", "Ja", "Nee");
             if (GoToSite)
             {
-                Device.OpenUri(new Uri("https://www.cultuurfonds.nl/provinciale-afdelingen/limburg"));
+                Device.OpenUri(new Uri("https://www.theaterhotelroermond.nl/"));
             }
         }
         private async void TapGestureRecognizer_Tapped10(object sender, EventArgs e)
@@ -109,10 +105,18 @@ namespace ReuzengildeProject.Pages
             bool GoToSite = await DisplayAlert("Melding", "Wilt u doorgaan naar de site van dit bedrijf of deze persoon?", "Ja", "Nee");
             if (GoToSite)
             {
-                Device.OpenUri(new Uri("https://www.rockwool.nl/"));
+                Device.OpenUri(new Uri("https://www.cultuurfonds.nl/provinciale-afdelingen/limburg"));
             }
         }
         private async void TapGestureRecognizer_Tapped11(object sender, EventArgs e)
+        {
+            bool GoToSite = await DisplayAlert("Melding", "Wilt u doorgaan naar de site van dit bedrijf of deze persoon?", "Ja", "Nee");
+            if (GoToSite)
+            {
+                Device.OpenUri(new Uri("https://www.rockwool.nl/"));
+            }
+        }
+        private async void TapGestureRecognizer_Tapped12(object sender, EventArgs e)
         {
             bool GoToSite = await DisplayAlert("Melding", "Wilt u doorgaan naar de site van dit bedrijf of deze persoon?", "Ja", "Nee");
             if (GoToSite)

@@ -5,33 +5,33 @@
              Title="Grote Sponsoren">
     <ScrollView BackgroundColor="White">
         <StackLayout BackgroundColor="White">
-            <Image Source="GemeenteRoermond">
+            <Image Source="GemeenteRoermond.png">
                 <Image.GestureRecognizers>
                     <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
                 </Image.GestureRecognizers>
             </Image>
                 <!-- https://www.roermond.nl/   -->
-            <Image Source="limburg">
+            <Image Source="limburg.jpg">
                 <Image.GestureRecognizers>
                     <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped1"/>
                 </Image.GestureRecognizers>
             </Image>
-            <Image Source="remunjs">
+            <Image Source="remunjs.jpg">
                 <Image.GestureRecognizers>
                     <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped2"/>
                 </Image.GestureRecognizers>
             </Image>
-            <Image Source="RaboBank">
+            <Image Source="RaboBank.jpg">
                 <Image.GestureRecognizers>
                     <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped3"/>
                 </Image.GestureRecognizers>
             </Image>
-            <Image Source="brasserie">
+            <Image Source="brasserie.jpg">
                 <Image.GestureRecognizers>
                     <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped4"/>
                 </Image.GestureRecognizers>
             </Image>
-            <Image Source="stichting">
+            <Image Source="stichting.jpg">
                 <Image.GestureRecognizers>
                     <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped5"/>
                 </Image.GestureRecognizers>

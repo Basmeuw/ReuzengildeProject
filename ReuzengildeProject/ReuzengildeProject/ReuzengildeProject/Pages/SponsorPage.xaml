@@ -11,73 +11,73 @@
                     </Image.GestureRecognizers>
                 </Image>
                 <!-- https://www.absautoherstel.nl/site/vestigingen/provincie/limburg/peterbrouwers   -->
-                <Image Source="arsprintmedia">
-                    <Image.GestureRecognizers>
-                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
-                    </Image.GestureRecognizers>
-                </Image>
-
-                <Image Source="Binnenstad">
+                <Image Source="arsprintmedia.jpg">
                     <Image.GestureRecognizers>
                         <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped1"/>
                     </Image.GestureRecognizers>
                 </Image>
 
-                <Image Source="cox">
+                <Image Source="Binnenstad.jpg">
                     <Image.GestureRecognizers>
                         <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped2"/>
                     </Image.GestureRecognizers>
                 </Image>
 
-                <Image Source="Gs">
+                <Image Source="cox.jpg">
                     <Image.GestureRecognizers>
                         <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped3"/>
                     </Image.GestureRecognizers>
                 </Image>
 
-                <Image Source="horeca">
+                <Image Source="Gs.jpg">
                     <Image.GestureRecognizers>
                         <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped4"/>
                     </Image.GestureRecognizers>
                 </Image>
 
-                <Image Source="Incognito">
+                <Image Source="horeca.jpg">
                     <Image.GestureRecognizers>
                         <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped5"/>
                     </Image.GestureRecognizers>
                 </Image>
 
-                <Image Source="mooren">
+                <Image Source="Incognito.jpg">
                     <Image.GestureRecognizers>
                         <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped6"/>
                     </Image.GestureRecognizers>
                 </Image>
 
-                <Image Source="nett">
+                <Image Source="mooren.jpg">
                     <Image.GestureRecognizers>
                         <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped7"/>
                     </Image.GestureRecognizers>
                 </Image>
-                <Image Source="oranjerie">
+
+                <Image Source="nett.jpg">
                     <Image.GestureRecognizers>
                         <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped8"/>
                     </Image.GestureRecognizers>
                 </Image>
-                <Image Source="prins">
+                <Image Source="oranjerie.jpg">
                     <Image.GestureRecognizers>
                         <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped9"/>
                     </Image.GestureRecognizers>
                 </Image>
-                <Image Source="rockwool">
+                <Image Source="prins.jpg">
                     <Image.GestureRecognizers>
                         <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped10"/>
                     </Image.GestureRecognizers>
                 </Image>
-
-
-                <Image Source="rotraco">
+                <Image Source="rockwool.jpg">
                     <Image.GestureRecognizers>
                         <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped11"/>
+                    </Image.GestureRecognizers>
+                </Image>
+
+
+                <Image Source="rotraco.jpg">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped12"/>
                     </Image.GestureRecognizers>
                 </Image>
             </StackLayout>
