@@ -796,4 +796,7 @@
   <ItemGroup>
     <BundleResource Include="Resources\GemeenteRoermond.png" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Opening HSR.m4a" />
+  </ItemGroup>
 </Project>
