@@ -42,12 +42,6 @@
                     </Image.GestureRecognizers>
                 </Image>
 
-                <Image Source="Incognito.jpg">
-                    <Image.GestureRecognizers>
-                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped6"/>
-                    </Image.GestureRecognizers>
-                </Image>
-
                 <Image Source="mooren.jpg">
                     <Image.GestureRecognizers>
                         <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped7"/>
