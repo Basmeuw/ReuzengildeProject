@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.HistorischeStoetApp" android:installLocation="auto" android:versionCode="15" android:versionName="15">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.HistorischeStoetApp" android:installLocation="auto" android:versionCode="16" android:versionName="16">
 	<uses-sdk android:minSdkVersion="17" android:targetSdkVersion="25" />
 	<application android:label="Historische Stoet" android:icon="@drawable/web_hi_res_512"></application>
 </manifest>
