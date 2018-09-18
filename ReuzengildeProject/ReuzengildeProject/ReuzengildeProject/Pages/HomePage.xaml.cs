@@ -23,7 +23,7 @@ namespace ReuzengildeProject.Pages
             {
                 try
                 {
-                    App.HomePageSound.Load("Instructie.mp3");
+                    App.HomePageSound.Load("Opening-HSR.mp3");
                     Console.WriteLine("Werkt");
                 }
                 catch
@@ -35,7 +35,7 @@ namespace ReuzengildeProject.Pages
             {
                 try
                 {
-                    App.HomePageSound.Load("Instructie.m4a");
+                    App.HomePageSound.Load("Opening HSR.m4a");
                     Console.WriteLine("Werkt");
                 }
                 catch

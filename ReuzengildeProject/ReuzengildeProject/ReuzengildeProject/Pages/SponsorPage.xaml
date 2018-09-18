@@ -5,12 +5,13 @@
     <ContentPage.Content>
         <ScrollView BackgroundColor="White">
             <StackLayout BackgroundColor="White">
-                <Image Source="ABS">
+                
+                <Image Source="ABS.jpg">
                     <Image.GestureRecognizers>
                         <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
                     </Image.GestureRecognizers>
                 </Image>
-                <!-- https://www.absautoherstel.nl/site/vestigingen/provincie/limburg/peterbrouwers   -->
+                
                 <Image Source="arsprintmedia.jpg">
                     <Image.GestureRecognizers>
                         <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped1"/>
@@ -41,12 +42,6 @@
                     </Image.GestureRecognizers>
                 </Image>
 
-                <Image Source="Incognito.jpg">
-                    <Image.GestureRecognizers>
-                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped6"/>
-                    </Image.GestureRecognizers>
-                </Image>
-
                 <Image Source="mooren.jpg">
                     <Image.GestureRecognizers>
                         <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped7"/>
@@ -58,22 +53,24 @@
                         <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped8"/>
                     </Image.GestureRecognizers>
                 </Image>
+                
                 <Image Source="oranjerie.jpg">
                     <Image.GestureRecognizers>
                         <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped9"/>
                     </Image.GestureRecognizers>
                 </Image>
+                
                 <Image Source="prins.jpg">
                     <Image.GestureRecognizers>
                         <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped10"/>
                     </Image.GestureRecognizers>
                 </Image>
+                
                 <Image Source="rockwool.jpg">
                     <Image.GestureRecognizers>
                         <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped11"/>
                     </Image.GestureRecognizers>
                 </Image>
-
 
                 <Image Source="rotraco.jpg">
                     <Image.GestureRecognizers>
